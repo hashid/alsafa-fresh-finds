@@ -38,7 +38,8 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <img src={logo} alt="Al Safa Hypermarket Logo" className="w-12 h-12 rounded-lg object-cover shadow-soft" />
             <div>
-              <h1 className="font-bold text-3xl text-[#e64343]">AL SAFA</h1>
+              <h1 className="font-bold text-[#e64343] text-left text-4xl">AL SAFA
+Hypermarket</h1>
               <p className="text-sm hidden sm:block text-green-700 text-left">Hypermarket</p>
             </div>
           </div>

@@ -95,6 +95,57 @@ export const AboutSection = () => {
           <div className="space-y-8">
           </div>
         </div>
+
+        {/* Floor Information Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+              Explore Al Safa Hypermarket – More Than Just Shopping
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Ground Floor */}
+            <Card className="bg-white shadow-medium hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-primary mb-4">Ground Floor – Supermarket</h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Freshness at your fingertips! From farm-fresh vegetables, tender meats, and seafood to nuts, bakery delights, confectionery, and beauty care—everything you love under one roof.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Basement */}
+            <Card className="bg-white shadow-medium hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-primary mb-4">Basement – Household Essentials</h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Your home, fully stocked. Find everything from cleaning products, stationery, and baby care to everyday household must-haves.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* 1st Floor */}
+            <Card className="bg-white shadow-medium hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-primary mb-4">1st Floor – Department Store</h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Style meets variety. Trendy fashion for men, women, and kids, plus footwear, electronics, perfumes, gifts, and toys for every occasion.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* 2nd Floor */}
+            <Card className="bg-white shadow-medium hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-8">
+                <h4 className="text-xl font-bold text-primary mb-4">2nd Floor – Eat & Play</h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  Shop. Play. Dine. Let the kids enjoy our fun play area while you relax and indulge in delicious meals at our family-friendly restaurant.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </div>
     </section>
   );

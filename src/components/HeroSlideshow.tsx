@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Phone } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo.jpg';
 import bagAndSandal from '@/assets/bag-and-sandal.jpg';
@@ -92,7 +92,7 @@ export const HeroSlideshow = () => {
               className="w-full bg-green-600 hover:bg-green-700 text-white rounded-lg p-4 transition-all duration-300 hover:scale-105 transform"
             >
               <div className="flex items-center justify-center gap-2">
-                <MessageCircle className="w-5 h-5" />
+                <Phone className="w-5 h-5" />
                 <div className="text-sm">
                   <div className="font-semibold">{t('hero.whatsapp.button')}</div>
                 </div>

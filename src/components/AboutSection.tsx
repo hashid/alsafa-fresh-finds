@@ -64,10 +64,10 @@ export const AboutSection = () => {
             </h2>
             <div className="w-32 h-1.5 bg-primary mx-auto mb-10"></div>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-foreground leading-relaxed mb-6">
+              <p className="text-3xl text-foreground leading-relaxed mb-6">
                 Welcome to <strong className="text-primary">Al Safa Hypermarket – Seeb</strong>, serving the community since 2015. We're proud to serve as your one-stop destination for all your daily needs.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-xl text-muted-foreground leading-relaxed">
                 Whether you're stocking up on groceries, household essentials, or delighting in fresh produce and baked goods, we have everything you need under one roof.
               </p>
             </div>
@@ -102,7 +102,7 @@ export const AboutSection = () => {
               Explore Al Safa Hypermarket
             </h3>
             <div className="w-32 h-1.5 bg-primary mx-auto mb-8"></div>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-3xl text-muted-foreground max-w-2xl mx-auto">
               More than just shopping – discover four floors of convenience, variety, and family fun.
             </p>
           </div>

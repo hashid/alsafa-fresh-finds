@@ -23,6 +23,7 @@ export const Header = () => {
             <div className="flex flex-col">
               <h1 className="font-bold text-[#e64343] text-3xl leading-tight">AL SAFA</h1>
               <h1 className="font-bold text-green-700 text-2xl leading-tight">HYPERMARKET</h1>
+              <p className="text-sm text-gray-600 mt-1">Fresh products, unbeatable prices</p>
             </div>
           </div>
 

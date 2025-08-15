@@ -21,9 +21,15 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <img src={logo} alt="Al Safa Hypermarket Logo" className="w-20 h-20 rounded-lg object-cover shadow-soft" />
             <div className="flex flex-col">
-              <h1 className="font-bold text-[#e64343] text-3xl leading-none">AL SAFA</h1>
-              <h1 className="font-bold text-green-700 text-2xl leading-none -mt-1">HYPERMARKET</h1>
-              <p className="text-sm text-gray-500 mt-1">Your satisfaction is our greatness</p>
+              <h1 className="font-playfair font-bold text-[#e64343] text-3xl md:text-4xl leading-none tracking-wide drop-shadow-lg text-shadow-premium transform hover:scale-105 transition-transform duration-300">
+                AL SAFA
+              </h1>
+              <h1 className="font-playfair font-bold text-green-700 text-2xl md:text-3xl leading-none -mt-1 tracking-wide drop-shadow-lg text-shadow-premium transform hover:scale-105 transition-transform duration-300">
+                HYPERMARKET
+              </h1>
+              <p className="font-inter text-sm text-gray-600 mt-2 italic font-medium tracking-wide">
+                Your satisfaction is our greatness
+              </p>
             </div>
           </div>
 

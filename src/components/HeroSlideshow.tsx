@@ -69,10 +69,6 @@ export const HeroSlideshow = () => {
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold hero-text-shadow">
-            <span className="text-red-500">AL SAFA</span><br />
-            <span className="text-green-700">HYPERMARKET</span>
-          </h1>
           <p className="text-xl md:text-2xl text-white/90 hero-text-shadow max-w-2xl mx-auto font-medium">
             Fresh products, unbeatable prices, and exceptional service • Since 2015
           </p>

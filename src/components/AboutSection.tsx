@@ -1,3 +1,4 @@
+import React from 'react';
 import { Check, Clock, Users, MapPin, Star, Heart, ShoppingCart, Home, Shirt, Coffee } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -79,9 +80,9 @@ export const AboutSection = () => {
               <Card key={index} className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group">
                 <CardContent className="p-4 md:p-6 text-center">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-3 md:mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    <div className="w-6 h-6 md:w-8 md:h-8">
-                      {feature.icon}
-                    </div>
+                    {React.cloneElement(feature.icon, { 
+                      className: "w-6 h-6 md:w-8 md:h-8 flex-shrink-0" 
+                    })}
                   </div>
                   <h3 className="text-base md:text-xl font-bold text-primary mb-2 md:mb-3">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
@@ -113,9 +114,9 @@ export const AboutSection = () => {
               <Card key={index} className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group">
                 <CardContent className="p-4 md:p-6 text-center">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-3 md:mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    <div className="w-6 h-6 md:w-8 md:h-8">
-                      {floor.icon}
-                    </div>
+                    {React.cloneElement(floor.icon, { 
+                      className: "w-6 h-6 md:w-8 md:h-8 flex-shrink-0" 
+                    })}
                   </div>
                   <h4 className="text-base md:text-xl font-bold text-primary mb-1 md:mb-2">{floor.title}</h4>
                   <h5 className="text-sm md:text-lg font-semibold text-foreground mb-2 md:mb-3">{floor.subtitle}</h5>

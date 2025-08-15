@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { AnimatedCart } from './AnimatedCart';
 import logo from '@/assets/logo.jpg';
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,10 +53,13 @@ export const Header = () => {
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
-          <Button variant="ghost" size="sm" className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </Button>
+          {/* Animated Cart and Mobile Menu */}
+          <div className="flex items-center gap-3 lg:hidden">
+            <AnimatedCart />
+            <Button variant="ghost" size="sm" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

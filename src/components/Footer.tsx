@@ -1,11 +1,14 @@
 import { Facebook, Instagram, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { LanguageToggle } from './LanguageToggle';
+import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo.jpg';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t, isRTL } = useLanguage();
 
   return (
-    <footer className="bg-primary text-white/80">
+    <footer className={`bg-primary text-white/80 ${isRTL ? 'font-cairo' : ''}`}>
       <div className="container mx-auto px-4 py-8">
         {/* Main Content */}
         <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -26,7 +29,7 @@ export const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Contact Info</h3>
+            <h3 className="text-lg font-semibold">{t('contact.title')}</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-white/80" />
@@ -58,13 +61,13 @@ export const Footer = () => {
 
           {/* Working Hours */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Working Hours</h3>
+            <h3 className="text-lg font-semibold">{t('contact.hours')}</h3>
             <div className="space-y-2">
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-white/80" />
                 <div className="text-white/90">
                   <div className="font-medium">Every Day</div>
-                  <div className="text-sm">8:00 AM - 12:00 AM</div>
+                  <div className="text-sm">{t('contact.hours.daily')}</div>
                 </div>
               </div>
               <div className="mt-3 p-3 bg-white/10 rounded-lg">
@@ -88,26 +91,34 @@ export const Footer = () => {
               </p>
             </div>
             
-            {/* Social Media */}
-            <div className="flex items-center gap-4">
-              <span className="text-white/80 text-sm">Follow us:</span>
-              <div className="flex gap-3">
-                <a 
-                  href="https://www.facebook.com/profile.php?id=100054276620484" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a 
-                  href="https://www.instagram.com/alsafahypermarket/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
+            {/* Language Toggle & Social Media */}
+            <div className="flex flex-col lg:flex-row items-center gap-4">
+              {/* Language Toggle */}
+              <div className="bg-white/10 rounded-lg p-2">
+                <LanguageToggle />
+              </div>
+              
+              {/* Social Media */}
+              <div className="flex items-center gap-4">
+                <span className="text-white/80 text-sm">Follow us:</span>
+                <div className="flex gap-3">
+                  <a 
+                    href="https://www.facebook.com/profile.php?id=100054276620484" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                  >
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/alsafahypermarket/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

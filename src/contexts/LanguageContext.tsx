@@ -58,11 +58,11 @@ const translations = {
     "floor.second.desc": "Family restaurant and fun play area for kids to enjoy while you shop.",
     
     // Contact
-    "contact.title": "Visit Us Today",
+    "contact.title": "Contact Info",
     "contact.address": "Address",
     "contact.phone": "Phone",
-    "contact.hours": "Opening Hours",
-    "contact.hours.daily": "Daily: 8:00 AM - 12:00 AM",
+    "contact.hours": "Working Hours",
+    "contact.hours.daily": "8:00 AM - 12:00 AM",
     "contact.hours.friday": "Friday: 2:00 PM - 12:00 AM",
     
     // Reviews
@@ -121,11 +121,11 @@ const translations = {
     "floor.second.desc": "مطعم عائلي ومنطقة لعب ممتعة للأطفال للاستمتاع أثناء تسوقكم.",
     
     // Contact
-    "contact.title": "زورونا اليوم",
+    "contact.title": "معلومات الاتصال",
     "contact.address": "العنوان",
     "contact.phone": "الهاتف",
     "contact.hours": "ساعات العمل",
-    "contact.hours.daily": "يومياً: 8:00 ص - 12:00 م",
+    "contact.hours.daily": "8:00 ص - 12:00 م",
     "contact.hours.friday": "الجمعة: 2:00 م - 12:00 م",
     
     // Reviews

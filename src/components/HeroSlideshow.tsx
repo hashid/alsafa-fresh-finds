@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logoHero from '@/assets/logo-hero.jpg';
-import storeFront from '@/assets/store-front.jpg';
+import { MessageCircle } from 'lucide-react';
 import bagAndSandal from '@/assets/bag-and-sandal.jpg';
 import bagsClear from '@/assets/bags-clear.jpg';
 import balloons from '@/assets/balloons.jpg';
@@ -18,8 +16,6 @@ import tide from '@/assets/tide.jpg';
 import veet from '@/assets/veet.jpg';
 
 const images = [
-  { src: logoHero, alt: 'Al Safa Hypermarket Logo' },
-  { src: storeFront, alt: 'Al Safa Store Front' },
   { src: fruitsClear, alt: 'Fresh Fruits Collection' },
   { src: frozenClear, alt: 'Frozen Products' },
   { src: bagsClear, alt: 'Quality Bags' },
@@ -44,14 +40,6 @@ export const HeroSlideshow = () => {
     }, 4000);
     return () => clearInterval(interval);
   }, []);
-
-  const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
-  };
 
   const goToImage = (index: number) => {
     setCurrentImage(index);
@@ -81,19 +69,31 @@ export const HeroSlideshow = () => {
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
         <div className="max-w-4xl mx-auto space-y-6">
-          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 hero-text-shadow font-medium">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold hero-text-shadow">
             Your Premium Destination for Quality Shopping
-          </p>
-          <p className="text-lg md:text-xl text-white/80 hero-text-shadow max-w-2xl mx-auto">
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 hero-text-shadow max-w-2xl mx-auto font-medium">
             Fresh products, unbeatable prices, and exceptional service • Since 2015
           </p>
+          
+          {/* Get Exclusive Offers Section */}
+          <div className="bg-white/15 backdrop-blur-lg rounded-xl p-6 max-w-md mx-auto border border-white/20">
+            <h3 className="text-xl font-bold text-white mb-3">Get Exclusive Offers!</h3>
+            <p className="text-white/90 text-sm mb-4">
+              To get updates on offers and promotions
+            </p>
+            <div className="bg-green-600 hover:bg-green-700 text-white rounded-lg p-3 transition-colors">
+              <div className="flex items-center justify-center gap-2">
+                <MessageCircle className="w-5 h-5" />
+                <div className="text-sm">
+                  <div className="font-semibold">Save WhatsApp Number</div>
+                  <div>+968 9107 3089 & Send "Hi"</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary-dark text-white px-8 py-3 text-lg font-semibold shadow-green"
-            >
-              Shop Now
-            </Button>
             <Button 
               variant="outline" 
               size="lg"
@@ -105,23 +105,6 @@ export const HeroSlideshow = () => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <Button
-        variant="ghost"
-        size="lg"
-        className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:bg-white/20 backdrop-blur-sm z-20"
-        onClick={prevImage}
-      >
-        <ChevronLeft className="w-8 h-8" />
-      </Button>
-      <Button
-        variant="ghost"
-        size="lg"
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:bg-white/20 backdrop-blur-sm z-20"
-        onClick={nextImage}
-      >
-        <ChevronRight className="w-8 h-8" />
-      </Button>
 
       {/* Dots Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">

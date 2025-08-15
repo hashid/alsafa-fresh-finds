@@ -6,8 +6,9 @@ export const Footer = () => {
 
   return (
     <footer className="bg-primary text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-8">
+        {/* Main Content */}
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -76,31 +77,36 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/20 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/80 text-sm">
-              © {currentYear} Al Safa Hypermarket. All rights reserved.
-            </p>
-            <div className="flex items-center gap-4">
+        <div className="border-t border-white/20 pt-6">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
+            <div className="text-center lg:text-left">
               <p className="text-white/80 text-sm">
+                © {currentYear} Al Safa Hypermarket. All rights reserved.
+              </p>
+              <p className="text-white/60 text-xs mt-1">
                 Quality Products • Competitive Prices • Excellent Service
               </p>
+            </div>
+            
+            {/* Social Media */}
+            <div className="flex items-center gap-4">
+              <span className="text-white/80 text-sm">Follow us:</span>
               <div className="flex gap-3">
                 <a 
                   href="https://www.facebook.com/profile.php?id=100054276620484" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
                 >
-                  <Facebook className="w-4 h-4" />
+                  <Facebook className="w-5 h-5" />
                 </a>
                 <a 
                   href="https://www.instagram.com/alsafahypermarket/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
                 >
-                  <Instagram className="w-4 h-4" />
+                  <Instagram className="w-5 h-5" />
                 </a>
               </div>
             </div>

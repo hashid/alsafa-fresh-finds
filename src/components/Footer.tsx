@@ -82,17 +82,8 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 pt-6">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
-            <div className="text-center lg:text-left">
-              <p className="text-white/80 text-sm">
-                © {currentYear} Al Safa Hypermarket. All rights reserved.
-              </p>
-              <p className="text-white/60 text-xs mt-1">
-                Quality Products • Competitive Prices • Excellent Service
-              </p>
-            </div>
-            
-            {/* Language Toggle & Social Media */}
-            <div className="flex flex-col lg:flex-row items-center gap-4">
+            {/* Language Toggle & Social Media - First on mobile, right on desktop */}
+            <div className="flex flex-col lg:flex-row items-center gap-4 order-1 lg:order-2">
               {/* Language Toggle */}
               <div className="bg-white/10 rounded-lg p-2">
                 <LanguageToggle />
@@ -120,6 +111,16 @@ export const Footer = () => {
                   </a>
                 </div>
               </div>
+            </div>
+
+            {/* Copyright - Second on mobile, left on desktop */}
+            <div className="text-center lg:text-left order-2 lg:order-1">
+              <p className="text-white/80 text-sm">
+                © {currentYear} Al Safa Hypermarket. All rights reserved.
+              </p>
+              <p className="text-white/60 text-xs mt-1">
+                Quality Products • Competitive Prices • Excellent Service
+              </p>
             </div>
           </div>
         </div>

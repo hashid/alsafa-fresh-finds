@@ -152,8 +152,7 @@ export const ReviewsSection = () => {
               <h3 className="text-lg md:text-xl font-bold text-primary mb-2">
                 Get Exclusive Offers
               </h3>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-4">
-                <MessageCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+              <div className="mb-4">
                 <p className="text-muted-foreground text-xs md:text-sm text-center">
                   To know about offers, send a WhatsApp message "Hi" and save our number
                 </p>

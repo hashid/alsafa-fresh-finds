@@ -147,14 +147,14 @@ export const ReviewsSection = () => {
 
         {/* WhatsApp Offers Section */}
         <div className="text-center mt-12">
-          <Card className="bg-gradient-fresh border-primary/20 inline-block">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-primary mb-2">
+          <Card className="bg-gradient-fresh border-primary/20 max-w-md mx-auto">
+            <CardContent className="p-4 md:p-6">
+              <h3 className="text-lg md:text-xl font-bold text-primary mb-2">
                 Get Exclusive Offers
               </h3>
-              <div className="flex items-center justify-center gap-3">
-                <MessageCircle className="w-6 h-6 text-green-600" />
-                <p className="text-muted-foreground text-sm">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 mb-4">
+                <MessageCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+                <p className="text-muted-foreground text-xs md:text-sm text-center">
                   To know about offers, send a WhatsApp message "Hi" and save our number
                 </p>
               </div>
@@ -162,7 +162,7 @@ export const ReviewsSection = () => {
                 href="https://wa.me/96891073089?text=Hi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors mt-4 text-sm"
+                className="inline-block bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 rounded-lg font-semibold transition-colors text-xs md:text-sm"
               >
                 WhatsApp Us: +968 9107 3089
               </a>

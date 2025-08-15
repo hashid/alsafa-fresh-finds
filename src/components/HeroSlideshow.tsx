@@ -75,20 +75,28 @@ export const HeroSlideshow = () => {
             Fresh products, unbeatable prices, and exceptional service • Since 2015
           </p>
           
-          {/* WhatsApp Offers Section - Moved down */}
-          <div className="mt-12 bg-white/15 backdrop-blur-lg rounded-xl p-3 max-w-sm mx-auto border border-white/20">
-            <div className="text-white text-center mb-2">
+          {/* WhatsApp Offers Section - Interactive Button */}
+          <div className="mt-12 bg-white/15 backdrop-blur-lg rounded-xl p-6 max-w-sm mx-auto border border-white/20">
+            <div className="text-white text-center mb-4">
               <div className="text-sm font-medium">Get exclusive offers to know about offer</div>
             </div>
-            <div className="bg-green-600 hover:bg-green-700 text-white rounded-lg p-3 transition-colors">
+            <Button
+              onClick={() => {
+                const phoneNumber = "96891073089";
+                const message = "Hi";
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+              }}
+              className="w-full bg-green-600 hover:bg-green-700 text-white rounded-lg p-4 transition-colors"
+            >
               <div className="flex items-center justify-center gap-2">
-                <MessageCircle className="w-4 h-4" />
-                <div className="text-xs">
-                  <div className="font-semibold">Save WhatsApp Number</div>
-                  <div>+968 9107 3089 & Send <span className="font-bold text-green-200">"Hi"</span></div>
+                <MessageCircle className="w-5 h-5" />
+                <div className="text-sm">
+                  <div className="font-semibold">Send Message on WhatsApp</div>
+                  <div className="text-xs text-green-200">+968 9107 3089</div>
                 </div>
               </div>
-            </div>
+            </Button>
           </div>
         </div>
       </div>

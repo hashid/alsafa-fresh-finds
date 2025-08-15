@@ -78,7 +78,7 @@ export const HeroSlideshow = () => {
           {/* WhatsApp Offers Section - Interactive Button */}
           <div className="mt-12 bg-white/15 backdrop-blur-lg rounded-xl p-6 max-w-sm mx-auto border border-white/20">
             <div className="text-white text-center mb-4">
-              <div className="text-sm font-medium">Get exclusive offers to know about offer</div>
+              <div className="text-sm font-medium">To know about offers, send a WhatsApp message "Hi" and save our number</div>
             </div>
             <Button
               onClick={() => {

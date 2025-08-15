@@ -62,15 +62,15 @@ export const AboutSection = () => {
             {/* Features Grid */}
             <div className="grid md:grid-cols-2 gap-6">
               {features.map((feature, index) => (
-                <Card key={index} className="bg-white hover:shadow-medium transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-red-600">
+                <Card key={index} className="bg-white hover:shadow-medium transition-shadow duration-300 h-full">
+                  <CardContent className="p-6 h-full flex flex-col">
+                    <div className="flex items-start gap-4 h-full">
+                      <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl flex items-center justify-center text-primary shadow-md">
                         {feature.icon}
                       </div>
-                      <div>
-                        <h3 className="font-semibold text-primary mb-2">{feature.title}</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
+                      <div className="flex-1 min-h-0">
+                        <h3 className="font-bold text-lg text-primary mb-3 leading-tight">{feature.title}</h3>
+                        <p className="text-muted-foreground leading-relaxed">
                           {feature.description}
                         </p>
                       </div>

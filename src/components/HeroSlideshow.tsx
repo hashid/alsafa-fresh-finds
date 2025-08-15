@@ -68,7 +68,7 @@ export const HeroSlideshow = () => {
       </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
+      <div className="absolute inset-0 flex flex-col items-center text-center px-4 z-10" style={{ paddingTop: '33vh' }}>
         <div className="max-w-4xl mx-auto space-y-6">
           
           <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 hero-text-shadow max-w-3xl mx-auto font-medium">

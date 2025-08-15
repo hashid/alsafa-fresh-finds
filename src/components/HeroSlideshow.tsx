@@ -1,24 +1,38 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroStore from '@/assets/hero-store.jpg';
-import bag from '@/assets/bag.jpg';
-import frozen from '@/assets/frozen.jpg';
-import fruits from '@/assets/fruits.jpg';
-import moreBags from '@/assets/more-bags.jpg';
-import safa from '@/assets/safa.jpg';
-import sandals from '@/assets/sandals.jpg';
-import soaps from '@/assets/soaps.jpg';
+import logoHero from '@/assets/logo-hero.jpg';
+import storeFront from '@/assets/store-front.jpg';
+import bagAndSandal from '@/assets/bag-and-sandal.jpg';
+import bagsClear from '@/assets/bags-clear.jpg';
+import balloons from '@/assets/balloons.jpg';
+import bucket from '@/assets/bucket.jpg';
+import dress from '@/assets/dress.jpg';
+import electronic from '@/assets/electronic.jpg';
+import frozenClear from '@/assets/frozen-clear.jpg';
+import fruitsClear from '@/assets/fruits-clear.jpg';
+import nido from '@/assets/nido.jpg';
+import pocari from '@/assets/pocari.jpg';
+import sandalsClear from '@/assets/sandals-clear.jpg';
+import tide from '@/assets/tide.jpg';
+import veet from '@/assets/veet.jpg';
 
 const images = [
-  { src: heroStore, alt: 'Al Safa Hypermarket Store' },
-  { src: fruits, alt: 'Fresh Fruits' },
-  { src: frozen, alt: 'Frozen Products' },
-  { src: bag, alt: 'Shopping Bags' },
-  { src: moreBags, alt: 'Quality Bags' },
-  { src: safa, alt: 'Al Safa Products' },
-  { src: sandals, alt: 'Footwear Collection' },
-  { src: soaps, alt: 'Personal Care Products' },
+  { src: logoHero, alt: 'Al Safa Hypermarket Logo' },
+  { src: storeFront, alt: 'Al Safa Store Front' },
+  { src: fruitsClear, alt: 'Fresh Fruits Collection' },
+  { src: frozenClear, alt: 'Frozen Products' },
+  { src: bagsClear, alt: 'Quality Bags' },
+  { src: bagAndSandal, alt: 'Bags and Sandals' },
+  { src: balloons, alt: 'Party Balloons' },
+  { src: bucket, alt: 'Household Items' },
+  { src: dress, alt: 'Fashion Collection' },
+  { src: electronic, alt: 'Electronics' },
+  { src: nido, alt: 'Dairy Products' },
+  { src: pocari, alt: 'Beverages' },
+  { src: sandalsClear, alt: 'Footwear Collection' },
+  { src: tide, alt: 'Cleaning Products' },
+  { src: veet, alt: 'Personal Care' },
 ];
 
 export const HeroSlideshow = () => {
@@ -67,9 +81,14 @@ export const HeroSlideshow = () => {
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
         <div className="max-w-4xl mx-auto space-y-6">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white hero-text-shadow">
-            Al Safa Hypermarket
-          </h1>
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white hero-text-shadow">
+              AL SAFA
+            </h1>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-green-700 hero-text-shadow -mt-2">
+              HYPERMARKET
+            </h2>
+          </div>
           <p className="text-xl md:text-2xl lg:text-3xl text-white/90 hero-text-shadow font-medium">
             Your Premium Destination for Quality Shopping
           </p>

@@ -87,48 +87,17 @@ export const AboutSection = () => {
                   <Star className="w-7 h-7" />
                   High Standards & Community Trust
                 </h3>
-                <p className="text-foreground leading-relaxed">
-                  We've built our reputation on reliability, excellent service, and responsiveness to locals' needs. 
-                  Reviews highlight our fresh offerings, helpful staff, and accessible location. Your trust is our 
-                  most valuable asset, and we work every day to maintain and exceed your expectations.
-                </p>
               </CardContent>
             </Card>
           </div>
 
-          {/* Working Hours */}
+          {/* Location Info */}
           <div className="space-y-8">
-            <Card className="bg-white shadow-strong">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
-                  <Clock className="w-7 h-7" />
-                  Working Hours
-                </h3>
-                <div className="space-y-4">
-                  {workingHours.map((schedule, index) => (
-                    <div 
-                      key={index} 
-                      className="flex justify-between items-center py-3 border-b border-border last:border-b-0"
-                    >
-                      <span className="font-medium text-foreground">{schedule.day}</span>
-                      <span className="text-primary font-semibold">{schedule.hours}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-6 p-4 bg-primary/5 rounded-lg">
-                  <p className="text-primary font-semibold text-center">
-                    Open Every Day for Your Convenience!
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Location Info */}
             <Card className="bg-primary text-white shadow-green">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
                   <MapPin className="w-7 h-7" />
-                  Visit Us Today
+                  Find Us
                 </h3>
                 <div className="space-y-3">
                   <p className="text-white/90">

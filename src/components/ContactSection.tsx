@@ -113,193 +113,75 @@ export const ContactSection = () => {
               </CardContent>
             </Card>
 
-            {/* Hours */}
-            <Card className="hover:shadow-medium transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-primary mb-2">Opening Hours</h3>
-                    <p className="text-foreground text-sm">
-                      <strong>Every Day:</strong><br />
-                      8:00 AM - 12:00 AM
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
-          {/* Contact Form */}
+          {/* Map and Directions */}
           <div className="lg:col-span-2">
             <Card className="shadow-strong">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary flex items-center gap-2">
-                  <Send className="w-6 h-6" />
-                  Send us a Message
+                  <MapPin className="w-6 h-6" />
+                  Find Us Here
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid lg:grid-cols-2 gap-8 items-start">
+                  <div className="space-y-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                        Full Name *
-                      </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        className="w-full"
-                        placeholder="Your full name"
-                      />
+                      <h3 className="font-semibold text-primary mb-2">Address</h3>
+                      <p className="text-foreground">
+                        7729 Way, Al Maabilah<br />
+                        Seeb, Muscat 130<br />
+                        Sultanate of Oman
+                      </p>
                     </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                        Email Address *
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        className="w-full"
-                        placeholder="your.email@example.com"
-                      />
+                    
+                    <div className="flex items-center gap-2 text-yellow-500">
+                      <Star className="w-5 h-5 fill-yellow-500" />
+                      <Star className="w-5 h-5 fill-yellow-500" />
+                      <Star className="w-5 h-5 fill-yellow-500" />
+                      <Star className="w-5 h-5 fill-yellow-500" />
+                      <Star className="w-5 h-5 fill-yellow-500" />
+                      <span className="text-foreground font-medium ml-2">4.9/5 (847 reviews)</span>
                     </div>
-                  </div>
-                  
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                        Phone Number
-                      </label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        className="w-full"
-                        placeholder="+968 XXXX XXXX"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                        Subject *
-                      </label>
-                      <Input
-                        id="subject"
-                        name="subject"
-                        type="text"
-                        required
-                        value={formData.subject}
-                        onChange={handleInputChange}
-                        className="w-full"
-                        placeholder="How can we help you?"
-                      />
-                    </div>
+                    
+                    <Button 
+                      asChild
+                      className="w-full bg-primary hover:bg-primary-dark text-white shadow-green"
+                    >
+                      <a 
+                        href="https://maps.app.goo.gl/DeiprjZnSJiWmaj89?g_st=com.google.maps.preview.copy" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2"
+                      >
+                        <MapPin className="w-5 h-5" />
+                        Get Directions
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </Button>
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Message *
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      className="w-full min-h-[120px]"
-                      placeholder="Tell us about your inquiry, suggestion, or how we can help you..."
-                    />
+                    <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.123456789!2d58.123456789!3d23.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAl%20Safa%20Hypermarket!5e0!3m2!1sen!2som!4v1234567890"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="rounded-lg"
+                      />
+                    </div>
                   </div>
-                  
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-primary hover:bg-primary-dark text-white py-3 text-lg font-semibold shadow-green"
-                  >
-                    Send Message
-                  </Button>
-                </form>
+                </div>
               </CardContent>
             </Card>
           </div>
         </div>
 
-        {/* Map and Directions */}
-        <div className="mt-16">
-          <Card className="shadow-strong">
-            <CardHeader>
-              <CardTitle className="text-2xl text-primary flex items-center gap-2">
-                <MapPin className="w-6 h-6" />
-                Find Us Here
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="p-6">
-              <div className="grid lg:grid-cols-3 gap-8 items-start">
-                <div className="lg:col-span-1 space-y-4">
-                  <div>
-                    <h3 className="font-semibold text-primary mb-2">Address</h3>
-                    <p className="text-foreground">
-                      7729 Way, Al Maabilah<br />
-                      Seeb, Muscat 130<br />
-                      Sultanate of Oman
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-center gap-2 text-yellow-500">
-                    <Star className="w-5 h-5 fill-yellow-500" />
-                    <Star className="w-5 h-5 fill-yellow-500" />
-                    <Star className="w-5 h-5 fill-yellow-500" />
-                    <Star className="w-5 h-5 fill-yellow-500" />
-                    <Star className="w-5 h-5 fill-yellow-500" />
-                    <span className="text-foreground font-medium ml-2">4.9/5 (847 reviews)</span>
-                  </div>
-                  
-                  <Button 
-                    asChild
-                    className="w-full bg-primary hover:bg-primary-dark text-white shadow-green"
-                  >
-                    <a 
-                      href="https://maps.app.goo.gl/DeiprjZnSJiWmaj89?g_st=com.google.maps.preview.copy" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2"
-                    >
-                      <MapPin className="w-5 h-5" />
-                      Get Directions
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </Button>
-                </div>
-                
-                <div className="lg:col-span-2">
-                  <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.123456789!2d58.123456789!3d23.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAl%20Safa%20Hypermarket!5e0!3m2!1sen!2som!4v1234567890"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      className="rounded-lg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );

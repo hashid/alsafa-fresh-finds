@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { AnimatedCart } from './AnimatedCart';
 import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo.jpg';
@@ -58,16 +57,10 @@ export const Header = () => {
             </Button>
           </nav>
 
-          {/* Animated Cart and Mobile Menu */}
-          <div className="flex items-center gap-3 lg:hidden">
-            <div className="flex flex-col items-center gap-1">
-              <AnimatedCart />
-              <LanguageToggle />
-            </div>
-            <Button variant="ghost" size="sm" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </Button>
-          </div>
+          {/* Mobile Menu Button */}
+          <Button variant="ghost" size="sm" className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </Button>
         </div>
 
         {/* Mobile Navigation */}

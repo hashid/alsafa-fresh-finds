@@ -19,11 +19,10 @@ export const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Al Safa Hypermarket Logo" className="w-12 h-12 rounded-lg object-cover shadow-soft" />
-            <div>
-              <h1 className="font-bold text-[#e64343] text-left text-4xl">AL SAFA
-Hypermarket</h1>
-              <p className="text-sm hidden sm:block text-green-700 text-left">Hypermarket</p>
+            <img src={logo} alt="Al Safa Hypermarket Logo" className="w-12 h-12 rounded-full object-cover shadow-soft" />
+            <div className="flex items-center gap-2">
+              <h1 className="font-bold text-[#e64343] text-2xl">AL SAFA</h1>
+              <h1 className="font-bold text-green-700 text-2xl">HYPERMARKET</h1>
             </div>
           </div>
 

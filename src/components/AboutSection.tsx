@@ -108,16 +108,18 @@ export const AboutSection = () => {
           </div>
 
           {/* 4-Card Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {floorSections.map((floor, index) => (
               <Card key={index} className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group">
-                <CardContent className="p-8 text-center">
-                  <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    {floor.icon}
+                <CardContent className="p-4 md:p-6 text-center">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-3 md:mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <div className="w-6 h-6 md:w-8 md:h-8">
+                      {floor.icon}
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold text-primary mb-2">{floor.title}</h4>
-                  <h5 className="text-lg font-semibold text-foreground mb-4">{floor.subtitle}</h5>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <h4 className="text-sm md:text-lg font-bold text-primary mb-1 md:mb-2">{floor.title}</h4>
+                  <h5 className="text-xs md:text-base font-semibold text-foreground mb-2 md:mb-3">{floor.subtitle}</h5>
+                  <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
                     {floor.description}
                   </p>
                 </CardContent>

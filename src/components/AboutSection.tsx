@@ -1,152 +1,140 @@
-import { Check, Clock, Users, MapPin, Star, Heart } from 'lucide-react';
+import { Check, Clock, Users, MapPin, Star, Heart, ShoppingCart, Home, Shirt, Coffee } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const features = [
   {
-    icon: <Check className="w-6 h-6" />,
+    icon: <Check className="w-8 h-8" />,
     title: "Wide Product Variety",
     description: "Fresh meat, fish, vegetables, breads, pastries, household goods and everyday essentials—all under one roof."
   },
   {
-    icon: <Star className="w-6 h-6" />,
+    icon: <Star className="w-8 h-8" />,
     title: "Competitive Prices & Regular Deals",
     description: "Day-to-day savings and special offers during festive seasons to stretch your budget further."
   },
   {
-    icon: <Heart className="w-6 h-6" />,
+    icon: <Heart className="w-8 h-8" />,
     title: "Clean & Well-Organized Spaces",
     description: "Neat and efficient layout making shopping fast, easy, and enjoyable for all customers."
   },
   {
-    icon: <Users className="w-6 h-6" />,
+    icon: <Users className="w-8 h-8" />,
     title: "Friendly, Helpful Staff",
     description: "Dedicated team offering prompt assistance and warm shopping environment that exceeds expectations."
   }
 ];
 
-const workingHours = [
-  { day: "Monday", hours: "8:00 AM - 12:00 AM" },
-  { day: "Tuesday", hours: "8:00 AM - 12:00 AM" },
-  { day: "Wednesday", hours: "8:00 AM - 12:00 AM" },
-  { day: "Thursday", hours: "8:00 AM - 12:00 AM" },
-  { day: "Friday", hours: "8:00 AM - 12:00 AM" },
-  { day: "Saturday", hours: "8:00 AM - 12:00 AM" },
-  { day: "Sunday", hours: "8:00 AM - 12:00 AM" }
+const floorSections = [
+  {
+    icon: <ShoppingCart className="w-8 h-8" />,
+    title: "Ground Floor",
+    subtitle: "Supermarket",
+    description: "Fresh vegetables, tender meats, seafood, bakery delights, and beauty care."
+  },
+  {
+    icon: <Home className="w-8 h-8" />,
+    title: "Basement",
+    subtitle: "Household Essentials", 
+    description: "Cleaning products, stationery, baby care, and everyday household needs."
+  },
+  {
+    icon: <Shirt className="w-8 h-8" />,
+    title: "1st Floor",
+    subtitle: "Department Store",
+    description: "Fashion for all ages, footwear, electronics, perfumes, gifts, and toys."
+  },
+  {
+    icon: <Coffee className="w-8 h-8" />,
+    title: "2nd Floor", 
+    subtitle: "Eat & Play",
+    description: "Family restaurant and fun play area for kids to enjoy while you shop."
+  }
 ];
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-fresh">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            About Al Safa Hypermarket
-          </h2>
-          <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Main Content */}
-          <div className="space-y-8">
-            <div className="prose prose-lg max-w-none">
-              <p className="text-lg text-foreground leading-relaxed mb-6">
+    <div className="min-h-screen">
+      {/* About Us Section */}
+      <section id="about" className="py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-6xl">
+          {/* Header */}
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-8">
+              About Al Safa Hypermarket
+            </h2>
+            <div className="w-32 h-1.5 bg-primary mx-auto mb-10"></div>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-xl text-foreground leading-relaxed mb-6">
                 Welcome to <strong className="text-primary">Al Safa Hypermarket – Seeb</strong>, serving the community since 2015. We're proud to serve as your one-stop destination for all your daily needs.
               </p>
-              
-              <p className="text-lg text-foreground leading-relaxed mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Whether you're stocking up on groceries, household essentials, or delighting in fresh produce and baked goods, we have everything you need under one roof.
               </p>
             </div>
+          </div>
 
-            {/* Features Grid */}
-            <div className="grid md:grid-cols-2 gap-6">
-              {features.map((feature, index) => (
-                <Card key={index} className="bg-white hover:shadow-medium transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-red-600">
-                        {feature.icon}
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-primary mb-2">{feature.title}</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {feature.description}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+          {/* Features - Two Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-start gap-6 p-8 bg-card rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+                <div className="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                  {feature.icon}
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-primary mb-3">{feature.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Trust Section */}
+          <div className="text-center p-12 bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <Star className="w-10 h-10 text-primary" />
+              <h3 className="text-3xl font-bold text-primary">High Standards & Community Trust</h3>
             </div>
-
-            {/* Trust Section */}
-            <Card className="bg-white shadow-medium">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-primary mb-4 flex items-center gap-3">
-                  <Star className="w-7 h-7" />
-                  High Standards & Community Trust
-                </h3>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Location Info */}
-          <div className="space-y-8">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Built on trust and quality, we maintain the highest standards to serve our community with excellence every day.
+            </p>
           </div>
         </div>
+      </section>
 
-        {/* Floor Information Section */}
-        <div className="mt-20">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Explore Al Safa Hypermarket – More Than Just Shopping
+      {/* Explore Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-20">
+            <h3 className="text-5xl md:text-6xl font-bold text-primary mb-8">
+              Explore Al Safa Hypermarket
             </h3>
+            <div className="w-32 h-1.5 bg-primary mx-auto mb-8"></div>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              More than just shopping – discover four floors of convenience, variety, and family fun.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Ground Floor */}
-            <Card className="bg-white shadow-medium hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-8">
-                <h4 className="text-xl font-bold text-primary mb-4">Ground Floor – Supermarket</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Freshness at your fingertips! From farm-fresh vegetables, tender meats, and seafood to nuts, bakery delights, confectionery, and beauty care—everything you love under one roof.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Basement */}
-            <Card className="bg-white shadow-medium hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-8">
-                <h4 className="text-xl font-bold text-primary mb-4">Basement – Household Essentials</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Your home, fully stocked. Find everything from cleaning products, stationery, and baby care to everyday household must-haves.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* 1st Floor */}
-            <Card className="bg-white shadow-medium hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-8">
-                <h4 className="text-xl font-bold text-primary mb-4">1st Floor – Department Store</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Style meets variety. Trendy fashion for men, women, and kids, plus footwear, electronics, perfumes, gifts, and toys for every occasion.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* 2nd Floor */}
-            <Card className="bg-white shadow-medium hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-8">
-                <h4 className="text-xl font-bold text-primary mb-4">2nd Floor – Eat & Play</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  Shop. Play. Dine. Let the kids enjoy our fun play area while you relax and indulge in delicious meals at our family-friendly restaurant.
-                </p>
-              </CardContent>
-            </Card>
+          {/* 4-Card Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {floorSections.map((floor, index) => (
+              <Card key={index} className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group">
+                <CardContent className="p-8 text-center">
+                  <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    {floor.icon}
+                  </div>
+                  <h4 className="text-xl font-bold text-primary mb-2">{floor.title}</h4>
+                  <h5 className="text-lg font-semibold text-foreground mb-4">{floor.subtitle}</h5>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {floor.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };

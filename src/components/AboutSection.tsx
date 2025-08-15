@@ -1,75 +1,79 @@
 import React from 'react';
 import { Check, Clock, Users, MapPin, Star, Heart, ShoppingCart, Home, Shirt, Coffee } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 
-const features = [
-  {
-    icon: <Check className="w-8 h-8" />,
-    title: "Wide Product Variety",
-    description: "Fresh meat, fish, vegetables, breads, pastries, household goods and everyday essentials—all under one roof."
-  },
-  {
-    icon: <Star className="w-8 h-8" />,
-    title: "Competitive Prices & Regular Deals",
-    description: "Day-to-day savings and special offers during festive seasons to stretch your budget further."
-  },
-  {
-    icon: <Heart className="w-8 h-8" />,
-    title: "Clean & Well-Organized Spaces",
-    description: "Neat and efficient layout making shopping fast, easy, and enjoyable for all customers."
-  },
-  {
-    icon: <Users className="w-8 h-8" />,
-    title: "Friendly, Helpful Staff",
-    description: "Dedicated team offering prompt assistance and warm shopping environment that exceeds expectations."
-  }
-];
-
-const floorSections = [
-  {
-    icon: <ShoppingCart className="w-8 h-8" />,
-    title: "Ground Floor",
-    subtitle: "Supermarket",
-    description: "Fresh vegetables, tender meats, seafood, bakery delights, and beauty care."
-  },
-  {
-    icon: <Home className="w-8 h-8" />,
-    title: "Basement",
-    subtitle: "Household Essentials", 
-    description: "Cleaning products, stationery, baby care, and everyday household needs."
-  },
-  {
-    icon: <Shirt className="w-8 h-8" />,
-    title: "1st Floor",
-    subtitle: "Department Store",
-    description: "Fashion for all ages, footwear, electronics, perfumes, gifts, and toys."
-  },
-  {
-    icon: <Coffee className="w-8 h-8" />,
-    title: "2nd Floor", 
-    subtitle: "Eat & Play",
-    description: "Family restaurant and fun play area for kids to enjoy while you shop."
-  }
-];
 
 export const AboutSection = () => {
+  const { t, isRTL } = useLanguage();
+  
+  const features = [
+    {
+      icon: <Check className="w-8 h-8" />,
+      title: t('feature.variety.title'),
+      description: t('feature.variety.desc')
+    },
+    {
+      icon: <Star className="w-8 h-8" />,
+      title: t('feature.prices.title'),
+      description: t('feature.prices.desc')
+    },
+    {
+      icon: <Heart className="w-8 h-8" />,
+      title: t('feature.clean.title'),
+      description: t('feature.clean.desc')
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: t('feature.staff.title'),
+      description: t('feature.staff.desc')
+    }
+  ];
+
+  const floorSections = [
+    {
+      icon: <ShoppingCart className="w-8 h-8" />,
+      title: t('floor.ground.title'),
+      subtitle: t('floor.ground.subtitle'),
+      description: t('floor.ground.desc')
+    },
+    {
+      icon: <Home className="w-8 h-8" />,
+      title: t('floor.basement.title'),
+      subtitle: t('floor.basement.subtitle'), 
+      description: t('floor.basement.desc')
+    },
+    {
+      icon: <Shirt className="w-8 h-8" />,
+      title: t('floor.first.title'),
+      subtitle: t('floor.first.subtitle'),
+      description: t('floor.first.desc')
+    },
+    {
+      icon: <Coffee className="w-8 h-8" />,
+      title: t('floor.second.title'), 
+      subtitle: t('floor.second.subtitle'),
+      description: t('floor.second.desc')
+    }
+  ];
+
   return (
-    <div className="min-h-screen">
+    <div className={`min-h-screen ${isRTL ? 'font-cairo' : ''}`}>
       {/* About Us Section */}
       <section id="about" className="py-24 bg-background">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Header */}
           <div className="text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-bold text-primary mb-8">
-              About Al Safa Hypermarket
+              {t('about.title')}
             </h2>
             <div className="w-32 h-1.5 bg-primary mx-auto mb-10"></div>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-foreground leading-relaxed mb-6">
-                Welcome to <strong className="text-primary">Al Safa Hypermarket</strong>, serving the community since 2015. We're proud to serve as your one-stop destination for all your daily needs.
+                {t('about.intro1')}
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Whether you're stocking up on groceries, household essentials, or delighting in fresh produce and baked goods, we have everything you need under one roof.
+                {t('about.intro2')}
               </p>
             </div>
           </div>
@@ -100,11 +104,11 @@ export const AboutSection = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-20">
             <h3 className="text-5xl md:text-6xl font-bold text-primary mb-8">
-              Explore Al Safa Hypermarket
+              {t('explore.title')}
             </h3>
             <div className="w-32 h-1.5 bg-primary mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              More than just shopping – discover four floors of convenience, variety, and family fun.
+              {t('explore.subtitle')}
             </p>
           </div>
 

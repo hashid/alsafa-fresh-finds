@@ -2,9 +2,13 @@ import { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { AnimatedCart } from './AnimatedCart';
+import { LanguageToggle } from './LanguageToggle';
+import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo.jpg';
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, isRTL } = useLanguage();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -14,7 +18,7 @@ export const Header = () => {
       setIsMenuOpen(false);
     }
   };
-  return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-soft">
+  return <header className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-soft ${isRTL ? 'font-cairo' : ''}`}>
       <div className="container mx-auto px-4">
         {/* Main Navigation */}
         <div className="flex items-center justify-between py-4">
@@ -28,33 +32,35 @@ export const Header = () => {
               <h1 className="font-playfair font-bold text-green-700 text-2xl md:text-3xl leading-none mt-0 md:-mt-1 tracking-wide transform hover:scale-105 transition-transform duration-300">
                 HYPERMARKET
               </h1>
-              <p className="font-inter text-xs text-gray-500 mt-2 font-light tracking-wide">
-                Your satisfaction is our greatness
+              <p className={`text-xs text-gray-500 mt-2 font-light tracking-wide ${isRTL ? 'font-cairo' : 'font-inter'}`}>
+                {t('header.tagline')}
               </p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
+            <LanguageToggle />
             <button onClick={() => scrollToSection('hero')} className="text-foreground hover:text-primary transition-colors font-medium">
-              Home
+              {t('nav.home')}
             </button>
             <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors font-medium">
-              About Us
+              {t('nav.about')}
             </button>
             <button onClick={() => scrollToSection('reviews')} className="text-foreground hover:text-primary transition-colors font-medium">
-              Reviews
+              {t('nav.reviews')}
             </button>
             <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors font-medium">
-              Contact
+              {t('nav.contact')}
             </button>
             <Button onClick={() => scrollToSection('contact')} className="bg-primary hover:bg-primary-dark text-white shadow-green">
-              Get Directions
+              {t('nav.directions')}
             </Button>
           </nav>
 
           {/* Animated Cart and Mobile Menu */}
           <div className="flex items-center gap-3 lg:hidden">
+            <LanguageToggle />
             <AnimatedCart />
             <Button variant="ghost" size="sm" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -66,19 +72,19 @@ export const Header = () => {
         {isMenuOpen && <div className="lg:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
               <button onClick={() => scrollToSection('hero')} className="text-left py-2 text-foreground hover:text-primary transition-colors font-medium">
-                Home
+                {t('nav.home')}
               </button>
               <button onClick={() => scrollToSection('about')} className="text-left py-2 text-foreground hover:text-primary transition-colors font-medium">
-                About Us
+                {t('nav.about')}
               </button>
               <button onClick={() => scrollToSection('reviews')} className="text-left py-2 text-foreground hover:text-primary transition-colors font-medium">
-                Reviews
+                {t('nav.reviews')}
               </button>
               <button onClick={() => scrollToSection('contact')} className="text-left py-2 text-foreground hover:text-primary transition-colors font-medium">
-                Contact
+                {t('nav.contact')}
               </button>
               <Button onClick={() => scrollToSection('contact')} className="bg-primary hover:bg-primary-dark text-white shadow-green w-full">
-                Get Directions
+                {t('nav.directions')}
               </Button>
             </nav>
           </div>}

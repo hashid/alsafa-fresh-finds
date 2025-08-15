@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo.jpg';
 import bagAndSandal from '@/assets/bag-and-sandal.jpg';
 import bagsClear from '@/assets/bags-clear.jpg';
@@ -33,6 +34,7 @@ const images = [
 ];
 
 export const HeroSlideshow = () => {
+  const { t, isRTL } = useLanguage();
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -47,7 +49,7 @@ export const HeroSlideshow = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className={`relative h-screen overflow-hidden ${isRTL ? 'font-cairo' : ''}`}>
       {/* Image Container */}
       <div className="relative h-full">
         {images.map((image, index) => (
@@ -72,13 +74,13 @@ export const HeroSlideshow = () => {
         <div className="max-w-4xl mx-auto space-y-6">
           
           <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 hero-text-shadow max-w-3xl mx-auto font-medium">
-            Fresh products, unbeatable prices, and exceptional service • Since 2015
+            {t('hero.tagline')}
           </p>
           
           {/* WhatsApp Offers Section - Interactive Button */}
           <div className="mt-12 bg-white/15 backdrop-blur-lg rounded-xl p-6 max-w-sm mx-auto border border-white/20">
             <div className="text-white text-center mb-4">
-              <div className="text-sm font-medium">Say "Hi" on WhatsApp and save our number to get updates, offers, and more!</div>
+              <div className="text-sm font-medium">{t('hero.whatsapp.text')}</div>
             </div>
             <Button
               onClick={() => {
@@ -92,7 +94,7 @@ export const HeroSlideshow = () => {
               <div className="flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 <div className="text-sm">
-                  <div className="font-semibold">Send Message on WhatsApp</div>
+                  <div className="font-semibold">{t('hero.whatsapp.button')}</div>
                 </div>
               </div>
             </Button>

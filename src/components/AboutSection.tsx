@@ -65,7 +65,7 @@ export const AboutSection = () => {
             <div className="w-32 h-1.5 bg-primary mx-auto mb-10"></div>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-foreground leading-relaxed mb-6">
-                Welcome to <strong className="text-primary">Al Safa Hypermarket – Seeb</strong>, serving the community since 2015. We're proud to serve as your one-stop destination for all your daily needs.
+                Welcome to <strong className="text-primary">Al Safa Hypermarket</strong>, serving the community since 2015. We're proud to serve as your one-stop destination for all your daily needs.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Whether you're stocking up on groceries, household essentials, or delighting in fresh produce and baked goods, we have everything you need under one roof.
@@ -83,8 +83,8 @@ export const AboutSection = () => {
                       {feature.icon}
                     </div>
                   </div>
-                  <h3 className="text-sm md:text-lg font-bold text-primary mb-2 md:mb-3">{feature.title}</h3>
-                  <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
+                  <h3 className="text-base md:text-xl font-bold text-primary mb-2 md:mb-3">{feature.title}</h3>
+                  <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -117,9 +117,9 @@ export const AboutSection = () => {
                       {floor.icon}
                     </div>
                   </div>
-                  <h4 className="text-sm md:text-lg font-bold text-primary mb-1 md:mb-2">{floor.title}</h4>
-                  <h5 className="text-xs md:text-base font-semibold text-foreground mb-2 md:mb-3">{floor.subtitle}</h5>
-                  <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
+                  <h4 className="text-base md:text-xl font-bold text-primary mb-1 md:mb-2">{floor.title}</h4>
+                  <h5 className="text-sm md:text-lg font-semibold text-foreground mb-2 md:mb-3">{floor.subtitle}</h5>
+                  <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
                     {floor.description}
                   </p>
                 </CardContent>

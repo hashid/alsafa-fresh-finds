@@ -15,23 +15,6 @@ export const Header = () => {
   };
   return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-soft">
       <div className="container mx-auto px-4">
-        {/* Top Bar */}
-        <div className="hidden md:flex justify-between items-center py-2 text-sm border-b border-border">
-          <div className="flex items-center gap-6 text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              <span>+968 9107 3089</span>
-            </div>
-            <div className="flex items-center gap-2 text-red-500">
-              <Mail className="w-4 h-4" />
-              <span>alsafahypermarket01@gmail.com</span>
-            </div>
-          </div>
-          <div className="text-primary font-medium">
-            Open Daily: 8:00 AM - 12:00 AM
-          </div>
-        </div>
-
         {/* Main Navigation */}
         <div className="flex items-center justify-between py-4">
           {/* Logo */}

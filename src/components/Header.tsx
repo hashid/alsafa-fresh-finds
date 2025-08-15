@@ -27,7 +27,7 @@ export const Header = () => {
               <h1 className="font-playfair font-bold text-green-700 text-2xl md:text-3xl leading-none -mt-1 tracking-wide drop-shadow-lg text-shadow-premium transform hover:scale-105 transition-transform duration-300">
                 HYPERMARKET
               </h1>
-              <p className="font-inter text-sm text-gray-600 mt-2 italic font-medium tracking-wide">
+              <p className="font-inter text-xs text-gray-500 mt-2 font-light tracking-wide">
                 Your satisfaction is our greatness
               </p>
             </div>

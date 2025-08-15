@@ -51,7 +51,7 @@ export const AboutSection = () => {
           <div className="space-y-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                Welcome to <strong className="text-primary">Al Safa Hypermarket – Seeb</strong>, your premier destination for quality shopping and unbeatable value in the heart of Muscat's Seeb district. Conveniently located on 7729 Way in Al Maabilah, Seeb (Postal Code 130), we're proud to serve as your one-stop destination for all your daily needs.
+                Welcome to <strong className="text-primary">Al Safa Hypermarket – Seeb</strong>, serving the community since 2015. We're proud to serve as your one-stop destination for all your daily needs.
               </p>
               
               <p className="text-lg text-foreground leading-relaxed mb-8">
@@ -65,7 +65,7 @@ export const AboutSection = () => {
                 <Card key={index} className="bg-white hover:shadow-medium transition-shadow duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                      <div className="flex-shrink-0 w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-red-600">
                         {feature.icon}
                       </div>
                       <div>
@@ -93,25 +93,6 @@ export const AboutSection = () => {
 
           {/* Location Info */}
           <div className="space-y-8">
-            <Card className="bg-primary text-white shadow-green">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
-                  <MapPin className="w-7 h-7" />
-                  Find Us
-                </h3>
-                <div className="space-y-3">
-                  <p className="text-white/90">
-                    <strong>Address:</strong><br />
-                    7729 Way, Al Maabilah<br />
-                    Seeb, Muscat 130<br />
-                    Sultanate of Oman
-                  </p>
-                  <p className="text-white/90">
-                    Conveniently located in the heart of Seeb district, easily accessible and with ample parking.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

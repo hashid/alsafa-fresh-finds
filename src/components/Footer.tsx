@@ -21,27 +21,6 @@ export const Footer = () => {
                 <p className="text-white/80 text-sm">Seeb, Muscat</p>
               </div>
             </div>
-            <p className="text-white/90 leading-relaxed">
-              Your premier destination for quality shopping and unbeatable value in the heart of Muscat's Seeb district.
-            </p>
-            <div className="flex gap-4">
-              <a 
-                href="https://www.facebook.com/profile.php?id=100054276620484" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://www.instagram.com/alsafahypermarket/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Contact Info */}
@@ -102,9 +81,29 @@ export const Footer = () => {
             <p className="text-white/80 text-sm">
               © {currentYear} Al Safa Hypermarket. All rights reserved.
             </p>
-            <p className="text-white/80 text-sm">
-              Quality Products • Competitive Prices • Excellent Service
-            </p>
+            <div className="flex items-center gap-4">
+              <p className="text-white/80 text-sm">
+                Quality Products • Competitive Prices • Excellent Service
+              </p>
+              <div className="flex gap-3">
+                <a 
+                  href="https://www.facebook.com/profile.php?id=100054276620484" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                >
+                  <Facebook className="w-4 h-4" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/alsafahypermarket/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                >
+                  <Instagram className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

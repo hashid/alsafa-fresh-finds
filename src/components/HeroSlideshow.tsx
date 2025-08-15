@@ -81,19 +81,11 @@ export const HeroSlideshow = () => {
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
         <div className="max-w-4xl mx-auto space-y-6">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white hero-text-shadow">
-              AL SAFA
-            </h1>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-green-700 hero-text-shadow -mt-2">
-              HYPERMARKET
-            </h2>
-          </div>
           <p className="text-xl md:text-2xl lg:text-3xl text-white/90 hero-text-shadow font-medium">
             Your Premium Destination for Quality Shopping
           </p>
           <p className="text-lg md:text-xl text-white/80 hero-text-shadow max-w-2xl mx-auto">
-            Fresh products, unbeatable prices, and exceptional service in the heart of Seeb
+            Fresh products, unbeatable prices, and exceptional service • Since 2015
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Button 

@@ -27,7 +27,6 @@ const translations = {
     // About Section
     "about.title": "About Al Safa Hypermarket",
     "about.intro1": "Welcome to Al Safa Hypermarket, serving the community since 2015. We're proud to serve as your one-stop destination for all your daily needs.",
-    "about.intro2": "",
     
     // Features
     "feature.variety.title": "Wide Product Variety",
@@ -90,7 +89,7 @@ const translations = {
     // About Section
     "about.title": "حول السوبر ماركت الصفا",
     "about.intro1": "مرحباً بكم في السوبر ماركت الصفا، نخدم المجتمع منذ عام 2015. نحن فخورون بخدمتكم كوجهتكم الشاملة لجميع احتياجاتكم اليومية.",
-    "about.intro2": "",
+    
     
     // Features
     "feature.variety.title": "تنوع واسع في المنتجات",

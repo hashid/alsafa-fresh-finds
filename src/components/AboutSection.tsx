@@ -72,9 +72,6 @@ export const AboutSection = () => {
               <p className="text-xl text-foreground leading-relaxed mb-6">
                 {t('about.intro1')}
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                {t('about.intro2')}
-              </p>
             </div>
           </div>
 

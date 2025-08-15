@@ -73,20 +73,20 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          {/* Features - Two Column Layout */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          {/* Features - 4-Card Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {features.map((feature, index) => (
-              <div key={index} className="flex items-start gap-6 p-8 bg-card rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="flex-shrink-0 w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
-                  {feature.icon}
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-primary mb-3">{feature.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+              <Card key={index} className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group">
+                <CardContent className="p-8 text-center">
+                  <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-primary mb-4">{feature.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {feature.description}
                   </p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
 

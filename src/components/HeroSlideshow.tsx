@@ -68,24 +68,21 @@ export const HeroSlideshow = () => {
 
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
-        <div className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-4xl mx-auto space-y-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold hero-text-shadow">
-            Your Premium Destination for Quality Shopping
+            <span className="text-red-500">AL SAFA</span><br />
+            <span className="text-green-700">HYPERMARKET</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 hero-text-shadow max-w-2xl mx-auto font-medium">
             Fresh products, unbeatable prices, and exceptional service • Since 2015
           </p>
           
-          {/* Get Exclusive Offers Section */}
-          <div className="bg-white/15 backdrop-blur-lg rounded-xl p-6 max-w-md mx-auto border border-white/20">
-            <h3 className="text-xl font-bold text-white mb-3">Get Exclusive Offers!</h3>
-            <p className="text-white/90 text-sm mb-4">
-              To get updates on offers and promotions
-            </p>
+          {/* WhatsApp Offers Section */}
+          <div className="bg-white/15 backdrop-blur-lg rounded-xl p-4 max-w-xs mx-auto border border-white/20">
             <div className="bg-green-600 hover:bg-green-700 text-white rounded-lg p-3 transition-colors">
               <div className="flex items-center justify-center gap-2">
-                <MessageCircle className="w-5 h-5" />
-                <div className="text-sm">
+                <MessageCircle className="w-4 h-4" />
+                <div className="text-xs">
                   <div className="font-semibold">Save WhatsApp Number</div>
                   <div>+968 9107 3089 & Send <span className="font-bold text-green-200">"Hi"</span></div>
                 </div>

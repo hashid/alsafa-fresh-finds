@@ -87,7 +87,7 @@ export const HeroSlideshow = () => {
                 <MessageCircle className="w-5 h-5" />
                 <div className="text-sm">
                   <div className="font-semibold">Save WhatsApp Number</div>
-                  <div>+968 9107 3089 & Send "Hi"</div>
+                  <div>+968 9107 3089 & Send <span className="font-bold text-green-200">"Hi"</span></div>
                 </div>
               </div>
             </div>

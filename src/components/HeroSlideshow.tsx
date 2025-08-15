@@ -87,7 +87,7 @@ export const HeroSlideshow = () => {
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
               }}
-              className="w-full bg-green-600 hover:bg-green-700 text-white rounded-lg p-4 transition-colors"
+              className="w-full bg-green-600 hover:bg-green-700 text-white rounded-lg p-4 transition-all duration-300 hover:scale-105 transform"
             >
               <div className="flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />

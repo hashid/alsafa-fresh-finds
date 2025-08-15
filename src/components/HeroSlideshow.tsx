@@ -93,7 +93,6 @@ export const HeroSlideshow = () => {
                 <MessageCircle className="w-5 h-5" />
                 <div className="text-sm">
                   <div className="font-semibold">Send Message on WhatsApp</div>
-                  <div className="text-xs text-green-200">9107 3089</div>
                 </div>
               </div>
             </Button>

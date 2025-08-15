@@ -19,10 +19,10 @@ export const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Al Safa Hypermarket Logo" className="w-16 h-16 rounded-full object-cover shadow-soft" />
+            <img src={logo} alt="Al Safa Hypermarket Logo" className="w-20 h-20 rounded-full object-cover shadow-soft" />
             <div className="flex flex-col">
-              <h1 className="font-bold text-[#e64343] text-3xl leading-tight">AL SAFA</h1>
-              <h1 className="font-bold text-green-700 text-2xl leading-tight">HYPERMARKET</h1>
+              <h1 className="font-bold text-[#e64343] text-3xl leading-none">AL SAFA</h1>
+              <h1 className="font-bold text-green-700 text-2xl leading-none -mt-1">HYPERMARKET</h1>
               <p className="text-sm text-gray-500 mt-1">Your satisfaction is our greatness</p>
             </div>
           </div>

@@ -60,8 +60,10 @@ export const Header = () => {
 
           {/* Animated Cart and Mobile Menu */}
           <div className="flex items-center gap-3 lg:hidden">
-            <LanguageToggle />
-            <AnimatedCart />
+            <div className="flex flex-col items-center gap-1">
+              <AnimatedCart />
+              <LanguageToggle />
+            </div>
             <Button variant="ghost" size="sm" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </Button>
@@ -71,9 +73,6 @@ export const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && <div className="lg:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              <div className="pb-2 border-b border-border mb-2">
-                <LanguageToggle />
-              </div>
               <button onClick={() => scrollToSection('hero')} className="text-left py-2 text-foreground hover:text-primary transition-colors font-medium">
                 {t('nav.home')}
               </button>

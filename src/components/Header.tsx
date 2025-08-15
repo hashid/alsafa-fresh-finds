@@ -15,15 +15,32 @@ export const Header = () => {
   };
   return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-soft">
       <div className="container mx-auto px-4">
+        {/* Top Bar */}
+        <div className="hidden md:flex justify-between items-center py-2 text-sm border-b border-border">
+          <div className="flex items-center gap-6 text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <Phone className="w-4 h-4" />
+              <span>+968 9107 3089</span>
+            </div>
+            <div className="flex items-center gap-2 text-orange-600">
+              <Mail className="w-4 h-4" />
+              <span>alsafahypermarket01@gmail.com</span>
+            </div>
+          </div>
+          <div className="text-primary font-medium">
+            Open Daily: 8:00 AM - 12:00 AM
+          </div>
+        </div>
 
         {/* Main Navigation */}
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Al Safa Hypermarket Logo" className="w-20 h-20 rounded-lg object-cover shadow-soft" />
+            <img src={logo} alt="Al Safa Hypermarket Logo" className="w-12 h-12 rounded-lg object-cover shadow-soft" />
             <div>
-              <h1 className="font-bold text-primary text-left text-4xl">AL SAFA</h1>
-              <h1 className="font-bold text-green-700 text-left text-3xl -mt-1">HYPERMARKET</h1>
+              <h1 className="font-bold text-[#e64343] text-left text-4xl">AL SAFA
+Hypermarket</h1>
+              <p className="text-sm hidden sm:block text-green-700 text-left">Hypermarket</p>
             </div>
           </div>
 

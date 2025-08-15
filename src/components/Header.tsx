@@ -22,7 +22,7 @@ export const Header = () => {
               <Phone className="w-4 h-4" />
               <span>+968 9107 3089</span>
             </div>
-            <div className="flex items-center gap-2 text-red-500">
+            <div className="flex items-center gap-2 text-orange-600">
               <Mail className="w-4 h-4" />
               <span>alsafahypermarket01@gmail.com</span>
             </div>

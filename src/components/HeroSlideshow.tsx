@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
+import logo from '@/assets/logo.jpg';
 import bagAndSandal from '@/assets/bag-and-sandal.jpg';
 import bagsClear from '@/assets/bags-clear.jpg';
 import balloons from '@/assets/balloons.jpg';
@@ -68,13 +69,31 @@ export const HeroSlideshow = () => {
 
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <p className="text-xl md:text-2xl text-white/90 hero-text-shadow max-w-2xl mx-auto font-medium">
+        <div className="max-w-4xl mx-auto space-y-6">
+          {/* Logo */}
+          <div className="mb-4">
+            <img 
+              src={logo} 
+              alt="AL SAFA HYPERMARKET Logo" 
+              className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full shadow-lg"
+            />
+          </div>
+          
+          {/* Store Name */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold hero-text-shadow">
+            <span className="text-red-500">AL SAFA</span><br />
+            <span className="text-green-700">HYPERMARKET</span>
+          </h1>
+          
+          <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 hero-text-shadow max-w-3xl mx-auto font-medium">
             Fresh products, unbeatable prices, and exceptional service • Since 2015
           </p>
           
-          {/* WhatsApp Offers Section */}
-          <div className="bg-white/15 backdrop-blur-lg rounded-xl p-4 max-w-xs mx-auto border border-white/20">
+          {/* WhatsApp Offers Section - Moved down */}
+          <div className="mt-12 bg-white/15 backdrop-blur-lg rounded-xl p-3 max-w-sm mx-auto border border-white/20">
+            <div className="text-white text-center mb-2">
+              <div className="text-sm font-medium">Get exclusive offers to know about offer</div>
+            </div>
             <div className="bg-green-600 hover:bg-green-700 text-white rounded-lg p-3 transition-colors">
               <div className="flex items-center justify-center gap-2">
                 <MessageCircle className="w-4 h-4" />
@@ -85,34 +104,10 @@ export const HeroSlideshow = () => {
               </div>
             </div>
           </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg font-semibold backdrop-blur-sm bg-white/10"
-            >
-              View Location
-            </Button>
-          </div>
         </div>
       </div>
 
 
-      {/* Dots Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentImage
-                ? 'bg-white scale-125'
-                : 'bg-white/50 hover:bg-white/70'
-            }`}
-            onClick={() => goToImage(index)}
-          />
-        ))}
-      </div>
     </section>
   );
 };

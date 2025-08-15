@@ -74,31 +74,22 @@ export const AboutSection = () => {
           </div>
 
           {/* Features - 4-Card Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {features.map((feature, index) => (
               <Card key={index} className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group">
-                <CardContent className="p-8 text-center">
-                  <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    {feature.icon}
+                <CardContent className="p-4 md:p-6 text-center">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-3 md:mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <div className="w-6 h-6 md:w-8 md:h-8">
+                      {feature.icon}
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-4">{feature.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <h3 className="text-sm md:text-lg font-bold text-primary mb-2 md:mb-3">{feature.title}</h3>
+                  <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          {/* Trust Section */}
-          <div className="text-center p-12 bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <Star className="w-10 h-10 text-primary" />
-              <h3 className="text-3xl font-bold text-primary">High Standards & Community Trust</h3>
-            </div>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Built on trust and quality, we maintain the highest standards to serve our community with excellence every day.
-            </p>
           </div>
         </div>
       </section>

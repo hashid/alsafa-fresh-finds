@@ -2,35 +2,22 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import logo from '@/assets/logo.jpg';
-import bagAndSandal from '@/assets/bag-and-sandal.jpg';
-import bagsClear from '@/assets/bags-clear.jpg';
-import balloons from '@/assets/balloons.jpg';
-import bucket from '@/assets/bucket.jpg';
-import dress from '@/assets/dress.jpg';
-import electronic from '@/assets/electronic.jpg';
-import frozenClear from '@/assets/frozen-clear.jpg';
-import fruitsClear from '@/assets/fruits-clear.jpg';
-import nido from '@/assets/nido.jpg';
-import pocari from '@/assets/pocari.jpg';
-import sandalsClear from '@/assets/sandals-clear.jpg';
-import tide from '@/assets/tide.jpg';
-import veet from '@/assets/veet.jpg';
+import heroMain from '@/assets/hero-main.jpg';
+import frozenNew from '@/assets/frozen-new.jpg';
+import fruitsNew from '@/assets/fruits-new.jpg';
+import juices from '@/assets/juices.jpg';
+import nidoNew from '@/assets/nido-new.jpg';
+import pocariNew from '@/assets/pocari-new.jpg';
+import weetNew from '@/assets/veet-new.jpg';
 
 const images = [
-  { src: fruitsClear, alt: 'Fresh Fruits Collection' },
-  { src: frozenClear, alt: 'Frozen Products' },
-  { src: bagsClear, alt: 'Quality Bags' },
-  { src: bagAndSandal, alt: 'Bags and Sandals' },
-  { src: balloons, alt: 'Party Balloons' },
-  { src: bucket, alt: 'Household Items' },
-  { src: dress, alt: 'Fashion Collection' },
-  { src: electronic, alt: 'Electronics' },
-  { src: nido, alt: 'Dairy Products' },
-  { src: pocari, alt: 'Beverages' },
-  { src: sandalsClear, alt: 'Footwear Collection' },
-  { src: tide, alt: 'Cleaning Products' },
-  { src: veet, alt: 'Personal Care' },
+  { src: heroMain, alt: 'Al Safa Hypermarket' },
+  { src: frozenNew, alt: 'Frozen Products' },
+  { src: fruitsNew, alt: 'Fresh Fruits Collection' },
+  { src: juices, alt: 'Beverages & Juices' },
+  { src: nidoNew, alt: 'Dairy Products' },
+  { src: pocariNew, alt: 'Sports Drinks' },
+  { src: weetNew, alt: 'Personal Care' },
 ];
 
 export const HeroSlideshow = () => {
@@ -73,6 +60,9 @@ export const HeroSlideshow = () => {
       <div className="absolute inset-0 flex flex-col items-center text-center px-4 z-10" style={{ paddingTop: '33vh' }}>
         <div className="max-w-4xl mx-auto space-y-6">
           
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 premium-title-effect">
+            AL SAFA HYPERMARKET
+          </h1>
           <p className="text-2xl md:text-3xl lg:text-4xl text-white hero-text-shadow max-w-3xl mx-auto font-medium animate-premium-pulse">
             {t('hero.tagline')}
           </p>

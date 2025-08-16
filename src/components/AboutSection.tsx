@@ -3,6 +3,25 @@ import { Check, Clock, Users, MapPin, Star, Heart, ShoppingCart, Home, Shirt, Co
 import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 
+// Ground Floor Images
+import frozenNew from '@/assets/frozen-new.jpg';
+import fruitsNew from '@/assets/fruits-new.jpg';
+import juices from '@/assets/juices.jpg';
+import nidoNew from '@/assets/nido-new.jpg';
+import pocariNew from '@/assets/pocari-new.jpg';
+import weetNew from '@/assets/veet-new.jpg';
+
+// Basement Images
+import balloonsNew from '@/assets/balloons-new.jpg';
+import bucketNew from '@/assets/bucket-new.jpg';
+import tideNew from '@/assets/tide-new.jpg';
+
+// First Floor Images
+import bagSandalNew from '@/assets/bag-sandal-new.jpg';
+import bagsNew from '@/assets/bags-new.jpg';
+import electronicNew from '@/assets/electronic-new.jpg';
+import sandalsNew from '@/assets/sandals-new.jpg';
+
 
 export const AboutSection = () => {
   const { t, isRTL } = useLanguage();
@@ -35,25 +54,29 @@ export const AboutSection = () => {
       icon: <ShoppingCart className="w-8 h-8" />,
       title: t('floor.ground.title'),
       subtitle: t('floor.ground.subtitle'),
-      description: t('floor.ground.desc')
+      description: t('floor.ground.desc'),
+      images: [frozenNew, fruitsNew, juices, nidoNew, pocariNew, weetNew]
     },
     {
       icon: <Home className="w-8 h-8" />,
       title: t('floor.basement.title'),
       subtitle: t('floor.basement.subtitle'), 
-      description: t('floor.basement.desc')
+      description: t('floor.basement.desc'),
+      images: [balloonsNew, bucketNew, tideNew]
     },
     {
       icon: <Shirt className="w-8 h-8" />,
       title: t('floor.first.title'),
       subtitle: t('floor.first.subtitle'),
-      description: t('floor.first.desc')
+      description: t('floor.first.desc'),
+      images: [bagSandalNew, bagsNew, electronicNew, sandalsNew]
     },
     {
       icon: <Coffee className="w-8 h-8" />,
-      title: t('floor.second.title'), 
-      subtitle: t('floor.second.subtitle'),
-      description: t('floor.second.desc')
+      title: "Department Store", 
+      subtitle: "Second Floor",
+      description: "Trolley bags, cycles and bed",
+      images: []
     }
   ];
 
@@ -109,23 +132,40 @@ export const AboutSection = () => {
             </p>
           </div>
 
-          {/* 4-Card Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          {/* Floor Sections with Images */}
+          <div className="space-y-16">
             {floorSections.map((floor, index) => (
-              <Card key={index} className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group">
-                <CardContent className="p-4 md:p-6 text-center">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-3 md:mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    {React.cloneElement(floor.icon, { 
-                      className: "w-6 h-6 md:w-8 md:h-8 flex-shrink-0" 
-                    })}
+              <div key={index} className="text-center">
+                <Card className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group mb-8">
+                  <CardContent className="p-6 md:p-8">
+                    <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      {React.cloneElement(floor.icon, { 
+                        className: "w-8 h-8 flex-shrink-0" 
+                      })}
+                    </div>
+                    <h4 className="text-2xl md:text-3xl font-bold text-primary mb-3">{floor.title}</h4>
+                    <h5 className="text-lg md:text-xl font-semibold text-foreground mb-4">{floor.subtitle}</h5>
+                    <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+                      {floor.description}
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                {/* Product Images Grid */}
+                {floor.images && floor.images.length > 0 && (
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
+                    {floor.images.map((image, imgIndex) => (
+                      <div key={imgIndex} className="aspect-square rounded-lg overflow-hidden bg-card shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <img 
+                          src={image} 
+                          alt={`Product ${imgIndex + 1}`}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    ))}
                   </div>
-                  <h4 className="text-base md:text-xl font-bold text-primary mb-2 md:mb-3">{floor.title}</h4>
-                  <h5 className="text-sm md:text-lg font-semibold text-foreground mb-2 md:mb-3">{floor.subtitle}</h5>
-                  <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-                    {floor.description}
-                  </p>
-                </CardContent>
-              </Card>
+                )}
+              </div>
             ))}
           </div>
         </div>

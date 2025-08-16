@@ -229,6 +229,20 @@ All colors MUST be HSL.
     transform: translateX(-100%);
     animation: golden-sweep 3s ease-in-out infinite;
   }
+  
+  .premium-title-effect {
+    background: linear-gradient(
+      135deg,
+      hsl(0 0% 100%),
+      hsl(45 80% 75%),
+      hsl(0 0% 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px hsl(215 25% 15% / 0.3);
+    letter-spacing: 0.05em;
+  }
 }
 
 @keyframes luxury-shimmer {

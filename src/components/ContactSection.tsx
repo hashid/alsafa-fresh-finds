@@ -38,11 +38,11 @@ export const ContactSection = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-green-700 mb-6">
             Contact Us
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <div className="w-24 h-1 bg-green-700 mx-auto mb-8"></div>
+          <p className="text-xl text-green-700 max-w-2xl mx-auto">
             We're here to help! Get in touch with us for any questions, suggestions, or special requests.
           </p>
         </div>
@@ -54,14 +54,14 @@ export const ContactSection = () => {
             <Card className="hover:shadow-medium transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-green-700/10 rounded-lg flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-green-700" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Phone</h3>
+                    <h3 className="font-semibold text-green-700 mb-1">Phone</h3>
                     <a 
                       href="tel:+96891073089" 
-                      className="text-foreground hover:text-primary transition-colors"
+                      className="text-green-700 hover:text-green-600 transition-colors"
                     >
                       +968 9107 3089
                     </a>
@@ -74,14 +74,14 @@ export const ContactSection = () => {
             <Card className="hover:shadow-medium transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 bg-green-700/10 rounded-lg flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-green-700" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Email</h3>
+                    <h3 className="font-semibold text-green-700 mb-1">Email</h3>
                     <a 
                       href="mailto:alsafahypermarket01@gmail.com" 
-                      className="text-foreground hover:text-primary transition-colors text-sm"
+                      className="text-green-700 hover:text-green-600 transition-colors text-sm"
                     >
                       alsafahypermarket01@gmail.com
                     </a>
@@ -94,16 +94,16 @@ export const ContactSection = () => {
             <Card className="hover:shadow-medium transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <MessageSquare className="w-6 h-6 text-green-600" />
+                  <div className="w-12 h-12 bg-green-700/10 rounded-lg flex items-center justify-center">
+                    <MessageSquare className="w-6 h-6 text-green-700" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">WhatsApp</h3>
+                    <h3 className="font-semibold text-green-700 mb-1">WhatsApp</h3>
                     <a 
                       href="https://wa.me/96891073089" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-foreground hover:text-green-600 transition-colors flex items-center gap-1"
+                      className="text-green-700 hover:text-green-600 transition-colors flex items-center gap-1"
                     >
                       +968 9107 3089
                       <ExternalLink className="w-3 h-3" />
@@ -119,7 +119,7 @@ export const ContactSection = () => {
           <div className="lg:col-span-2">
             <Card className="shadow-strong">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary flex items-center gap-2">
+                <CardTitle className="text-2xl text-green-700 flex items-center gap-2">
                   <MapPin className="w-6 h-6" />
                   Find Us Here
                 </CardTitle>
@@ -128,8 +128,8 @@ export const ContactSection = () => {
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <div className="space-y-4">
                     <div>
-                      <h3 className="font-semibold text-primary mb-2">Address</h3>
-                      <p className="text-foreground">
+                      <h3 className="font-semibold text-green-700 mb-2">Address</h3>
+                      <p className="text-green-700">
                         7729 Way, Al Maabilah<br />
                         Seeb, Muscat 130<br />
                         Sultanate of Oman
@@ -142,12 +142,12 @@ export const ContactSection = () => {
                       <Star className="w-5 h-5 fill-yellow-500" />
                       <Star className="w-5 h-5 fill-yellow-500" />
                       <Star className="w-5 h-5 fill-yellow-500" />
-                      <span className="text-foreground font-medium ml-2">4.9/5 (847 reviews)</span>
+                      <span className="text-green-700 font-medium ml-2">4.9/5 (847 reviews)</span>
                     </div>
                     
                     <Button 
                       asChild
-                      className="w-full bg-primary hover:bg-primary-dark text-white shadow-green"
+                      className="w-full bg-green-700 hover:bg-green-600 text-white shadow-green"
                     >
                       <a 
                         href="https://maps.app.goo.gl/DeiprjZnSJiWmaj89?g_st=com.google.maps.preview.copy" 

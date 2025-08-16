@@ -109,7 +109,7 @@ export const AboutSection = () => {
             {features.map((feature, index) => (
               <Card key={index} className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group">
                 <CardContent className="p-4 md:p-6 text-center">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-3 md:mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-green-700/10 rounded-xl flex items-center justify-center text-green-700 mx-auto mb-3 md:mb-4 group-hover:bg-green-700 group-hover:text-white transition-all duration-300">
                     {React.cloneElement(feature.icon, { 
                       className: "w-6 h-6 md:w-8 md:h-8 flex-shrink-0" 
                     })}
@@ -161,7 +161,7 @@ export const AboutSection = () => {
                 
                 <CardContent className="p-6 h-48 flex flex-col justify-between">
                   <div>
-                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <div className="w-12 h-12 bg-green-700/10 rounded-xl flex items-center justify-center text-green-700 mb-4 group-hover:bg-green-700 group-hover:text-white transition-all duration-300">
                       {React.cloneElement(floor.icon, { 
                         className: "w-6 h-6 flex-shrink-0" 
                       })}

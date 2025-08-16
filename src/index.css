@@ -254,10 +254,9 @@ All colors MUST be HSL.
 
   .premium-3d-text {
     text-shadow: 
-      0 0 5px currentColor,
-      0 0 10px currentColor,
-      0 0 15px currentColor;
-    filter: brightness(1.1);
+      0 0 3px currentColor,
+      0 0 6px currentColor;
+    filter: brightness(1.05);
   }
 }
 

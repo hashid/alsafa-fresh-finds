@@ -2,27 +2,23 @@ import { Facebook, Instagram, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo.jpg';
-
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const { t, isRTL } = useLanguage();
-
-  return (
-    <footer className={`bg-primary text-white/80 ${isRTL ? 'font-cairo' : ''}`}>
+  const {
+    t,
+    isRTL
+  } = useLanguage();
+  return <footer className={`bg-primary text-white/80 ${isRTL ? 'font-cairo' : ''}`}>
       <div className="container mx-auto px-4 py-8">
         {/* Main Content */}
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img 
-                src={logo} 
-                alt="Al Safa Hypermarket Logo" 
-                className="w-12 h-12 rounded-lg object-cover"
-              />
+              <img src={logo} alt="Al Safa Hypermarket Logo" className="w-12 h-12 rounded-lg object-cover" />
               <div>
                 <h3 className="text-xl font-bold">Al Safa Hypermarket</h3>
-                <p className="text-white/80 text-sm">Seeb, Muscat</p>
+                <p className="text-white/80 text-sm">Mabela South</p>
               </div>
             </div>
           </div>
@@ -33,19 +29,13 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-white/80" />
-                <a 
-                  href="tel:+96891073089" 
-                  className="text-white/90 hover:text-white transition-colors"
-                >
+                <a href="tel:+96891073089" className="text-white/90 hover:text-white transition-colors">
                   +968 9107 3089
                 </a>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-white/80 mt-0.5" />
-                <a 
-                  href="mailto:alsafahypermarket01@gmail.com" 
-                  className="text-white/90 hover:text-white transition-colors text-sm"
-                >
+                <a href="mailto:alsafahypermarket01@gmail.com" className="text-white/90 hover:text-white transition-colors text-sm">
                   alsafahypermarket01@gmail.com
                 </a>
               </div>
@@ -93,20 +83,10 @@ export const Footer = () => {
               <div className="flex items-center gap-4">
                 <span className="text-white/80 text-sm">Follow us:</span>
                 <div className="flex gap-3">
-                  <a 
-                    href="https://www.facebook.com/profile.php?id=100054276620484" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
-                  >
+                  <a href="https://www.facebook.com/profile.php?id=100054276620484" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors">
                     <Facebook className="w-5 h-5" />
                   </a>
-                  <a 
-                    href="https://www.instagram.com/alsafahypermarket/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
-                  >
+                  <a href="https://www.instagram.com/alsafahypermarket/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors">
                     <Instagram className="w-5 h-5" />
                   </a>
                 </div>
@@ -125,6 +105,5 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };

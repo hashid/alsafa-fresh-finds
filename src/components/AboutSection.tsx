@@ -23,6 +23,11 @@ import bagsNew from '@/assets/bags-new.jpg';
 import electronicNew from '@/assets/electronic-new.jpg';
 import sandalsNew from '@/assets/sandals-new.jpg';
 
+// Second Floor Images
+import departmentStore from '@/assets/department-store.jpg';
+import trolleyBags from '@/assets/trolley-bags.jpg';
+import bedMattresses from '@/assets/bed-mattresses.jpg';
+
 
 export const AboutSection = () => {
   const { t, isRTL } = useLanguage();
@@ -77,7 +82,7 @@ export const AboutSection = () => {
       title: "Department Store", 
       subtitle: "Second Floor",
       description: "Trolley bags, cycles and bed",
-      images: []
+      images: [departmentStore, trolleyBags, bedMattresses]
     }
   ];
 

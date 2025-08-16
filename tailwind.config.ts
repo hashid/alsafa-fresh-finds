@@ -19,11 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'playfair': ['Playfair Display', 'serif'],
+				'montserrat': ['Montserrat', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
-				'cormorant': ['Cormorant Garamond', 'serif'],
 				'cairo': ['Cairo', 'sans-serif'],
-				'roboto-condensed': ['Roboto Condensed', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

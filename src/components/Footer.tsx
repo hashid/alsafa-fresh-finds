@@ -1,13 +1,14 @@
 import { Facebook, Instagram, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo.jpg';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
 
   return (
-    <footer className="bg-primary text-white/80">
+    <footer className={`bg-primary text-white/80 ${isRTL ? 'font-cairo' : ''}`}>
       <div className="container mx-auto px-4 py-8">
         {/* Main Content */}
         <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -81,26 +82,34 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 pt-6">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
-            {/* Social Media */}
-            <div className="flex items-center gap-4 order-1 lg:order-2">
-              <span className="text-white/80 text-sm">Follow us:</span>
-              <div className="flex gap-3">
-                <a 
-                  href="https://www.facebook.com/profile.php?id=100054276620484" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a 
-                  href="https://www.instagram.com/alsafahypermarket/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
+            {/* Language Toggle & Social Media - First on mobile, right on desktop */}
+            <div className="flex flex-col lg:flex-row items-center gap-4 order-1 lg:order-2">
+              {/* Language Toggle */}
+              <div className="bg-white/10 rounded-lg p-2">
+                <LanguageToggle />
+              </div>
+              
+              {/* Social Media */}
+              <div className="flex items-center gap-4">
+                <span className="text-white/80 text-sm">Follow us:</span>
+                <div className="flex gap-3">
+                  <a 
+                    href="https://www.facebook.com/profile.php?id=100054276620484" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                  >
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/alsafahypermarket/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors"
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
             </div>
 

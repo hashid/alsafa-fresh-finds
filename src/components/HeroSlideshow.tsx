@@ -21,7 +21,7 @@ const images = [
 ];
 
 export const HeroSlideshow = () => {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export const HeroSlideshow = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className={`relative h-screen overflow-hidden ${isRTL ? 'font-cairo' : ''}`}>
       {/* Image Container */}
       <div className="relative h-full">
         {images.map((image, index) => (

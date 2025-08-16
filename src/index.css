@@ -251,6 +251,15 @@ All colors MUST be HSL.
     text-shadow: 0 2px 4px hsl(215 25% 15% / 0.3);
     letter-spacing: 0.05em;
   }
+
+  .premium-3d-text {
+    text-shadow: 
+      0 1px 0 rgba(0, 0, 0, 0.1),
+      0 2px 0 rgba(0, 0, 0, 0.08),
+      0 3px 5px rgba(0, 0, 0, 0.15),
+      0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
 }
 
 @keyframes luxury-shimmer {

@@ -142,7 +142,7 @@ export const AboutSection = () => {
                     <FloorImageSlider 
                       images={floor.images} 
                       title={floor.title}
-                      interval={5000}
+                      interval={3000}
                     />
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">

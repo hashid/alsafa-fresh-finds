@@ -85,7 +85,7 @@ export const HeroSlideshow = () => {
           </div>
           
           {/* WhatsApp Offers Section - Golden Ratio Spacing */}
-          <div className="glass-morphism rounded-xl p-4 max-w-xs mx-auto elegant-border premium-grid animate-luxury-float golden-accent" style={{ marginTop: '20vh' }}>
+          <div className="glass-morphism rounded-xl p-4 max-w-xs mx-auto elegant-border premium-grid animate-luxury-float golden-accent" style={{ marginTop: '40vh' }}>
             <div className="text-white text-center mb-4">
               <div className="text-sm font-medium text-shadow-premium">{t('hero.whatsapp.text')}</div>
             </div>

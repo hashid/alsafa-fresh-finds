@@ -26,10 +26,10 @@ export const HeroSlideshow = () => {
   const [animatedTextIndex, setAnimatedTextIndex] = useState(0);
 
   const taglineParts = [
-    "Fresh products",
-    "unbeatable prices", 
-    "and exceptional service",
-    "• Since 2015"
+    "FRESH PRODUCTS",
+    "UNBEATABLE PRICES", 
+    "AND EXCEPTIONAL SERVICE",
+    "SINCE 2015"
   ];
 
   useEffect(() => {

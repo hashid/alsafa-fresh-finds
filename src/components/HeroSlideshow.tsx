@@ -77,28 +77,11 @@ export const HeroSlideshow = () => {
       </div>
 
       {/* Content Overlay - Golden Ratio Layout */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
-        <div className="w-full max-w-4xl mx-auto" style={{ transform: 'translateY(5vh)' }}>
+      <div className="absolute inset-0 flex flex-col justify-end items-center text-center px-4 z-10 pb-32">
+        <div className="w-full max-w-4xl mx-auto">
           
-          <div className="text-xl md:text-2xl lg:text-3xl text-white max-w-2xl mx-auto font-montserrat font-bold premium-glow-text min-h-[200px] flex flex-col items-center justify-center mt-52 space-y-2">
-            {taglineParts.map((part, partIndex) => (
-              <div
-                key={partIndex}
-                className={`transition-opacity duration-500 animate-fade-in ${
-                  partIndex <= animatedTextIndex ? 'opacity-100' : 'opacity-0'
-                }`}
-                style={{
-                  animationDelay: `${partIndex * 1000}ms`,
-                  animationFillMode: 'both'
-                }}
-              >
-                {part}
-              </div>
-            ))}
-          </div>
-          
-          {/* WhatsApp Offers Section - Golden Ratio Spacing */}
-          <div className="glass-morphism rounded-xl p-4 max-w-xs mx-auto elegant-border premium-grid animate-luxury-float golden-accent" style={{ marginTop: '30vh' }}>
+          {/* WhatsApp Offers Section - Lower Third */}
+          <div className="glass-morphism rounded-xl p-4 max-w-xs mx-auto elegant-border premium-grid animate-luxury-float golden-accent">
             <div className="text-white text-center mb-4">
               <div className="text-sm font-medium text-shadow-premium">{t('hero.whatsapp.text')}</div>
             </div>

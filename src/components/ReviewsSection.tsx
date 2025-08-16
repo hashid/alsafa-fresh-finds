@@ -147,13 +147,13 @@ export const ReviewsSection = () => {
 
         {/* WhatsApp Offers Section */}
         <div className="text-center mt-12">
-          <Card className="bg-gradient-fresh border-primary/20 max-w-md mx-auto">
+          <Card className="bg-white border-primary/20 shadow-lg max-w-md mx-auto">
             <CardContent className="p-4 md:p-6">
-              <h3 className="text-lg md:text-xl font-bold text-primary mb-2">
+              <h3 className="text-lg md:text-xl font-bold text-primary mb-3">
                 Get Exclusive Offers
               </h3>
               <div className="mb-4">
-                <p className="text-muted-foreground text-xs md:text-sm text-center">
+                <p className="text-foreground font-medium text-sm text-center">
                   To know about offers, send a WhatsApp message "Hi" and save our number
                 </p>
               </div>
@@ -161,8 +161,9 @@ export const ReviewsSection = () => {
                 href="https://wa.me/96891073089?text=Hi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 rounded-lg font-semibold transition-colors text-xs md:text-sm"
+                className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors text-sm shadow-md"
               >
+                <MessageCircle className="w-4 h-4" />
                 WhatsApp Us: +968 9107 3089
               </a>
             </CardContent>

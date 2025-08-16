@@ -73,7 +73,7 @@ export const HeroSlideshow = () => {
 
       {/* Content Overlay - Golden Ratio Layout */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
-        <div className="w-full max-w-4xl mx-auto" style={{ transform: 'translateY(-2vh)' }}>
+        <div className="w-full max-w-4xl mx-auto" style={{ transform: 'translateY(5vh)' }}>
           
           <div className="text-2xl md:text-3xl lg:text-4xl text-white max-w-3xl mx-auto font-montserrat font-bold premium-glow-text min-h-[120px] flex items-center justify-center">
             <span 

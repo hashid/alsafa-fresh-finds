@@ -2,6 +2,7 @@ import React from 'react';
 import { Check, Clock, Users, MapPin, Star, Heart, ShoppingCart, Home, Shirt, Coffee } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { FloorImageSlider } from '@/components/FloorImageSlider';
 
 // Ground Floor Images
 import frozenNew from '@/assets/frozen-new.jpg';
@@ -132,40 +133,42 @@ export const AboutSection = () => {
             </p>
           </div>
 
-          {/* Floor Sections with Images */}
-          <div className="space-y-16">
+          {/* Four Floor Cards with Image Transitions */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {floorSections.map((floor, index) => (
-              <div key={index} className="text-center">
-                <Card className="bg-card hover:shadow-lg transition-all duration-300 border-0 overflow-hidden group mb-8">
-                  <CardContent className="p-6 md:p-8">
-                    <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+              <Card key={index} className="bg-card hover:shadow-xl transition-all duration-500 border-0 overflow-hidden group h-[450px]">
+                <div className="relative h-56 overflow-hidden">
+                  {floor.images && floor.images.length > 0 ? (
+                    <FloorImageSlider 
+                      images={floor.images} 
+                      title={floor.title}
+                      interval={3000}
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
                       {React.cloneElement(floor.icon, { 
-                        className: "w-8 h-8 flex-shrink-0" 
+                        className: "w-16 h-16 text-primary opacity-50" 
                       })}
                     </div>
-                    <h4 className="text-2xl md:text-3xl font-bold text-primary mb-3">{floor.title}</h4>
-                    <h5 className="text-lg md:text-xl font-semibold text-foreground mb-4">{floor.subtitle}</h5>
-                    <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-                      {floor.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
                 
-                {/* Product Images Grid */}
-                {floor.images && floor.images.length > 0 && (
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
-                    {floor.images.map((image, imgIndex) => (
-                      <div key={imgIndex} className="aspect-square rounded-lg overflow-hidden bg-card shadow-md hover:shadow-lg transition-all duration-300 group">
-                        <img 
-                          src={image} 
-                          alt={`Product ${imgIndex + 1}`}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                    ))}
+                <CardContent className="p-6 h-48 flex flex-col justify-between">
+                  <div>
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      {React.cloneElement(floor.icon, { 
+                        className: "w-6 h-6 flex-shrink-0" 
+                      })}
+                    </div>
+                    <h4 className="text-xl font-bold text-primary mb-2 group-hover:text-primary-light transition-colors duration-300">{floor.title}</h4>
+                    <h5 className="text-sm font-semibold text-foreground mb-3 opacity-80">{floor.subtitle}</h5>
                   </div>
-                )}
-              </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {floor.description}
+                  </p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>

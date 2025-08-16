@@ -6,8 +6,10 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo-new.jpg';
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t, isRTL } = useLanguage();
-
+  const {
+    t,
+    isRTL
+  } = useLanguage();
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -25,7 +27,7 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <img src={logo} alt="Al Safa Hypermarket Logo" className="w-20 h-20 rounded-lg object-cover shadow-soft filter blur-[0.3px] brightness-110 contrast-105" />
             <div className="flex flex-col">
-              <h1 className="font-montserrat font-black text-[#DC143C] text-3xl md:text-4xl leading-none tracking-widest premium-3d-text transform hover:scale-105 transition-transform duration-300">
+              <h1 className="font-montserrat font-black text-3xl md:text-4xl leading-none tracking-widest premium-3d-text transform hover:scale-105 transition-transform duration-300 text-red-500">
                 AL SAFA
               </h1>
               <h1 className="font-montserrat font-black text-green-700 text-2xl md:text-3xl leading-none mt-0 md:-mt-1 tracking-widest premium-3d-text transform hover:scale-105 transition-transform duration-300">

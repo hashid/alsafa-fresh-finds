@@ -89,10 +89,10 @@ export const ReviewsSection = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-4">
             What Our Customers Say
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto"></div>
+          <div className="w-20 h-1 bg-green-700 mx-auto"></div>
         </div>
 
         {/* Sliding Reviews */}
@@ -116,12 +116,12 @@ export const ReviewsSection = () => {
                             {review.date}
                           </span>
                         </div>
-                        <p className="text-foreground leading-relaxed mb-4 text-sm">
+                        <p className="text-green-700 leading-relaxed mb-4 text-sm">
                           "{review.review}"
                         </p>
                         <div>
-                          <p className="font-semibold text-primary text-sm">{review.name}</p>
-                          <p className="text-xs text-muted-foreground">{review.location}</p>
+                          <p className="font-semibold text-green-700 text-sm">{review.name}</p>
+                          <p className="text-xs text-green-700">{review.location}</p>
                         </div>
                       </div>
                     </div>
@@ -149,11 +149,11 @@ export const ReviewsSection = () => {
         <div className="text-center mt-12">
           <Card className="bg-white border-primary/20 shadow-lg max-w-md mx-auto">
             <CardContent className="p-4 md:p-6">
-              <h3 className="text-lg md:text-xl font-bold text-primary mb-3">
+              <h3 className="text-lg md:text-xl font-bold text-green-700 mb-3">
                 Get Exclusive Offers
               </h3>
               <div className="mb-4">
-                <p className="text-foreground font-medium text-sm text-center">
+                <p className="text-green-700 font-medium text-sm text-center">
                   To know about offers, send a WhatsApp message "Hi" and save our number
                 </p>
               </div>

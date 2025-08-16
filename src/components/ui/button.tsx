@@ -9,17 +9,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-to-r from-brand-cyber to-brand-electric text-primary-foreground hover:shadow-cyber transform hover:scale-105 border border-brand-cyber/50",
+        default: "bg-gradient-to-r from-brand-forest to-brand-navy text-primary-foreground hover:shadow-premium transform hover:scale-105 border border-brand-forest/30",
         destructive:
-          "bg-gradient-to-r from-destructive to-red-500 text-destructive-foreground hover:shadow-neon transform hover:scale-105",
+          "bg-gradient-to-r from-destructive to-red-500 text-destructive-foreground hover:shadow-fresh transform hover:scale-105",
         outline:
-          "border-2 border-brand-cyber/50 bg-background/50 backdrop-blur-sm hover:bg-brand-cyber/10 hover:border-brand-cyber hover:shadow-cyber text-brand-cyber",
+          "border-2 border-brand-forest/40 bg-background/80 backdrop-blur-sm hover:bg-brand-forest/5 hover:border-brand-forest hover:shadow-premium text-brand-forest",
         secondary:
-          "bg-gradient-to-r from-neural-purple to-brand-neon text-secondary-foreground hover:shadow-neural transform hover:scale-105",
-        ghost: "hover:bg-brand-cyber/10 hover:text-brand-cyber hover:shadow-cyber/50",
-        link: "text-brand-cyber underline-offset-4 hover:underline hover:text-brand-neon",
-        cyber: "bg-gradient-quantum text-primary-foreground hover:shadow-cyber transform hover:scale-105 animate-cyber-pulse",
-        neural: "glass-morphism neural-border text-brand-cyber hover:shadow-neural transform hover:scale-105",
+          "bg-gradient-to-r from-brand-navy to-brand-sage text-secondary-foreground hover:shadow-luxury transform hover:scale-105",
+        ghost: "hover:bg-brand-forest/5 hover:text-brand-forest hover:shadow-fresh/50",
+        link: "text-brand-forest underline-offset-4 hover:underline hover:text-fresh-green",
+        premium: "bg-gradient-fresh text-primary-foreground hover:shadow-premium transform hover:scale-105 animate-premium-pulse golden-accent",
+        luxury: "glass-morphism elegant-border text-brand-forest hover:shadow-luxury transform hover:scale-105 luxury-gradient",
       },
       size: {
         default: "h-10 px-4 py-2",

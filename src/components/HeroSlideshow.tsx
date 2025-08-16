@@ -73,17 +73,17 @@ export const HeroSlideshow = () => {
       <div className="absolute inset-0 flex flex-col items-center text-center px-4 z-10" style={{ paddingTop: '33vh' }}>
         <div className="max-w-4xl mx-auto space-y-6">
           
-          <p className="text-2xl md:text-3xl lg:text-4xl text-white hero-text-shadow max-w-3xl mx-auto font-medium animate-cyber-pulse">
+          <p className="text-2xl md:text-3xl lg:text-4xl text-white hero-text-shadow max-w-3xl mx-auto font-medium animate-premium-pulse">
             {t('hero.tagline')}
           </p>
           
           {/* WhatsApp Offers Section - Interactive Button */}
-          <div className="mt-12 glass-morphism rounded-2xl p-6 max-w-sm mx-auto neural-border cyber-grid animate-quantum-float">
+          <div className="mt-12 glass-morphism rounded-2xl p-6 max-w-sm mx-auto elegant-border premium-grid animate-luxury-float golden-accent">
             <div className="text-white text-center mb-4">
-              <div className="text-sm font-medium text-shadow-cyber">{t('hero.whatsapp.text')}</div>
+              <div className="text-sm font-medium text-shadow-premium">{t('hero.whatsapp.text')}</div>
             </div>
             <Button
-              variant="cyber"
+              variant="premium"
               onClick={() => {
                 const phoneNumber = "96891073089";
                 const message = "Hi";

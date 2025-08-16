@@ -30,7 +30,7 @@ export const Header = () => {
               <h1 className="font-montserrat font-bold text-3xl md:text-4xl leading-none tracking-wide premium-3d-text transform hover:scale-105 transition-transform duration-300 text-red-500">
                 AL SAFA
               </h1>
-              <h1 className="font-montserrat font-light text-green-700 text-2xl md:text-3xl leading-none mt-0 md:-mt-1 tracking-wide premium-3d-text transform hover:scale-105 transition-transform duration-300">
+              <h1 className="font-montserrat font-medium text-green-700 text-2xl md:text-3xl leading-none mt-0 md:-mt-1 tracking-wide premium-3d-text transform hover:scale-105 transition-transform duration-300">
                 HYPERMARKET
               </h1>
               <p className={`text-xs text-gray-700 mt-2 font-light tracking-wide ${isRTL ? 'font-cairo' : 'font-inter'}`}>

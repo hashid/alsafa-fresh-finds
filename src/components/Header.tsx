@@ -27,10 +27,10 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <img src={logo} alt="Al Safa Hypermarket Logo" className="w-20 h-20 rounded-lg object-cover shadow-soft filter blur-[0.3px] brightness-110 contrast-105" />
             <div className="flex flex-col">
-              <h1 className="font-montserrat font-black text-3xl md:text-4xl leading-none tracking-widest premium-3d-text transform hover:scale-105 transition-transform duration-300 text-red-500">
+              <h1 className="font-montserrat font-light text-3xl md:text-4xl leading-none tracking-wide premium-3d-text transform hover:scale-105 transition-transform duration-300 text-red-500">
                 AL SAFA
               </h1>
-              <h1 className="font-montserrat font-black text-green-700 text-2xl md:text-3xl leading-none mt-0 md:-mt-1 tracking-widest premium-3d-text transform hover:scale-105 transition-transform duration-300">
+              <h1 className="font-montserrat font-light text-green-700 text-2xl md:text-3xl leading-none mt-0 md:-mt-1 tracking-wide premium-3d-text transform hover:scale-105 transition-transform duration-300">
                 HYPERMARKET
               </h1>
               <p className={`text-xs text-gray-700 mt-2 font-light tracking-wide ${isRTL ? 'font-cairo' : 'font-inter'}`}>

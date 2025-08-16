@@ -71,9 +71,9 @@ export const HeroSlideshow = () => {
         ))}
       </div>
 
-      {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col items-center text-center px-4 z-10" style={{ paddingTop: '33vh' }}>
-        <div className="max-w-4xl mx-auto space-y-6">
+      {/* Content Overlay - Golden Ratio Layout */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
+        <div className="w-full max-w-4xl mx-auto" style={{ transform: 'translateY(-8vh)' }}>
           
           <div className="text-2xl md:text-3xl lg:text-4xl text-white max-w-3xl mx-auto font-montserrat font-bold premium-glow-text min-h-[120px] flex items-center justify-center">
             <span 
@@ -84,8 +84,8 @@ export const HeroSlideshow = () => {
             </span>
           </div>
           
-          {/* WhatsApp Offers Section - Interactive Button */}
-          <div className="mt-12 glass-morphism rounded-2xl p-6 max-w-sm mx-auto elegant-border premium-grid animate-luxury-float golden-accent">
+          {/* WhatsApp Offers Section - Golden Ratio Spacing */}
+          <div className="glass-morphism rounded-2xl p-6 max-w-sm mx-auto elegant-border premium-grid animate-luxury-float golden-accent" style={{ marginTop: '10vh' }}>
             <div className="text-white text-center mb-4">
               <div className="text-sm font-medium text-shadow-premium">{t('hero.whatsapp.text')}</div>
             </div>

@@ -75,7 +75,7 @@ export const HeroSlideshow = () => {
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
         <div className="w-full max-w-4xl mx-auto" style={{ transform: 'translateY(5vh)' }}>
           
-          <div className="text-2xl md:text-3xl lg:text-4xl text-white max-w-3xl mx-auto font-montserrat font-bold premium-glow-text min-h-[120px] flex items-center justify-center mt-16">
+          <div className="text-2xl md:text-3xl lg:text-4xl text-white max-w-3xl mx-auto font-montserrat font-bold premium-glow-text min-h-[120px] flex items-center justify-center mt-48">
             <span 
               key={animatedTextIndex}
               className="animate-fade-in block"

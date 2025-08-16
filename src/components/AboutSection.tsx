@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Clock, Users, MapPin, Star, Heart, ShoppingCart, Home, Shirt, Coffee } from 'lucide-react';
+import { Check, Clock, Users, MapPin, Star, Heart, ShoppingCart, Home, Shirt, ShoppingBag } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { FloorImageSlider } from '@/components/FloorImageSlider';
@@ -78,7 +78,7 @@ export const AboutSection = () => {
       images: [bagSandalNew, bagsNew, electronicNew, sandalsNew]
     },
     {
-      icon: <Coffee className="w-8 h-8" />,
+      icon: <ShoppingBag className="w-8 h-8" />,
       title: "Department Store", 
       subtitle: "Second Floor",
       description: "Trolley bags, cycles and bed",

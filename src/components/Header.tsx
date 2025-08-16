@@ -25,7 +25,7 @@ export const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Al Safa Hypermarket Logo" className="w-20 h-20 rounded-lg object-cover shadow-soft filter blur-[0.3px] brightness-110 contrast-105" />
+            <img src={logo} alt="Al Safa Hypermarket Logo" className="w-12 h-12 rounded-lg object-cover shadow-soft filter blur-[0.3px] brightness-110 contrast-105" />
             <div className="flex flex-col">
               <h1 className="font-montserrat font-medium text-3xl md:text-4xl leading-none tracking-wide premium-3d-text transform hover:scale-105 transition-transform duration-300 text-red-500">
                 AL SAFA

@@ -75,7 +75,7 @@ export const HeroSlideshow = () => {
       <div className="absolute inset-0 flex flex-col items-center text-center px-4 z-10" style={{ paddingTop: '33vh' }}>
         <div className="max-w-4xl mx-auto space-y-6">
           
-          <div className="text-2xl md:text-3xl lg:text-4xl text-white max-w-3xl mx-auto font-medium premium-glow-text min-h-[120px] flex items-center justify-center">
+          <div className="text-2xl md:text-3xl lg:text-4xl text-white max-w-3xl mx-auto font-montserrat font-bold premium-glow-text min-h-[120px] flex items-center justify-center">
             <span 
               key={animatedTextIndex}
               className="animate-fade-in block"

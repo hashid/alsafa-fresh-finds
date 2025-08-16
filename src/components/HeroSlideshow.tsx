@@ -78,9 +78,20 @@ export const HeroSlideshow = () => {
           <div className="text-xl md:text-2xl lg:text-3xl text-white max-w-2xl mx-auto font-montserrat font-bold premium-glow-text min-h-[120px] flex items-center justify-center mt-24">
             <span 
               key={animatedTextIndex}
-              className="animate-fade-in block"
+              className="block"
             >
-              {taglineParts[animatedTextIndex]}
+              {taglineParts[animatedTextIndex].split('').map((char, index) => (
+                <span
+                  key={index}
+                  className="inline-block animate-fade-in"
+                  style={{ 
+                    animationDelay: `${index * 0.05}s`,
+                    animationFillMode: 'both'
+                  }}
+                >
+                  {char === ' ' ? '\u00A0' : char}
+                </span>
+              ))}
             </span>
           </div>
           

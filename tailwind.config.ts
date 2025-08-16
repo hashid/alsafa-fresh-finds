@@ -122,11 +122,11 @@ export default {
 				'premium-pulse': {
 					'0%, 100%': { 
 						opacity: '1',
-						boxShadow: '0 2px 10px hsl(140 40% 20% / 0.2)'
+						boxShadow: '0 2px 10px hsl(140 40% 20% / 0.15)'
 					},
 					'50%': { 
-						opacity: '0.9',
-						boxShadow: '0 4px 20px hsl(140 40% 20% / 0.3), 0 8px 32px hsl(45 80% 60% / 0.15)'
+						opacity: '0.95',
+						boxShadow: '0 4px 16px hsl(140 40% 20% / 0.2), 0 6px 24px hsl(45 80% 60% / 0.1)'
 					}
 				},
 				'elegant-flow': {
@@ -141,7 +141,7 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'premium-pulse': 'premium-pulse 3s ease-in-out infinite',
+				'premium-pulse': 'premium-pulse 6s ease-in-out infinite',
 				'elegant-flow': 'elegant-flow 4s linear infinite',
 				'luxury-float': 'luxury-float 4s ease-in-out infinite'
 			}

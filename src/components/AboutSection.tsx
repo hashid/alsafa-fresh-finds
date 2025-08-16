@@ -30,7 +30,7 @@ import whiteMattress from '@/assets/white-mattress.jpg';
 
 
 export const AboutSection = () => {
-  const { t, isRTL } = useLanguage();
+  const { t } = useLanguage();
   
   const features = [
     {
@@ -87,7 +87,7 @@ export const AboutSection = () => {
   ];
 
   return (
-    <div className={`min-h-screen ${isRTL ? 'font-cairo' : ''}`}>
+    <div className="min-h-screen">
       {/* About Us Section */}
       <section id="about" className="py-24 bg-background">
         <div className="container mx-auto px-4 max-w-6xl">

@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo-new.jpg';
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t, isRTL } = useLanguage();
+  const { t } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -17,7 +16,7 @@ export const Header = () => {
       setIsMenuOpen(false);
     }
   };
-  return <header className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-soft ${isRTL ? 'font-cairo' : ''}`}>
+  return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-soft">
       <div className="container mx-auto px-4">
         {/* Main Navigation */}
         <div className="flex items-center justify-between py-4">
@@ -31,7 +30,7 @@ export const Header = () => {
               <h1 className="font-roboto-condensed font-black text-green-700 text-2xl md:text-3xl leading-none mt-0 md:-mt-1 tracking-widest premium-3d-text transform hover:scale-105 transition-transform duration-300">
                 HYPERMARKET
               </h1>
-              <p className={`text-xs text-gray-500 mt-2 font-light tracking-wide ${isRTL ? 'font-cairo' : 'font-inter'}`}>
+              <p className="text-xs text-gray-500 mt-2 font-light tracking-wide font-inter">
                 {t('header.tagline')}
               </p>
             </div>
@@ -39,7 +38,6 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <LanguageToggle />
             <button onClick={() => scrollToSection('hero')} className="text-foreground hover:text-primary transition-colors font-medium">
               {t('nav.home')}
             </button>

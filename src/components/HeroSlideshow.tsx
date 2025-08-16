@@ -89,7 +89,7 @@ export const HeroSlideshow = () => {
               variant="premium"
               onClick={() => {
                 const phoneNumber = "96891073089";
-                const message = "Hi";
+                const message = "Send";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
               }}

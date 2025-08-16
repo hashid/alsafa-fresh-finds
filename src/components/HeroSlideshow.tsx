@@ -80,7 +80,7 @@ export const HeroSlideshow = () => {
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
         <div className="w-full max-w-4xl mx-auto" style={{ transform: 'translateY(5vh)' }}>
           
-          <div className="text-xl md:text-2xl lg:text-3xl text-white max-w-2xl mx-auto font-montserrat font-bold premium-glow-text min-h-[200px] flex flex-col items-center justify-center mt-24 space-y-2">
+          <div className="text-xl md:text-2xl lg:text-3xl text-white max-w-2xl mx-auto font-montserrat font-bold premium-glow-text min-h-[200px] flex flex-col items-center justify-center mt-32 space-y-2">
             {taglineParts.map((part, partIndex) => (
               <div
                 key={partIndex}

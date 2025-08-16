@@ -61,15 +61,16 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				brand: {
-					green: 'hsl(var(--brand-green))',
-					orange: 'hsl(var(--brand-orange))',
-					blue: 'hsl(var(--brand-blue))'
+					cyber: 'hsl(var(--brand-cyber))',
+					neon: 'hsl(var(--brand-neon))',
+					electric: 'hsl(var(--brand-electric))',
+					glow: 'hsl(var(--brand-glow))'
 				},
-				fresh: {
-					mint: 'hsl(var(--fresh-mint))'
+				quantum: {
+					blue: 'hsl(var(--quantum-blue))'
 				},
-				warm: {
-					cream: 'hsl(var(--warm-cream))'
+				neural: {
+					purple: 'hsl(var(--neural-purple))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -89,41 +90,60 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-fresh': 'var(--gradient-fresh)',
-				'gradient-warm': 'var(--gradient-warm)'
+				'gradient-cyber': 'var(--gradient-cyber)',
+				'gradient-neural': 'var(--gradient-neural)',
+				'gradient-quantum': 'var(--gradient-quantum)',
+				'gradient-hologram': 'var(--gradient-hologram)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'medium': 'var(--shadow-medium)',
 				'strong': 'var(--shadow-strong)',
-				'green': 'var(--shadow-green)'
+				'cyber': 'var(--shadow-cyber)',
+				'neon': 'var(--shadow-neon)',
+				'neural': 'var(--shadow-neural)'
 			},
 			transitionDuration: {
+				'lightning': 'var(--transition-lightning)',
 				'fast': 'var(--transition-fast)',
 				'normal': 'var(--transition-normal)',
-				'slow': 'var(--transition-slow)'
+				'slow': 'var(--transition-slow)',
+				'epic': 'var(--transition-epic)'
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'cyber-pulse': {
+					'0%, 100%': { 
+						opacity: '1',
+						boxShadow: '0 0 5px hsl(180 100% 50% / 0.5)'
 					},
-					to: {
-						height: '0'
+					'50%': { 
+						opacity: '0.8',
+						boxShadow: '0 0 20px hsl(180 100% 50% / 0.8), 0 0 40px hsl(180 100% 50% / 0.6)'
 					}
+				},
+				'neural-flow': {
+					'0%': { transform: 'translateX(-100%) skewX(-15deg)' },
+					'100%': { transform: 'translateX(200%) skewX(-15deg)' }
+				},
+				'quantum-float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'cyber-pulse': 'cyber-pulse 2s ease-in-out infinite',
+				'neural-flow': 'neural-flow 3s linear infinite',
+				'quantum-float': 'quantum-float 3s ease-in-out infinite'
 			}
 		}
 	},

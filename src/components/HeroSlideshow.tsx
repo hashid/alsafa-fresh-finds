@@ -73,23 +73,24 @@ export const HeroSlideshow = () => {
       <div className="absolute inset-0 flex flex-col items-center text-center px-4 z-10" style={{ paddingTop: '33vh' }}>
         <div className="max-w-4xl mx-auto space-y-6">
           
-          <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 hero-text-shadow max-w-3xl mx-auto font-medium">
+          <p className="text-2xl md:text-3xl lg:text-4xl text-white hero-text-shadow max-w-3xl mx-auto font-medium animate-cyber-pulse">
             {t('hero.tagline')}
           </p>
           
           {/* WhatsApp Offers Section - Interactive Button */}
-          <div className="mt-12 bg-white/15 backdrop-blur-lg rounded-xl p-6 max-w-sm mx-auto border border-white/20">
+          <div className="mt-12 glass-morphism rounded-2xl p-6 max-w-sm mx-auto neural-border cyber-grid animate-quantum-float">
             <div className="text-white text-center mb-4">
-              <div className="text-sm font-medium">{t('hero.whatsapp.text')}</div>
+              <div className="text-sm font-medium text-shadow-cyber">{t('hero.whatsapp.text')}</div>
             </div>
             <Button
+              variant="cyber"
               onClick={() => {
                 const phoneNumber = "96891073089";
                 const message = "Hi";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
               }}
-              className="w-full bg-green-600 hover:bg-green-700 text-white rounded-lg p-4 transition-all duration-300 hover:scale-105 transform"
+              className="w-full p-4"
             >
               <div className="flex items-center justify-center gap-2">
                 <MessageSquare className="w-5 h-5" />

@@ -21,7 +21,7 @@ const translations = {
     
     // Hero
     "hero.tagline": "Fresh products, unbeatable prices, and exceptional service • Since 2015",
-    "hero.whatsapp.text": "Say \"Hi\" on WhatsApp and save our number to get updates, offers, and more!",
+    "hero.whatsapp.text": "Send \"Hi\" on WhatsApp and save our number to get updates, offers, and more!",
     "hero.whatsapp.button": "Send Message on WhatsApp",
     
     // About Section
@@ -83,7 +83,7 @@ const translations = {
     
     // Hero
     "hero.tagline": "منتجات طازجة، أسعار لا تقبل المنافسة، وخدمة استثنائية • منذ 2015",
-    "hero.whatsapp.text": "قل \"مرحبا\" على الواتساب واحفظ رقمنا للحصول على التحديثات والعروض والمزيد!",
+    "hero.whatsapp.text": "إرسال \"مرحبا\" على الواتساب واحفظ رقمنا للحصول على التحديثات والعروض والمزيد!",
     "hero.whatsapp.button": "إرسال رسالة على الواتساب",
     
     // About Section

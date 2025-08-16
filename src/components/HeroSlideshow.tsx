@@ -41,8 +41,13 @@ export const HeroSlideshow = () => {
 
   useEffect(() => {
     const textInterval = setInterval(() => {
-      setAnimatedTextIndex((prev) => (prev + 1) % taglineParts.length);
-    }, 2000);
+      setAnimatedTextIndex((prev) => {
+        if (prev < taglineParts.length - 1) {
+          return prev + 1;
+        }
+        return 0; // Reset after all parts are shown
+      });
+    }, 1000);
     return () => clearInterval(textInterval);
   }, []);
 
@@ -75,24 +80,33 @@ export const HeroSlideshow = () => {
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
         <div className="w-full max-w-4xl mx-auto" style={{ transform: 'translateY(5vh)' }}>
           
-          <div className="text-xl md:text-2xl lg:text-3xl text-white max-w-2xl mx-auto font-montserrat font-bold premium-glow-text min-h-[120px] flex items-center justify-center mt-24">
-            <span 
-              key={animatedTextIndex}
-              className="block"
-            >
-              {taglineParts[animatedTextIndex].split('').map((char, index) => (
-                <span
-                  key={index}
-                  className="inline-block animate-fade-in"
-                  style={{ 
-                    animationDelay: `${index * 0.05}s`,
-                    animationFillMode: 'both'
-                  }}
-                >
-                  {char === ' ' ? '\u00A0' : char}
-                </span>
-              ))}
-            </span>
+          <div className="text-xl md:text-2xl lg:text-3xl text-white max-w-2xl mx-auto font-montserrat font-bold premium-glow-text min-h-[200px] flex flex-col items-center justify-center mt-24 space-y-2">
+            {taglineParts.map((part, partIndex) => (
+              <div
+                key={partIndex}
+                className={`transition-opacity duration-500 ${
+                  partIndex <= animatedTextIndex ? 'opacity-100' : 'opacity-0'
+                }`}
+                style={{
+                  animationDelay: `${partIndex * 1000}ms`
+                }}
+              >
+                {part.split('').map((char, charIndex) => (
+                  <span
+                    key={charIndex}
+                    className={`inline-block ${
+                      partIndex <= animatedTextIndex ? 'animate-fade-in' : ''
+                    }`}
+                    style={{ 
+                      animationDelay: `${(partIndex * 1000) + (charIndex * 50)}ms`,
+                      animationFillMode: 'both'
+                    }}
+                  >
+                    {char === ' ' ? '\u00A0' : char}
+                  </span>
+                ))}
+              </div>
+            ))}
           </div>
           
           {/* WhatsApp Offers Section - Golden Ratio Spacing */}

@@ -60,10 +60,7 @@ export const HeroSlideshow = () => {
       <div className="absolute inset-0 flex flex-col items-center text-center px-4 z-10" style={{ paddingTop: '33vh' }}>
         <div className="max-w-4xl mx-auto space-y-6">
           
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 premium-title-effect">
-            AL SAFA HYPERMARKET
-          </h1>
-          <p className="text-2xl md:text-3xl lg:text-4xl text-white hero-text-shadow max-w-3xl mx-auto font-medium animate-premium-pulse">
+          <p className="text-2xl md:text-3xl lg:text-4xl text-white max-w-3xl mx-auto font-medium animate-premium-pulse premium-glow-text">
             {t('hero.tagline')}
           </p>
           

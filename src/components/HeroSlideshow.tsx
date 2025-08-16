@@ -84,27 +84,15 @@ export const HeroSlideshow = () => {
             {taglineParts.map((part, partIndex) => (
               <div
                 key={partIndex}
-                className={`transition-opacity duration-500 ${
+                className={`transition-opacity duration-500 animate-fade-in ${
                   partIndex <= animatedTextIndex ? 'opacity-100' : 'opacity-0'
                 }`}
                 style={{
-                  animationDelay: `${partIndex * 1000}ms`
+                  animationDelay: `${partIndex * 1000}ms`,
+                  animationFillMode: 'both'
                 }}
               >
-                {part.split('').map((char, charIndex) => (
-                  <span
-                    key={charIndex}
-                    className={`inline-block ${
-                      partIndex <= animatedTextIndex ? 'animate-fade-in' : ''
-                    }`}
-                    style={{ 
-                      animationDelay: `${(partIndex * 1000) + (charIndex * 50)}ms`,
-                      animationFillMode: 'both'
-                    }}
-                  >
-                    {char === ' ' ? '\u00A0' : char}
-                  </span>
-                ))}
+                {part}
               </div>
             ))}
           </div>

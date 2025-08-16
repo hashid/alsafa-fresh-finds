@@ -26,7 +26,7 @@ import sandalsNew from '@/assets/sandals-new.jpg';
 // Second Floor Images
 import departmentStore from '@/assets/department-store.jpg';
 import trolleyBags from '@/assets/trolley-bags.jpg';
-import bedMattresses from '@/assets/bed-mattresses.jpg';
+import whiteMattress from '@/assets/white-mattress.jpg';
 
 
 export const AboutSection = () => {
@@ -82,7 +82,7 @@ export const AboutSection = () => {
       title: "Department Store", 
       subtitle: "Second Floor",
       description: "Trolley bags, cycles and bed",
-      images: [departmentStore, trolleyBags, bedMattresses]
+      images: [departmentStore, trolleyBags, whiteMattress]
     }
   ];
 

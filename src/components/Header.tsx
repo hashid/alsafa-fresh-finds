@@ -33,7 +33,7 @@ export const Header = () => {
               <h1 className="font-montserrat font-black text-green-700 text-2xl md:text-3xl leading-none mt-0 md:-mt-1 tracking-widest premium-3d-text transform hover:scale-105 transition-transform duration-300">
                 HYPERMARKET
               </h1>
-              <p className={`text-xs text-blue-900 mt-2 font-light tracking-wide ${isRTL ? 'font-cairo' : 'font-inter'}`}>
+              <p className={`text-xs text-gray-700 mt-2 font-light tracking-wide ${isRTL ? 'font-cairo' : 'font-inter'}`}>
                 {t('header.tagline')}
               </p>
             </div>

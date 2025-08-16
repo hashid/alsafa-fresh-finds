@@ -3,7 +3,7 @@ import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '@/contexts/LanguageContext';
-import logo from '@/assets/logo-new.jpg';
+import logo from '@/assets/logo-red-matched.jpg';
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t, isRTL } = useLanguage();

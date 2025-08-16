@@ -19,7 +19,7 @@ export const Header = () => {
       setIsMenuOpen(false);
     }
   };
-  return <header className={`fixed top-0 left-0 right-0 z-50 bg-gradient-premium backdrop-blur-md shadow-premium ${isRTL ? 'font-cairo' : ''}`}>
+  return <header className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-soft ${isRTL ? 'font-cairo' : ''}`}>
       <div className="container mx-auto px-4">
         {/* Main Navigation */}
         <div className="flex items-center justify-between py-4">

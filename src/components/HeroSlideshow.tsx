@@ -5,16 +5,18 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import heroMain from '@/assets/hero-main.jpg';
 import frozenNew from '@/assets/frozen-new.jpg';
 import fruitsNew from '@/assets/fruits-new.jpg';
-import juices from '@/assets/juices.jpg';
 import nidoNew from '@/assets/nido-new.jpg';
 import pocariNew from '@/assets/pocari-new.jpg';
 import weetNew from '@/assets/veet-new.jpg';
+import beveragesAisle from '@/assets/beverages-aisle.jpg';
+import grocerySection from '@/assets/grocery-section.jpg';
 
 const images = [
   { src: heroMain, alt: 'Al Safa Hypermarket' },
   { src: frozenNew, alt: 'Frozen Products' },
   { src: fruitsNew, alt: 'Fresh Fruits Collection' },
-  { src: juices, alt: 'Beverages & Juices' },
+  { src: beveragesAisle, alt: 'Beverages & Drinks' },
+  { src: grocerySection, alt: 'Grocery Section' },
   { src: nidoNew, alt: 'Dairy Products' },
   { src: pocariNew, alt: 'Sports Drinks' },
   { src: weetNew, alt: 'Personal Care' },

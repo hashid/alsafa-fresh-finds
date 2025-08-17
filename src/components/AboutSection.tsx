@@ -10,7 +10,6 @@ import fruitsNew from '@/assets/fruits-new.jpg';
 import juices from '@/assets/juices.jpg';
 import nidoNew from '@/assets/nido-new.jpg';
 import pocariNew from '@/assets/pocari-new.jpg';
-import weetNew from '@/assets/veet-new.jpg';
 
 // Basement Images
 import balloonsNew from '@/assets/balloons-new.jpg';
@@ -61,7 +60,7 @@ export const AboutSection = () => {
       title: t('floor.ground.title'),
       subtitle: t('floor.ground.subtitle'),
       description: t('floor.ground.desc'),
-      images: [frozenNew, fruitsNew, juices, nidoNew, pocariNew, weetNew]
+      images: [frozenNew, fruitsNew, juices, nidoNew, pocariNew]
     },
     {
       icon: <Home className="w-8 h-8" />,

@@ -7,7 +7,6 @@ import frozenNew from '@/assets/frozen-new.jpg';
 import fruitsNew from '@/assets/fruits-new.jpg';
 import nidoNew from '@/assets/nido-new.jpg';
 import pocariNew from '@/assets/pocari-new.jpg';
-import weetNew from '@/assets/veet-new.jpg';
 import beveragesAisle from '@/assets/beverages-aisle.jpg';
 import grocerySection from '@/assets/grocery-section.jpg';
 
@@ -19,7 +18,6 @@ const images = [
   { src: grocerySection, alt: 'Grocery Section' },
   { src: nidoNew, alt: 'Dairy Products' },
   { src: pocariNew, alt: 'Sports Drinks' },
-  { src: weetNew, alt: 'Personal Care' },
 ];
 
 export const HeroSlideshow = () => {

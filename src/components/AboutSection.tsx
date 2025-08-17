@@ -92,12 +92,12 @@ export const AboutSection = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Header */}
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-green-700 mb-8">
+            <h2 className="text-5xl md:text-6xl font-bold text-ash-dark mb-8">
               {t('about.title')}
             </h2>
-            <div className="w-32 h-1.5 bg-green-700 mx-auto mb-10"></div>
+            <div className="w-32 h-1.5 bg-ash-dark mx-auto mb-10"></div>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-green-700 leading-relaxed mb-6">
+              <p className="text-xl text-ash-dark leading-relaxed mb-6">
                 {t('about.intro1')}
               </p>
             </div>
@@ -113,8 +113,8 @@ export const AboutSection = () => {
                       className: "w-6 h-6 md:w-8 md:h-8 flex-shrink-0" 
                     })}
                   </div>
-                  <h3 className="text-base md:text-xl font-bold text-green-700 mb-2 md:mb-3">{feature.title}</h3>
-                  <p className="text-green-700 text-sm md:text-base leading-relaxed">
+                  <h3 className="text-base md:text-xl font-bold text-ash-dark mb-2 md:mb-3">{feature.title}</h3>
+                  <p className="text-ash-dark text-sm md:text-base leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -128,11 +128,11 @@ export const AboutSection = () => {
       <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-20">
-            <h3 className="text-5xl md:text-6xl font-bold text-green-700 mb-8">
+            <h3 className="text-5xl md:text-6xl font-bold text-ash-dark mb-8">
               {t('explore.title')}
             </h3>
-            <div className="w-32 h-1.5 bg-green-700 mx-auto mb-8"></div>
-            <p className="text-xl text-green-700 max-w-2xl mx-auto">
+            <div className="w-32 h-1.5 bg-ash-dark mx-auto mb-8"></div>
+            <p className="text-xl text-ash-dark max-w-2xl mx-auto">
               {t('explore.subtitle')}
             </p>
           </div>
@@ -165,10 +165,10 @@ export const AboutSection = () => {
                         className: "w-6 h-6 flex-shrink-0" 
                       })}
                     </div>
-                    <h4 className="text-xl font-bold text-green-700 mb-2 group-hover:text-green-600 transition-colors duration-300">{floor.title}</h4>
-                    <h5 className="text-sm font-semibold text-green-700 mb-3 opacity-80">{floor.subtitle}</h5>
+                    <h4 className="text-xl font-bold text-ash-dark mb-2 group-hover:text-green-600 transition-colors duration-300">{floor.title}</h4>
+                    <h5 className="text-sm font-semibold text-ash-dark mb-3 opacity-80">{floor.subtitle}</h5>
                   </div>
-                  <p className="text-green-700 text-sm leading-relaxed">
+                  <p className="text-ash-dark text-sm leading-relaxed">
                     {floor.description}
                   </p>
                 </CardContent>

@@ -71,6 +71,9 @@ export default {
 				luxury: {
 					gold: 'hsl(var(--luxury-gold))'
 				},
+				ash: {
+					dark: 'hsl(var(--dark-ash))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

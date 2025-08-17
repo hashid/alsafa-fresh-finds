@@ -38,11 +38,11 @@ export const ContactSection = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-green-700 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-ash-dark mb-6">
             Contact Us
           </h2>
-          <div className="w-24 h-1 bg-green-700 mx-auto mb-8"></div>
-          <p className="text-xl text-green-700 max-w-2xl mx-auto">
+          <div className="w-24 h-1 bg-ash-dark mx-auto mb-8"></div>
+          <p className="text-xl text-ash-dark max-w-2xl mx-auto">
             We're here to help! Get in touch with us for any questions, suggestions, or special requests.
           </p>
         </div>
@@ -58,10 +58,10 @@ export const ContactSection = () => {
                     <Phone className="w-6 h-6 text-green-700" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-green-700 mb-1">Phone</h3>
+                    <h3 className="font-semibold text-ash-dark mb-1">Phone</h3>
                     <a 
                       href="tel:+96891073089" 
-                      className="text-green-700 hover:text-green-600 transition-colors"
+                      className="text-ash-dark hover:text-green-600 transition-colors"
                     >
                       +968 9107 3089
                     </a>
@@ -78,10 +78,10 @@ export const ContactSection = () => {
                     <Mail className="w-6 h-6 text-green-700" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-green-700 mb-1">Email</h3>
+                    <h3 className="font-semibold text-ash-dark mb-1">Email</h3>
                     <a 
                       href="mailto:alsafahypermarket01@gmail.com" 
-                      className="text-green-700 hover:text-green-600 transition-colors text-sm"
+                      className="text-ash-dark hover:text-green-600 transition-colors text-sm"
                     >
                       alsafahypermarket01@gmail.com
                     </a>
@@ -98,12 +98,12 @@ export const ContactSection = () => {
                     <MessageSquare className="w-6 h-6 text-green-700" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-green-700 mb-1">WhatsApp</h3>
+                    <h3 className="font-semibold text-ash-dark mb-1">WhatsApp</h3>
                     <a 
                       href="https://wa.me/96891073089" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-green-700 hover:text-green-600 transition-colors flex items-center gap-1"
+                      className="text-ash-dark hover:text-green-600 transition-colors flex items-center gap-1"
                     >
                       +968 9107 3089
                       <ExternalLink className="w-3 h-3" />
@@ -119,7 +119,7 @@ export const ContactSection = () => {
           <div className="lg:col-span-2">
             <Card className="shadow-strong">
               <CardHeader>
-                <CardTitle className="text-2xl text-green-700 flex items-center gap-2">
+                <CardTitle className="text-2xl text-ash-dark flex items-center gap-2">
                   <MapPin className="w-6 h-6" />
                   Find Us Here
                 </CardTitle>
@@ -128,8 +128,8 @@ export const ContactSection = () => {
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <div className="space-y-4">
                     <div>
-                      <h3 className="font-semibold text-green-700 mb-2">Address</h3>
-                      <p className="text-green-700">
+                      <h3 className="font-semibold text-ash-dark mb-2">Address</h3>
+                      <p className="text-ash-dark">
                         7729 Way, Al Maabilah<br />
                         Seeb, Muscat 130<br />
                         Sultanate of Oman
@@ -142,7 +142,7 @@ export const ContactSection = () => {
                       <Star className="w-5 h-5 fill-yellow-500" />
                       <Star className="w-5 h-5 fill-yellow-500" />
                       <Star className="w-5 h-5 fill-yellow-500" />
-                      <span className="text-green-700 font-medium ml-2">4.9/5 (847 reviews)</span>
+                      <span className="text-ash-dark font-medium ml-2">4.9/5 (847 reviews)</span>
                     </div>
                     
                     <Button 

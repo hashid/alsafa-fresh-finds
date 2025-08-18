@@ -50,11 +50,7 @@ export const ModernHero = () => {
             <div className="fade-in-up bounce-cart" style={{
             animationDelay: '0.4s'
           }}>
-              <img 
-                src={shoppingCartHero} 
-                alt="Shopping cart with fresh fruits and vegetables" 
-                className="w-1/3 h-auto object-contain"
-              />
+              
             </div>
           </div>
         </div>

@@ -2,67 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Al Safa Hypermarket - Premium Design System
+/* Al Safa Hypermarket - Modern Design System
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 215 25% 15%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 0 0% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 0 0% 17%;
 
-    /* Premium primary colors - Deep Forest Green */
-    --primary: 140 40% 20%;
-    --primary-foreground: 0 0% 98%;
-    --primary-light: 140 35% 30%;
-    --primary-dark: 140 45% 15%;
+    /* Modern primary colors - Hypermarket Red */
+    --primary: 0 65% 51%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 0 60% 60%;
+    --primary-dark: 0 70% 42%;
 
-    /* Luxury secondary colors - Navy Blue */
-    --secondary: 215 30% 25%;
-    --secondary-foreground: 0 0% 98%;
+    /* Clean secondary colors - Charcoal */
+    --secondary: 0 0% 17%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 15% 95%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 45 80% 75%;
-    --accent-foreground: 215 25% 15%;
+    --accent: 0 0% 97%;
+    --accent-foreground: 0 0% 17%;
 
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 15% 88%;
-    --input: 210 10% 96%;
-    --ring: 140 40% 20%;
+    --border: 0 0% 91%;
+    --input: 0 0% 97%;
+    --ring: 0 65% 51%;
 
-    /* Premium brand colors */
-    --brand-forest: 140 40% 20%;
-    --brand-navy: 215 30% 25%;
-    --brand-gold: 45 80% 60%;
-    --brand-sage: 120 25% 45%;
-    --fresh-green: 140 60% 45%;
-    --luxury-gold: 45 70% 55%;
-    --dark-ash: 220 10% 35%;
+    /* Modern brand colors */
+    --hypermarket-red: 0 65% 51%;
+    --charcoal-gray: 0 0% 17%;
+    --light-gray: 0 0% 97%;
+    --premium-gold: 45 85% 58%;
+    --fresh-green: 120 60% 34%;
+    --dark-ash: 0 0% 17%;
     
-    /* Premium gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(140 40% 20%), hsl(215 30% 25%), hsl(45 80% 60% / 0.3));
-    --gradient-premium: linear-gradient(45deg, hsl(140 40% 20% / 0.05), hsl(45 80% 60% / 0.1));
-    --gradient-luxury: linear-gradient(180deg, hsl(215 30% 25% / 0.1), hsl(140 40% 20% / 0.05));
-    --gradient-fresh: linear-gradient(90deg, hsl(140 60% 45%), hsl(120 25% 45%));
-    --gradient-elegant: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 15% 95%));
+    /* Modern gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 97%));
+    --gradient-red: linear-gradient(135deg, hsl(0 65% 51%), hsl(0 70% 42%));
+    --gradient-green: linear-gradient(135deg, hsl(120 60% 34%), hsl(120 55% 40%));
+    --gradient-deals: linear-gradient(135deg, hsl(0 65% 51%), hsl(0 60% 60%));
+    --gradient-elegant: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 97%));
     
-    /* Sophisticated shadows with subtle glow */
-    --shadow-soft: 0 2px 20px hsl(215 25% 15% / 0.08);
-    --shadow-medium: 0 4px 32px hsl(215 25% 15% / 0.12);
-    --shadow-strong: 0 8px 64px hsl(215 25% 15% / 0.15);
-    --shadow-premium: 0 4px 24px hsl(140 40% 20% / 0.15), 0 2px 8px hsl(45 80% 60% / 0.1);
-    --shadow-luxury: 0 8px 32px hsl(215 30% 25% / 0.2), 0 0 0 1px hsl(45 80% 60% / 0.1);
-    --shadow-fresh: 0 4px 16px hsl(140 60% 45% / 0.2);
+    /* Clean shadows */
+    --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.06);
+    --shadow-medium: 0 4px 16px hsl(0 0% 0% / 0.1);
+    --shadow-strong: 0 8px 32px hsl(0 0% 0% / 0.12);
+    --shadow-card: 0 2px 12px hsl(0 0% 0% / 0.08);
+    --shadow-button: 0 4px 12px hsl(0 65% 51% / 0.3);
+    --shadow-green: 0 4px 12px hsl(120 60% 34% / 0.3);
     
     /* Refined animation durations */
     --transition-instant: 0.15s;
@@ -168,95 +167,67 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  .hero-text-shadow {
-    text-shadow: 
-      0 2px 8px hsl(215 25% 15% / 0.4),
-      0 4px 16px hsl(140 40% 20% / 0.2);
+  /* Modern animations */
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
   }
   
-  .text-shadow-premium {
-    text-shadow: 
-      0 1px 3px hsl(215 25% 15% / 0.3),
-      0 2px 6px hsl(140 40% 20% / 0.2);
+  .zoom-in-on-scroll {
+    transition: transform 0.3s ease;
   }
   
-  .text-shadow-luxury {
-    text-shadow: 
-      0 2px 4px hsl(45 80% 60% / 0.3),
-      0 1px 2px hsl(215 25% 15% / 0.4);
+  .zoom-in-on-scroll:hover {
+    transform: scale(1.05);
   }
   
-  .image-overlay {
-    background: linear-gradient(
-      45deg, 
-      hsl(215 25% 15% / 0.6), 
-      hsl(140 40% 20% / 0.3),
-      hsl(45 80% 60% / 0.1)
-    );
+  .modern-button {
+    transition: all 0.3s ease;
+    border-radius: 8px;
   }
   
-  .glass-morphism {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  .modern-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-button);
   }
   
-  .premium-grid {
-    background-image: 
-      linear-gradient(hsl(140 40% 20% / 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(140 40% 20% / 0.05) 1px, transparent 1px);
-    background-size: 32px 32px;
+  .card-hover {
+    transition: all 0.3s ease;
   }
   
-  .luxury-gradient {
-    background: var(--gradient-luxury);
-    background-size: 200% 200%;
-    animation: luxury-shimmer 4s ease-in-out infinite;
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
   }
   
-  .premium-glow {
-    animation: premium-glow 3s ease-in-out infinite alternate;
+  .category-icon {
+    transition: all 0.3s ease;
   }
   
-  .elegant-border {
-    border: 2px solid transparent;
-    background: linear-gradient(var(--background), var(--background)) padding-box,
-                var(--gradient-premium) border-box;
+  .category-icon:hover {
+    transform: scale(1.1);
+    color: hsl(var(--fresh-green));
   }
-  
-  .golden-accent {
-    position: relative;
-  }
-  
-  .golden-accent::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, hsl(45 80% 60% / 0.1) 50%, transparent 70%);
-    transform: translateX(-100%);
-    animation: golden-sweep 3s ease-in-out infinite;
-  }
-  
-  .premium-title-effect {
-    background: linear-gradient(
-      135deg,
-      hsl(0 0% 100%),
-      hsl(45 80% 75%),
-      hsl(0 0% 100%)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 2px 4px hsl(215 25% 15% / 0.3);
-    letter-spacing: 0.05em;
-  }
+}
 
-  .premium-3d-text {
-    text-shadow: 0 0 2px currentColor;
-    filter: brightness(1.02);
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

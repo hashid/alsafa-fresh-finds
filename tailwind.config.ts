@@ -148,6 +148,14 @@ export default {
 						boxShadow: '0 6px 20px hsl(0 84% 50% / 0.5)'
 					}
 				},
+				'soft-blink': {
+					'0%, 100%': { 
+						opacity: '1'
+					},
+					'50%': { 
+						opacity: '0.7'
+					}
+				},
 				'elegant-flow': {
 					'0%': { transform: 'translateX(-100%) skewX(-12deg)' },
 					'100%': { transform: 'translateX(200%) skewX(-12deg)' }
@@ -168,7 +176,8 @@ export default {
 				'elegant-flow': 'elegant-flow 4s linear infinite',
 				'luxury-float': 'luxury-float 4s ease-in-out infinite',
 				'fade-in': 'fade-in 1.2s ease-out',
-				'breathe': 'breathe 8s ease-in-out infinite'
+				'breathe': 'breathe 8s ease-in-out infinite',
+				'soft-blink': 'soft-blink 3s ease-in-out infinite'
 			}
 		}
 	},

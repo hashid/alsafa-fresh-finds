@@ -36,7 +36,7 @@ export const ModernHero = () => {
               {/* WhatsApp Button */}
               <div className="flex justify-center">
                 <Button 
-                  onClick={() => window.open('https://wa.me/97191073089', '_blank')}
+                  onClick={() => window.open('https://wa.me/96891073089', '_blank')}
                   className="bg-hypermarket-red hover:bg-hypermarket-red/90 text-white font-bold text-base md:text-lg rounded-lg w-32 md:w-44 h-12 md:h-14 px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2 animate-breathe"
                 >
                   <MessageSquare className="w-5 h-5" />

@@ -30,8 +30,8 @@ export const ModernHeader = () => {
           <div className="flex justify-end py-2">
             <div className="flex items-center space-x-2 text-sm text-charcoal-gray">
               <Phone className="w-4 h-4" />
-              <a href="tel:+97191073089" className="hover:text-hypermarket-red transition-colors">
-                +971 91073089
+              <a href="tel:+96891073089" className="hover:text-hypermarket-red transition-colors">
+                +968 91073089
               </a>
             </div>
           </div>

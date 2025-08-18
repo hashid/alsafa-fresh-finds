@@ -2,12 +2,12 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
 import fruitsImage from '@/assets/fruits-new.jpg';
-
 export const BestDealsSection = () => {
-  const { t, isRTL } = useLanguage();
-
-  return (
-    <section className="py-20">
+  const {
+    t,
+    isRTL
+  } = useLanguage();
+  return <section className="py-20">
       <div className="container mx-auto px-6">
         <div className="bg-gradient-deals rounded-3xl p-12 text-white relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
@@ -24,11 +24,7 @@ export const BestDealsSection = () => {
             {/* Right Content - Image */}
             <div className={`flex justify-center ${isRTL ? 'lg:order-1' : ''}`}>
               <div className="zoom-in-on-scroll">
-                <img 
-                  src={fruitsImage} 
-                  alt="Fresh fruits and vegetables" 
-                  className="w-full max-w-md rounded-2xl shadow-strong"
-                />
+                
               </div>
             </div>
           </div>
@@ -37,6 +33,5 @@ export const BestDealsSection = () => {
           <div className="absolute top-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full -translate-y-48 translate-x-48"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

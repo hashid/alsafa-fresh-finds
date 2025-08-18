@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import heroImageRight from '@/assets/hero-image-right.jpg';
+import premiumTrolley from '@/assets/premium-trolley-fruits.jpg';
 export const ModernHero = () => {
   const {
     t,
@@ -47,10 +47,14 @@ export const ModernHero = () => {
 
           {/* Right Content - Hero Image */}
           <div className={`flex justify-center ${isRTL ? 'lg:order-1' : ''}`}>
-            <div className="fade-in-up" style={{
+            <div className="fade-in-up w-1/3" style={{
             animationDelay: '0.4s'
           }}>
-              
+              <img 
+                src={premiumTrolley} 
+                alt="Premium shopping trolley filled with fresh fruits and vegetables" 
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>

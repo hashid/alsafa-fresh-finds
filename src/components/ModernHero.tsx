@@ -22,15 +22,6 @@ export const ModernHero = () => {
               </p>
             </div>
             
-            {/* Trolley Image */}
-            <div className="flex justify-center mb-8 fade-in-up" style={{
-            animationDelay: '0.2s'
-          }}>
-              <div className="w-1/2">
-                <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" />
-              </div>
-            </div>
-            
             {/* WhatsApp Box */}
             <div className="fade-in-up animate-scale-in bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-card transform transition-all duration-500 hover:shadow-lg" style={{
             animationDelay: '0.4s'
@@ -48,6 +39,17 @@ export const ModernHero = () => {
                     <div>offers and updates</div>
                   </div>
                 </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content - Trolley Image */}
+          <div className={`flex justify-center ${isRTL ? 'lg:order-1' : ''}`}>
+            <div className="fade-in-up" style={{
+            animationDelay: '0.2s'
+          }}>
+              <div className="w-3/4 mx-auto">
+                <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" />
               </div>
             </div>
           </div>

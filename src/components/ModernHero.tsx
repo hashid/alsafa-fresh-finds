@@ -9,7 +9,7 @@ export const ModernHero = () => {
   } = useLanguage();
   return <section className="min-h-screen bg-white flex items-center py-20">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-2 gap-4 sm:gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
             <div className="fade-in-up my-[120px]">

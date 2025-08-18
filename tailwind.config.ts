@@ -138,6 +138,16 @@ export default {
 						boxShadow: '0 4px 16px hsl(140 40% 20% / 0.2), 0 6px 24px hsl(45 80% 60% / 0.1)'
 					}
 				},
+				'breathe': {
+					'0%, 100%': { 
+						transform: 'scale(1)',
+						boxShadow: '0 4px 12px hsl(0 84% 50% / 0.3)'
+					},
+					'50%': { 
+						transform: 'scale(1.05)',
+						boxShadow: '0 6px 20px hsl(0 84% 50% / 0.5)'
+					}
+				},
 				'elegant-flow': {
 					'0%': { transform: 'translateX(-100%) skewX(-12deg)' },
 					'100%': { transform: 'translateX(200%) skewX(-12deg)' }
@@ -157,7 +167,8 @@ export default {
 				'premium-pulse': 'premium-pulse 8s ease-in-out infinite',
 				'elegant-flow': 'elegant-flow 4s linear infinite',
 				'luxury-float': 'luxury-float 4s ease-in-out infinite',
-				'fade-in': 'fade-in 1.2s ease-out'
+				'fade-in': 'fade-in 1.2s ease-out',
+				'breathe': 'breathe 2s ease-in-out infinite'
 			}
 		}
 	},

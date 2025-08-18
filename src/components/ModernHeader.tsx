@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { LanguageToggle } from '@/components/LanguageToggle';
 import { Button } from '@/components/ui/button';
-import { Menu, X, MapPin } from 'lucide-react';
+import { Menu, X, MapPin, Phone } from 'lucide-react';
 import logoAlSafa from '@/assets/logo-alsafa.jpg';
 export const ModernHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,11 +24,16 @@ export const ModernHeader = () => {
     }
   };
   return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft">
-      {/* Top language toggle bar */}
+      {/* Top contact bar */}
       <div className="bg-background border-b border-border/50">
         <div className="container mx-auto px-6">
           <div className="flex justify-end py-2">
-            <LanguageToggle />
+            <div className="flex items-center space-x-2 text-sm text-charcoal-gray">
+              <Phone className="w-4 h-4" />
+              <a href="tel:+971501234567" className="hover:text-hypermarket-red transition-colors">
+                +971 50 123 4567
+              </a>
+            </div>
           </div>
         </div>
       </div>

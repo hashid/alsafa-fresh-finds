@@ -37,7 +37,9 @@ const Index = () => {
           <div id="categories">
             <CategoriesSection />
           </div>
-          <BestDealsImageSection />
+          <div id="deals">
+            <BestDealsImageSection />
+          </div>
           
           <div id="about">
             <ModernAbout />

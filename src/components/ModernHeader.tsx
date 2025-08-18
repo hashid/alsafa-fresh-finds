@@ -62,7 +62,7 @@ export const ModernHeader = () => {
               {t('Deals')}
             </button>
             <button onClick={() => scrollToSection('about')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
-              {t('About')}
+              {t('About Us')}
             </button>
             <button onClick={() => scrollToSection('contact')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
               {t('Contact')}
@@ -92,7 +92,7 @@ export const ModernHeader = () => {
                 {t('Deals')}
               </button>
               <button onClick={() => scrollToSection('about')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
-                {t('About')}
+                {t('About Us')}
               </button>
               <button onClick={() => scrollToSection('contact')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
                 {t('Contact')}

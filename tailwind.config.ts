@@ -102,7 +102,8 @@ export default {
 				'gradient-red': 'var(--gradient-red)',
 				'gradient-green': 'var(--gradient-green)',
 				'gradient-deals': 'var(--gradient-deals)',
-				'gradient-elegant': 'var(--gradient-elegant)'
+				'gradient-elegant': 'var(--gradient-elegant)',
+				'gradient-golden': 'var(--gradient-golden)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
@@ -110,7 +111,9 @@ export default {
 				'strong': 'var(--shadow-strong)',
 				'card': 'var(--shadow-card)',
 				'button': 'var(--shadow-button)',
-				'green': 'var(--shadow-green)'
+				'green': 'var(--shadow-green)',
+				'golden': 'var(--shadow-golden)',
+				'elegant': 'var(--shadow-elegant)'
 			},
 			transitionDuration: {
 				'instant': 'var(--transition-instant)',
@@ -138,6 +141,28 @@ export default {
 						boxShadow: '0 4px 16px hsl(140 40% 20% / 0.2), 0 6px 24px hsl(45 80% 60% / 0.1)'
 					}
 				},
+				'golden-glow': {
+					'0%, 100%': { 
+						boxShadow: '0 4px 20px hsl(45 85% 58% / 0.2)'
+					},
+					'50%': { 
+						boxShadow: '0 8px 40px hsl(45 85% 58% / 0.4), 0 0 60px hsl(45 85% 58% / 0.2)'
+					}
+				},
+				'golden-shimmer': {
+					'0%': { 
+						backgroundPosition: '0% 50%',
+						transform: 'scale(1)'
+					},
+					'50%': { 
+						backgroundPosition: '100% 50%',
+						transform: 'scale(1.02)'
+					},
+					'100%': { 
+						backgroundPosition: '0% 50%',
+						transform: 'scale(1)'
+					}
+				},
 				'elegant-flow': {
 					'0%': { transform: 'translateX(-100%) skewX(-12deg)' },
 					'100%': { transform: 'translateX(200%) skewX(-12deg)' }
@@ -155,6 +180,8 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'premium-pulse': 'premium-pulse 8s ease-in-out infinite',
+				'golden-glow': 'golden-glow 4s ease-in-out infinite',
+				'golden-shimmer': 'golden-shimmer 6s ease-in-out infinite',
 				'elegant-flow': 'elegant-flow 4s linear infinite',
 				'luxury-float': 'luxury-float 4s ease-in-out infinite',
 				'fade-in': 'fade-in 1.2s ease-out'

@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import fruitsVegetablesGroceries from '@/assets/fruits-vegetables-groceries.jpg';
+import shoppingCartHero from '@/assets/shopping-cart-hero.jpg';
 export const ModernHero = () => {
   const {
     t,
@@ -53,9 +53,9 @@ export const ModernHero = () => {
             animationDelay: '0.4s'
           }}>
               <img 
-                src={fruitsVegetablesGroceries} 
+                src={shoppingCartHero} 
                 alt="Shopping cart with fresh fruits and vegetables" 
-                className="w-full max-w-md h-auto object-contain"
+                className="w-1/3 h-auto object-contain"
               />
             </div>
           </div>

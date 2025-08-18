@@ -34,16 +34,21 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-warm">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-20 bg-gradient-to-b from-light-gray/30 via-white to-light-gray/30 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-premium-gold/5 to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-ash-dark mb-6">
-            Contact Us
+          <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-charcoal-gray via-hypermarket-red to-charcoal-gray bg-clip-text text-shimmer mb-6 relative">
+            <span className="relative z-10">Contact Us</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-premium-gold/20 to-transparent blur-sm opacity-50"></div>
           </h2>
-          <div className="w-24 h-1 bg-ash-dark mx-auto mb-8"></div>
-          <p className="text-xl text-ash-dark max-w-2xl mx-auto">
-            We're here to help! Get in touch with us for any questions, suggestions, or special requests.
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-hypermarket-red to-transparent mx-auto mb-8 rounded-full shadow-lg"></div>
+          <p className="text-xl text-ash-dark max-w-2xl mx-auto leading-relaxed">
+            <span className="bg-gradient-to-r from-charcoal-gray to-ash-dark bg-clip-text text-transparent font-medium">
+              We're here to help! Get in touch with us for any questions, suggestions, or special requests.
+            </span>
           </p>
         </div>
 
@@ -51,17 +56,19 @@ export const ContactSection = () => {
           {/* Contact Information */}
           <div className="lg:col-span-1 space-y-6">
             {/* Phone */}
-            <Card className="hover:shadow-medium transition-shadow duration-300">
-              <CardContent className="p-6">
+            <Card className="hover:shadow-medium transition-all duration-500 border border-premium-gold/10 bg-gradient-to-br from-white to-light-gray/30 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-r from-premium-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-premium-gold/20 to-transparent rounded-bl-full"></div>
+              <CardContent className="p-6 relative z-10">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-green-700/10 rounded-lg flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-green-700" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-fresh-green/20 to-fresh-green/10 rounded-lg flex items-center justify-center shadow-soft">
+                    <Phone className="w-6 h-6 text-fresh-green" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-ash-dark mb-1">Phone</h3>
+                    <h3 className="font-bold text-charcoal-gray mb-1 text-shimmer">Phone</h3>
                     <a 
                       href="tel:+96891073089" 
-                      className="text-ash-dark hover:text-green-600 transition-colors"
+                      className="text-ash-dark hover:text-hypermarket-red transition-colors font-medium"
                     >
                       +968 9107 3089
                     </a>
@@ -71,17 +78,19 @@ export const ContactSection = () => {
             </Card>
 
             {/* Email */}
-            <Card className="hover:shadow-medium transition-shadow duration-300">
-              <CardContent className="p-6">
+            <Card className="hover:shadow-medium transition-all duration-500 border border-premium-gold/10 bg-gradient-to-br from-white to-light-gray/30 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-r from-premium-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-premium-gold/20 to-transparent rounded-bl-full"></div>
+              <CardContent className="p-6 relative z-10">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-green-700/10 rounded-lg flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-green-700" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-fresh-green/20 to-fresh-green/10 rounded-lg flex items-center justify-center shadow-soft">
+                    <Mail className="w-6 h-6 text-fresh-green" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-ash-dark mb-1">Email</h3>
+                    <h3 className="font-bold text-charcoal-gray mb-1 text-shimmer">Email</h3>
                     <a 
                       href="mailto:alsafahypermarket01@gmail.com" 
-                      className="text-ash-dark hover:text-green-600 transition-colors text-sm"
+                      className="text-ash-dark hover:text-hypermarket-red transition-colors text-sm font-medium"
                     >
                       alsafahypermarket01@gmail.com
                     </a>
@@ -91,19 +100,21 @@ export const ContactSection = () => {
             </Card>
 
             {/* WhatsApp */}
-            <Card className="hover:shadow-medium transition-shadow duration-300">
-              <CardContent className="p-6">
+            <Card className="hover:shadow-medium transition-all duration-500 border border-premium-gold/10 bg-gradient-to-br from-white to-light-gray/30 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-r from-premium-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-premium-gold/20 to-transparent rounded-bl-full"></div>
+              <CardContent className="p-6 relative z-10">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-green-700/10 rounded-lg flex items-center justify-center">
-                    <MessageSquare className="w-6 h-6 text-green-700" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-fresh-green/20 to-fresh-green/10 rounded-lg flex items-center justify-center shadow-soft">
+                    <MessageSquare className="w-6 h-6 text-fresh-green" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-ash-dark mb-1">WhatsApp</h3>
+                    <h3 className="font-bold text-charcoal-gray mb-1 text-shimmer">WhatsApp</h3>
                     <a 
                       href="https://wa.me/96891073089" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-ash-dark hover:text-green-600 transition-colors flex items-center gap-1"
+                      className="text-ash-dark hover:text-hypermarket-red transition-colors flex items-center gap-1 font-medium"
                     >
                       +968 9107 3089
                       <ExternalLink className="w-3 h-3" />
@@ -117,47 +128,49 @@ export const ContactSection = () => {
 
           {/* Map and Directions */}
           <div className="lg:col-span-2">
-            <Card className="shadow-strong">
-              <CardHeader>
-                <CardTitle className="text-2xl text-ash-dark flex items-center gap-2">
-                  <MapPin className="w-6 h-6" />
+            <Card className="shadow-strong border border-premium-gold/10 bg-gradient-to-br from-white to-light-gray/20 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-premium-gold/3 to-transparent"></div>
+              <CardHeader className="relative z-10">
+                <CardTitle className="text-2xl text-transparent bg-gradient-to-r from-charcoal-gray to-ash-dark bg-clip-text flex items-center gap-2 text-shimmer">
+                  <MapPin className="w-6 h-6 text-hypermarket-red" />
                   Find Us Here
                 </CardTitle>
               </CardHeader>
-              <CardContent className="p-6">
+              <CardContent className="p-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <div className="space-y-4">
                     <div>
-                      <h3 className="font-semibold text-ash-dark mb-2">Address</h3>
-                      <p className="text-ash-dark">
+                      <h3 className="font-bold text-charcoal-gray mb-2 text-shimmer">Address</h3>
+                      <p className="text-ash-dark leading-relaxed">
                         7729 Way, Al Maabilah<br />
                         Seeb, Muscat 130<br />
                         Sultanate of Oman
                       </p>
                     </div>
                     
-                    <div className="flex items-center gap-2 text-yellow-500">
-                      <Star className="w-5 h-5 fill-yellow-500" />
-                      <Star className="w-5 h-5 fill-yellow-500" />
-                      <Star className="w-5 h-5 fill-yellow-500" />
-                      <Star className="w-5 h-5 fill-yellow-500" />
-                      <Star className="w-5 h-5 fill-yellow-500" />
-                      <span className="text-ash-dark font-medium ml-2">4.9/5 (847 reviews)</span>
+                    <div className="flex items-center gap-2 text-premium-gold">
+                      <Star className="w-5 h-5 fill-premium-gold" />
+                      <Star className="w-5 h-5 fill-premium-gold" />
+                      <Star className="w-5 h-5 fill-premium-gold" />
+                      <Star className="w-5 h-5 fill-premium-gold" />
+                      <Star className="w-5 h-5 fill-premium-gold" />
+                      <span className="text-ash-dark font-bold ml-2">4.9/5 (847 reviews)</span>
                     </div>
                     
                     <Button 
                       asChild
-                      className="w-full bg-green-700 hover:bg-green-600 text-white shadow-green"
+                      className="w-full bg-gradient-to-r from-fresh-green to-fresh-green/90 hover:from-fresh-green/90 hover:to-fresh-green text-white shadow-green border border-white/20 rounded-xl transform hover:scale-105 transition-all duration-500"
                     >
                       <a 
                         href="https://maps.app.goo.gl/DeiprjZnSJiWmaj89?g_st=com.google.maps.preview.copy" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2"
+                        className="flex items-center gap-2 relative overflow-hidden group"
                       >
-                        <MapPin className="w-5 h-5" />
-                        Get Directions
-                        <ExternalLink className="w-4 h-4" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                        <MapPin className="w-5 h-5 relative z-10" />
+                        <span className="relative z-10">Get Directions</span>
+                        <ExternalLink className="w-4 h-4 relative z-10" />
                       </a>
                     </Button>
                   </div>

@@ -40,9 +40,8 @@ export const ContactSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-charcoal-gray via-hypermarket-red to-charcoal-gray bg-clip-text text-shimmer mb-6 relative">
+          <h2 className="text-4xl md:text-5xl font-bold text-hypermarket-red mb-6 relative">
             <span className="relative z-10">Contact Us</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-premium-gold/20 to-transparent blur-sm opacity-50"></div>
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-transparent via-hypermarket-red to-transparent mx-auto mb-8 rounded-full shadow-lg"></div>
           <p className="text-xl text-ash-dark max-w-2xl mx-auto leading-relaxed">

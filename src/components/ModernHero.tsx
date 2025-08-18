@@ -12,7 +12,7 @@ export const ModernHero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
-            <div className="fade-in-up my-[40px]">
+            <div className="fade-in-up my-[120px]">
               <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray my-0">
                 Your One-Stop Hypermarket
               </h1>

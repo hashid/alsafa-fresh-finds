@@ -1,4 +1,4 @@
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Apple, Carrot, Fish, Ham, Cookie } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 interface LoadingScreenProps {
@@ -56,37 +56,32 @@ export const LoadingScreen = ({ isLoading, onLoadingComplete }: LoadingScreenPro
           {/* Tray Base */}
           <div className="absolute bottom-0 w-full h-4 bg-charcoal-gray/20 rounded-lg border-2 border-charcoal-gray/30"></div>
           
-          {/* Tray Items */}
-          <div className="absolute bottom-4 left-0 right-0 h-12 flex items-end justify-center gap-1 overflow-hidden">
-            {/* Items appear progressively */}
+          {/* Food Category Icons */}
+          <div className="absolute bottom-4 left-0 right-0 h-12 flex items-end justify-center gap-3 overflow-hidden">
+            {/* Icons appear progressively */}
             {progress > 10 && (
-              <div className="w-6 h-8 bg-fresh-green rounded-t-lg animate-bounce" style={{ animationDelay: '0s' }}>
-                <div className="w-full h-2 bg-fresh-green/80 rounded-t-lg"></div>
+              <div className="animate-bounce" style={{ animationDelay: '0s' }}>
+                <Apple className="w-8 h-8 text-fresh-green" />
               </div>
             )}
             {progress > 25 && (
-              <div className="w-5 h-6 bg-hypermarket-red rounded-t-lg animate-bounce" style={{ animationDelay: '0.2s' }}>
-                <div className="w-full h-1 bg-hypermarket-red/80 rounded-t-lg"></div>
+              <div className="animate-bounce" style={{ animationDelay: '0.2s' }}>
+                <Carrot className="w-8 h-8 text-hypermarket-red" />
               </div>
             )}
             {progress > 40 && (
-              <div className="w-4 h-5 bg-premium-gold rounded-t-lg animate-bounce" style={{ animationDelay: '0.4s' }}>
-                <div className="w-full h-1 bg-premium-gold/80 rounded-t-lg"></div>
+              <div className="animate-bounce" style={{ animationDelay: '0.4s' }}>
+                <Fish className="w-8 h-8 text-premium-gold" />
               </div>
             )}
             {progress > 55 && (
-              <div className="w-6 h-7 bg-mustard-yellow rounded-t-lg animate-bounce" style={{ animationDelay: '0.6s' }}>
-                <div className="w-full h-1 bg-mustard-yellow/80 rounded-t-lg"></div>
+              <div className="animate-bounce" style={{ animationDelay: '0.6s' }}>
+                <Ham className="w-8 h-8 text-mustard-yellow" />
               </div>
             )}
             {progress > 70 && (
-              <div className="w-5 h-6 bg-fresh-green rounded-t-lg animate-bounce" style={{ animationDelay: '0.8s' }}>
-                <div className="w-full h-1 bg-fresh-green/80 rounded-t-lg"></div>
-              </div>
-            )}
-            {progress > 85 && (
-              <div className="w-4 h-8 bg-hypermarket-red rounded-t-lg animate-bounce" style={{ animationDelay: '1s' }}>
-                <div className="w-full h-2 bg-hypermarket-red/80 rounded-t-lg"></div>
+              <div className="animate-bounce" style={{ animationDelay: '0.8s' }}>
+                <Cookie className="w-8 h-8 text-charcoal-gray" />
               </div>
             )}
           </div>

@@ -36,7 +36,7 @@ export const ModernFooter = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-hypermarket-red" />
-                <span className="text-gray-300">+968 2449 9049</span>
+                <span className="text-gray-300">+968 9107 3089</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-hypermarket-red" />

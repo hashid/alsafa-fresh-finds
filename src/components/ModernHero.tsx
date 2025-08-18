@@ -16,8 +16,9 @@ export const ModernHero = () => {
               <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray">
                 Your One-Stop Hypermarket
               </h1>
-              <p className="text-xl text-charcoal-gray mt-6 leading-relaxed font-medium">
-                {t('Providing quality products with excellent customer service')}
+              <p className="text-lg text-charcoal-gray mt-6 leading-relaxed font-medium">
+                <span className="block">{t('Providing quality products')}</span>
+                <span className="block">{t('with excellent customer service')}</span>
               </p>
             </div>
             

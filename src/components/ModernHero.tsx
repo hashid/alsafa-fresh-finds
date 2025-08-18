@@ -38,7 +38,10 @@ export const ModernHero = () => {
                 window.open(whatsappUrl, '_blank');
               }} className="w-fit bg-hypermarket-red hover:bg-red-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm">
                   <MessageSquare className="w-4 h-4 mr-2" />
-                  Send "Hi" to get offers and updates
+                  <div className="text-center">
+                    <div>Send "Hi" to get</div>
+                    <div>offers and updates</div>
+                  </div>
                 </Button>
               </div>
             </div>
@@ -49,7 +52,11 @@ export const ModernHero = () => {
             <div className="fade-in-up bounce-cart" style={{
             animationDelay: '0.4s'
           }}>
-              
+              <img 
+                src={fruitsVegetablesGroceries} 
+                alt="Shopping cart with fresh fruits and vegetables" 
+                className="w-full max-w-md h-auto object-contain"
+              />
             </div>
           </div>
         </div>

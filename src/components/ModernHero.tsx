@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import premiumTrolley from '@/assets/complete-trolley-white-bg.jpg';
+import premiumTrolley from '@/assets/trolley-right-facing-effect.jpg';
 export const ModernHero = () => {
   const {
     t,
@@ -53,7 +53,7 @@ export const ModernHero = () => {
               <img 
                 src={premiumTrolley} 
                 alt="Premium shopping trolley filled with fresh fruits and vegetables" 
-                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                className="w-full h-auto object-cover rounded-lg shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:scale-105"
               />
             </div>
           </div>

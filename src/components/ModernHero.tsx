@@ -12,7 +12,7 @@ export const ModernHero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
-            <div className="fade-in-up">
+            <div className="fade-in-up my-[10px]">
               <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray">
                 Your One-Stop Hypermarket
               </h1>
@@ -25,7 +25,7 @@ export const ModernHero = () => {
             <div className="fade-in-up" style={{
             animationDelay: '0.2s'
           }}>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-card">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-card my-[130px] mx-[20px] px-[8px]">
                 <div className="text-charcoal-gray text-center mb-4">
                   
                 </div>

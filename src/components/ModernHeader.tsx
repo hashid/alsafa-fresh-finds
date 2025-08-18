@@ -46,7 +46,7 @@ export const ModernHeader = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo and Tagline */}
           <div className="flex items-center space-x-4">
-            <img src={logoAlSafa} alt="Al Safa Hypermarket" className="h-20 w-auto rounded-lg sleek-hover image-float" />
+            <img src={logoAlSafa} alt="Al Safa Hypermarket" className="h-12 md:h-20 w-auto rounded-lg sleek-hover image-float" />
             {showTagline}
           </div>
 

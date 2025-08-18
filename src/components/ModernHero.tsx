@@ -26,7 +26,7 @@ export const ModernHero = () => {
             <div className="flex justify-center mb-8 fade-in-up" style={{
             animationDelay: '0.2s'
           }}>
-              <div className="w-1/2">
+              <div className="w-1/3">
                 <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" />
               </div>
             </div>

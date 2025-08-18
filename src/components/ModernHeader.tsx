@@ -25,6 +25,15 @@ export const ModernHeader = () => {
     }
   };
   return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft">
+      {/* Top language toggle bar */}
+      <div className="bg-background border-b border-border/50">
+        <div className="container mx-auto px-6">
+          <div className="flex justify-start py-2">
+            <LanguageToggle />
+          </div>
+        </div>
+      </div>
+      
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo and Tagline */}
@@ -54,7 +63,6 @@ export const ModernHeader = () => {
               <MapPin className="w-4 h-4 mr-2" />
               {t('Directions')}
             </Button>
-            <LanguageToggle />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -85,7 +93,6 @@ export const ModernHeader = () => {
                 <MapPin className="w-4 h-4 mr-2" />
                 {t('Directions')}
               </Button>
-              <LanguageToggle />
             </nav>
           </div>}
       </div>

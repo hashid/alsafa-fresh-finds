@@ -8,15 +8,6 @@ export const ModernAbout = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-white via-light-gray/30 to-white relative overflow-hidden">
       <div className="container mx-auto px-6">
-        {/* About Us Image */}
-        <div className="mb-16 text-center fade-in-up">
-          <img 
-            src={aboutUsImage} 
-            alt="Al Safa Hypermarket Interior" 
-            className="w-full max-w-4xl mx-auto rounded-2xl shadow-elegant image-float sleek-hover object-cover"
-          />
-        </div>
-        
         <div className="max-w-4xl mx-auto text-center">
           {/* Content */}
           <div className="space-y-8 fade-in-up">
@@ -24,9 +15,18 @@ export const ModernAbout = () => {
               <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-hypermarket-red mb-6 relative">
                 <span className="relative z-10">{t('About Us')}</span>
               </h2>
-              <p className="text-xl text-ash-dark leading-relaxed">
+              <p className="text-xl text-ash-dark leading-relaxed mb-8">
                 Welcome to Al Safa Hypermarket – proudly serving since 2015. From fresh produce and quality groceries to household essentials and more, we are your trusted one-stop destination dedicated to convenience, value, and excellent customer care.
               </p>
+            </div>
+            
+            {/* About Us Image */}
+            <div className="mb-8 text-center fade-in-up" style={{ animationDelay: '0.1s' }}>
+              <img 
+                src={aboutUsImage} 
+                alt="Al Safa Hypermarket Interior" 
+                className="w-full max-w-4xl mx-auto rounded-2xl shadow-elegant image-float sleek-hover object-cover"
+              />
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 fade-in-up" style={{ animationDelay: '0.2s' }}>

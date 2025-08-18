@@ -34,15 +34,15 @@ export const ModernHero = () => {
               </div>
               
               {/* WhatsApp Button */}
-              <div className="flex justify-center">
+              <div className="flex justify-center px-4">
                 <Button 
                   onClick={() => window.open('https://wa.me/96891073089', '_blank')}
-                  className="bg-gradient-to-r from-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/90 hover:to-hypermarket-red text-white font-bold text-base md:text-lg rounded-xl w-32 md:w-44 h-12 md:h-14 px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-2xl hover:shadow-hypermarket-red/30 transition-all duration-500 ease-out flex items-center justify-center space-x-2 transform hover:scale-105 border border-white/20 backdrop-blur-sm relative overflow-hidden group"
+                  className="bg-gradient-to-r from-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/90 hover:to-hypermarket-red text-white font-bold text-sm sm:text-base md:text-lg rounded-xl w-40 sm:w-44 md:w-48 h-12 sm:h-13 md:h-14 px-4 sm:px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-2xl hover:shadow-hypermarket-red/30 transition-all duration-500 ease-out flex items-center justify-center space-x-2 transform hover:scale-105 border border-white/20 backdrop-blur-sm relative overflow-hidden group"
                 >
                   {/* Premium shimmer effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                  <MessageSquare className="w-5 h-5 relative z-10" />
-                  <span className="relative z-10">WhatsApp</span>
+                  <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 flex-shrink-0" />
+                  <span className="relative z-10 whitespace-nowrap">WhatsApp</span>
                 </Button>
               </div>
             </div>

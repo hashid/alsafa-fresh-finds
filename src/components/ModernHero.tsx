@@ -11,25 +11,25 @@ export const ModernHero = () => {
       <div className="container mx-auto px-4 md:px-6">
         {/* Mobile Layout - Stacked */}
         <div className="block lg:hidden">
-          <div className="space-y-8">
-            {/* Hero Title */}
-            <div className="text-center fade-in-up">
+          <div className="space-y-6">
+            {/* Hero Title - Left Aligned */}
+            <div className="text-left fade-in-up">
               <h1 className="text-2xl sm:text-3xl font-bold font-poppins leading-tight text-charcoal-gray text-shimmer">
                 Your One-Stop Hypermarket
               </h1>
-              <p className="text-sm sm:text-base text-charcoal-gray mt-4 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
+              <p className="text-sm sm:text-base text-charcoal-gray mt-3 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
                 <span className="block">{t('Providing quality products')}</span>
                 <span className="block">{t('with excellent customer service')}</span>
               </p>
             </div>
             
-            {/* Two Column Layout for Mobile - Text/Button on Left, Image on Right */}
-            <div className="grid grid-cols-2 gap-4 items-start">
+            {/* Two Column Layout for Mobile - WhatsApp on Left, Image on Right */}
+            <div className="grid grid-cols-2 gap-3 items-start">
               {/* Left: WhatsApp Section */}
               <div className="fade-in-up space-y-3" style={{ animationDelay: '0.4s' }}>
                 {/* WhatsApp Text */}
                 <div className="text-left">
-                  <p className="text-xs text-charcoal-gray/80 leading-relaxed font-medium">
+                  <p className="text-xs leading-tight text-charcoal-gray/80 font-medium">
                     <span className="block">Send "Hi" on WhatsApp</span>
                     <span className="block">and save our number</span>
                     <span className="block">to get updates and offers</span>
@@ -40,18 +40,18 @@ export const ModernHero = () => {
                 <div className="flex justify-start">
                   <Button 
                     onClick={() => window.open('https://wa.me/96891073089', '_blank')}
-                    className="bg-gradient-to-r from-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/90 hover:to-hypermarket-red text-white font-bold text-xs rounded-lg w-24 h-8 px-2 py-1 shadow-lg hover:shadow-2xl hover:shadow-hypermarket-red/30 transition-all duration-500 ease-out flex items-center justify-center space-x-1 transform hover:scale-105 border border-white/20 backdrop-blur-sm relative overflow-hidden group"
+                    className="bg-gradient-to-r from-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/90 hover:to-hypermarket-red text-white font-medium text-xs rounded-md px-2 py-1 h-7 min-w-[80px] shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-1 border border-white/20 relative overflow-hidden group"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
                     <MessageSquare className="w-3 h-3 relative z-10 flex-shrink-0" />
-                    <span className="relative z-10 text-xs">WhatsApp</span>
+                    <span className="relative z-10 text-xs leading-none">WhatsApp</span>
                   </Button>
                 </div>
               </div>
 
               {/* Right: Trolley Image */}
-              <div className="flex items-center justify-center">
-                <div className="w-full fade-in-right image-float" style={{ animationDelay: '0.2s' }}>
+              <div className="flex items-center justify-end">
+                <div className="w-full max-w-[140px] fade-in-right image-float" style={{ animationDelay: '0.2s' }}>
                   <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
                 </div>
               </div>

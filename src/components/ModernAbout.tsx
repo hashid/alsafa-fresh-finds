@@ -25,7 +25,7 @@ export const ModernAbout = () => {
                 {t('About Us')}
               </h2>
               <p className="text-xl text-ash-dark leading-relaxed">
-                Welcome to Al Safa Hypermarket – proudly serving our community since 2015. From fresh produce and quality groceries to household essentials and more, we are your trusted one-stop destination dedicated to convenience, value, and excellent customer care.
+                Welcome to Al Safa Hypermarket – proudly serving since 2015. From fresh produce and quality groceries to household essentials and more, we are your trusted one-stop destination dedicated to convenience, value, and excellent customer care.
               </p>
             </div>
             

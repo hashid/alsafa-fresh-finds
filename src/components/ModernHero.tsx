@@ -7,13 +7,64 @@ export const ModernHero = () => {
     t,
     isRTL
   } = useLanguage();
-  return <section className="min-h-screen bg-white flex items-center py-20">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 gap-4 sm:gap-8 lg:gap-12 items-center">
+  return <section className="min-h-screen bg-white flex items-center py-10 md:py-20">
+      <div className="container mx-auto px-4 md:px-6">
+        {/* Mobile Layout - Stacked */}
+        <div className="block lg:hidden">
+          <div className="space-y-8">
+            {/* Hero Title */}
+            <div className="text-center fade-in-up">
+              <h1 className="text-2xl sm:text-3xl font-bold font-poppins leading-tight text-charcoal-gray text-shimmer">
+                Your One-Stop Hypermarket
+              </h1>
+              <p className="text-sm sm:text-base text-charcoal-gray mt-4 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
+                <span className="block">{t('Providing quality products')}</span>
+                <span className="block">{t('with excellent customer service')}</span>
+              </p>
+            </div>
+            
+            {/* Two Column Layout for Mobile - Text/Button on Left, Image on Right */}
+            <div className="grid grid-cols-2 gap-4 items-start">
+              {/* Left: WhatsApp Section */}
+              <div className="fade-in-up space-y-3" style={{ animationDelay: '0.4s' }}>
+                {/* WhatsApp Text */}
+                <div className="text-left">
+                  <p className="text-xs text-charcoal-gray/80 leading-relaxed font-medium">
+                    <span className="block">Send "Hi" on WhatsApp</span>
+                    <span className="block">and save our number</span>
+                    <span className="block">to get updates and offers</span>
+                  </p>
+                </div>
+                
+                {/* WhatsApp Button */}
+                <div className="flex justify-start">
+                  <Button 
+                    onClick={() => window.open('https://wa.me/96891073089', '_blank')}
+                    className="bg-gradient-to-r from-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/90 hover:to-hypermarket-red text-white font-bold text-xs rounded-lg w-24 h-8 px-2 py-1 shadow-lg hover:shadow-2xl hover:shadow-hypermarket-red/30 transition-all duration-500 ease-out flex items-center justify-center space-x-1 transform hover:scale-105 border border-white/20 backdrop-blur-sm relative overflow-hidden group"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                    <MessageSquare className="w-3 h-3 relative z-10 flex-shrink-0" />
+                    <span className="relative z-10 text-xs">WhatsApp</span>
+                  </Button>
+                </div>
+              </div>
+
+              {/* Right: Trolley Image */}
+              <div className="flex items-center justify-center">
+                <div className="w-full fade-in-right image-float" style={{ animationDelay: '0.2s' }}>
+                  <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout - Side by Side */}
+        <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
             <div className="fade-in-up my-[120px]">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray my-0 text-shimmer">
+              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray my-0 text-shimmer">
                 Your One-Stop Hypermarket
               </h1>
               <p className="text-lg text-charcoal-gray mt-6 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
@@ -46,18 +97,14 @@ export const ModernHero = () => {
                 </Button>
               </div>
             </div>
-            
           </div>
 
           {/* Right Side - Trolley Image */}
           <div className={`flex items-center justify-center ${isRTL ? 'lg:order-1' : ''}`}>
-            <div className="w-2/3 fade-in-right image-float" style={{
-            animationDelay: '0.2s'
-          }}>
+            <div className="w-2/3 fade-in-right image-float" style={{ animationDelay: '0.2s' }}>
               <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
             </div>
           </div>
-
         </div>
       </div>
     </section>;

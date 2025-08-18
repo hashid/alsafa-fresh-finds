@@ -1,6 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
-import { Facebook, Instagram, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Facebook, Instagram, Phone, MapPin, Clock } from 'lucide-react';
 import logoImage from '@/assets/logo-new.jpg';
 export const ModernFooter = () => {
   const {
@@ -33,10 +33,6 @@ export const ModernFooter = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-hypermarket-red" />
                 <span className="text-gray-300">+968 9107 3089</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-hypermarket-red" />
-                <span className="text-gray-300">alsafahypermarket01@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-hypermarket-red mt-1" />

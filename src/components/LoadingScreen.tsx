@@ -90,12 +90,9 @@ export const LoadingScreen = ({ isLoading, onLoadingComplete }: LoadingScreenPro
               </div>
             )}
           </div>
-          
-          {/* Progress Indicator */}
-          <div className="mt-4 text-center">
-            <div className="text-xs text-charcoal-gray/60">{progress}%</div>
-          </div>
         </div>
+
+        {/* Animated dots */}
         <div className="flex space-x-2 justify-center">
           <div className="w-2 h-2 bg-hypermarket-red rounded-full animate-bounce"></div>
           <div className="w-2 h-2 bg-hypermarket-red rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>

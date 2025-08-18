@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import shoppingCartHero from '@/assets/shopping-cart-hero.jpg';
+import heroImageRight from '@/assets/hero-image-right.jpg';
 export const ModernHero = () => {
   const {
     t,
@@ -16,7 +16,7 @@ export const ModernHero = () => {
               <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray">
                 Your One-Stop Hypermarket
               </h1>
-              <p className="text-lg text-charcoal-gray mt-6 leading-relaxed font-medium">
+              <p className="text-lg text-charcoal-gray mt-6 leading-relaxed font-normal">
                 <span className="block">{t('Providing quality products')}</span>
                 <span className="block">{t('with excellent customer service')}</span>
               </p>
@@ -45,12 +45,16 @@ export const ModernHero = () => {
             </div>
           </div>
 
-          {/* Right Content - Shopping Cart with Groceries */}
+          {/* Right Content - Hero Image */}
           <div className={`flex justify-center ${isRTL ? 'lg:order-1' : ''}`}>
-            <div className="fade-in-up bounce-cart" style={{
+            <div className="fade-in-up" style={{
             animationDelay: '0.4s'
           }}>
-              
+              <img 
+                src={heroImageRight} 
+                alt="Hypermarket products display" 
+                className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>

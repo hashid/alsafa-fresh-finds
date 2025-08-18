@@ -50,11 +50,7 @@ export const ModernHero = () => {
             <div className="fade-in-up" style={{
             animationDelay: '0.4s'
           }}>
-              <img 
-                src={heroImageRight} 
-                alt="Hypermarket products display" 
-                className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
-              />
+              
             </div>
           </div>
         </div>

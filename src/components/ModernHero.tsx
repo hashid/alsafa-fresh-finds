@@ -26,17 +26,12 @@ export const ModernHero = () => {
             animationDelay: '0.2s'
           }}>
               {/* Trolley Image */}
-              <div className="flex justify-end mb-6">
+              <div className="flex justify-end mb-6 my-px">
                 <div className="w-1/3">
-                  <img 
-                    src={premiumTrolley} 
-                    alt="Premium shopping trolley filled with fresh fruits and vegetables" 
-                    className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]"
-                    style={{
-                      animation: 'pulse 3s ease-in-out infinite',
-                      transform: 'scale(1)'
-                    }}
-                  />
+                  <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" style={{
+                  animation: 'pulse 3s ease-in-out infinite',
+                  transform: 'scale(1)'
+                }} />
                 </div>
               </div>
               

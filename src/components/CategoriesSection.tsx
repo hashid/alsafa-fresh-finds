@@ -76,21 +76,22 @@ export const CategoriesSection = () => {
           </h2>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-          {categories.map((category, index) => (
-            <div
-              key={category.titleKey}
-              className={`text-center group cursor-pointer ${category.animation}`}
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+        <div className="overflow-hidden">
+          <div className="flex animate-scroll-left space-x-8 py-4">
+            {[...categories, ...categories].map((category, index) => (
+              <div
+                key={`${category.titleKey}-${index}`}
+                className="text-center group cursor-pointer flex-shrink-0 w-32"
+              >
               <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110">
                 <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
               </div>
               <h3 className="text-lg font-semibold font-poppins text-charcoal-gray">
                 {t(category.titleKey)}
               </h3>
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

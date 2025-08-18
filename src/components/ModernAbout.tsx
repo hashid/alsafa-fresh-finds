@@ -7,20 +7,9 @@ export const ModernAbout = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Image */}
-          <div className={`${isRTL ? 'lg:order-2' : ''}`}>
-            <div className="zoom-in-on-scroll">
-              <img 
-                src={storeImage} 
-                alt="Al Safa Hypermarket interior" 
-                className="w-full rounded-2xl shadow-card"
-              />
-            </div>
-          </div>
-
+        <div className="max-w-4xl mx-auto text-center">
           {/* Content */}
-          <div className={`space-y-8 ${isRTL ? 'lg:order-1' : ''}`}>
+          <div className="space-y-8 fade-in-up">
             <div className="fade-in-up">
               <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-charcoal-gray mb-6">
                 {t('About Us')}

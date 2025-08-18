@@ -316,3 +316,20 @@ All colors MUST be HSL.
 .pop-up {
   animation: popUp 1s ease-out forwards;
 }
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.bounce-cart {
+  animation: bounce 5s infinite;
+}

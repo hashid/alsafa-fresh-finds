@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import shoppingCartGroceries from '@/assets/shopping-cart-groceries.jpg';
+import fruitsVegetablesGroceries from '@/assets/fruits-vegetables-groceries.jpg';
 export const ModernHero = () => {
   const {
     t,
@@ -13,9 +13,8 @@ export const ModernHero = () => {
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
             <div className="fade-in-up">
-              <h1 className="text-5xl lg:text-6xl font-bold font-poppins text-charcoal-gray leading-tight">
-                <span className="text-hypermarket-red">AL SAFA</span>
-                <br />
+              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight" style={{ color: '#2B2B2B' }}>
+                <span className="text-hypermarket-red">AL SAFA</span><br />
                 <span className="text-fresh-green">HYPERMARKET</span>
               </h1>
               <p className="text-xl text-ash-dark mt-6 leading-relaxed">
@@ -35,8 +34,8 @@ export const ModernHero = () => {
                 const message = "Hi";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
-              }} className="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-lg font-semibold transition-all duration-300">
-                  <MessageSquare className="w-5 h-5 mr-2" />
+              }} className="w-fit bg-hypermarket-red hover:bg-red-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm">
+                  <MessageSquare className="w-4 h-4 mr-2" />
                   Send "Hi" to get offers and updates
                 </Button>
               </div>
@@ -48,7 +47,7 @@ export const ModernHero = () => {
             <div className="fade-in-up bounce-cart" style={{
             animationDelay: '0.4s'
           }}>
-              <img src={shoppingCartGroceries} alt="Shopping cart filled with fresh groceries" className="w-full max-w-lg rounded-2xl shadow-strong" />
+              <img src={fruitsVegetablesGroceries} alt="High-quality fruits and vegetables" className="w-full max-w-lg rounded-2xl shadow-strong" />
             </div>
           </div>
         </div>

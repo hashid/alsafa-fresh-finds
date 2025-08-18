@@ -6,10 +6,8 @@ import { BestDealsSection } from '@/components/BestDealsSection';
 import { ModernAbout } from '@/components/ModernAbout';
 import { ContactSection } from '@/components/ContactSection';
 import { ModernFooter } from '@/components/ModernFooter';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen font-poppins">
+  return <div className="min-h-screen font-poppins">
       <ModernHeader />
       <main>
         <div id="hero">
@@ -19,9 +17,7 @@ const Index = () => {
           <CategoriesSection />
         </div>
         <BestDealsImageSection />
-        <div id="deals">
-          <BestDealsSection />
-        </div>
+        
         <div id="about">
           <ModernAbout />
         </div>
@@ -30,8 +26,6 @@ const Index = () => {
         </div>
       </main>
       <ModernFooter />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

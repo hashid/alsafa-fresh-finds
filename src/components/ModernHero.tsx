@@ -29,10 +29,7 @@ export const ModernHero = () => {
                 className="bg-hypermarket-red hover:bg-hypermarket-red/90 text-white font-bold text-sm md:text-base rounded-lg w-auto max-w-xs h-auto px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <MessageSquare className="w-5 h-5 flex-shrink-0" />
-                <span className="text-center leading-tight">
-                  <span className="block">Send "Hi" on WhatsApp and save our number</span>
-                  <span className="block">to get updates and offer</span>
-                </span>
+                <span className="text-center leading-tight">Send "Hi" on WhatsApp and save our number to get updates and offer</span>
               </Button>
             </div>
             

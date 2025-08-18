@@ -1,5 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import storeImage from '@/assets/department-store.jpg';
+import aboutUsImage from '@/assets/about-us-image.jpg';
 
 export const ModernAbout = () => {
   const { t, isRTL } = useLanguage();
@@ -7,6 +8,15 @@ export const ModernAbout = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
+        {/* About Us Image */}
+        <div className="mb-16 text-center fade-in-up">
+          <img 
+            src={aboutUsImage} 
+            alt="Al Safa Hypermarket Interior" 
+            className="w-full max-w-4xl mx-auto rounded-2xl shadow-elegant image-float sleek-hover object-cover"
+          />
+        </div>
+        
         <div className="max-w-4xl mx-auto text-center">
           {/* Content */}
           <div className="space-y-8 fade-in-up">

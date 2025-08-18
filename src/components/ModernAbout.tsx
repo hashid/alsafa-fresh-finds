@@ -20,7 +20,7 @@ export const ModernAbout = () => {
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="bg-light-gray p-6 rounded-xl">
+              <div className="bg-light-gray p-6 rounded-xl card-hover sleek-hover">
                 <h3 className="font-semibold text-charcoal-gray mb-2 font-poppins">
                   {t('Quality Products')}
                 </h3>
@@ -28,7 +28,7 @@ export const ModernAbout = () => {
                   {t('Fresh and high-quality items sourced from trusted suppliers')}
                 </p>
               </div>
-              <div className="bg-light-gray p-6 rounded-xl">
+              <div className="bg-light-gray p-6 rounded-xl card-hover sleek-hover">
                 <h3 className="font-semibold text-charcoal-gray mb-2 font-poppins">
                   {t('Customer Service')}
                 </h3>

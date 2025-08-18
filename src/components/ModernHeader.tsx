@@ -42,28 +42,28 @@ export const ModernHeader = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo and Tagline */}
           <div className="flex items-center space-x-4">
-            <img src={logoAlSafa} alt="Al Safa Hypermarket" className="h-20 w-auto rounded-lg" />
+            <img src={logoAlSafa} alt="Al Safa Hypermarket" className="h-20 w-auto rounded-lg sleek-hover image-float" />
             {showTagline}
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('hero')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
+            <button onClick={() => scrollToSection('hero')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
               {t('Home')}
             </button>
-            <button onClick={() => scrollToSection('categories')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
+            <button onClick={() => scrollToSection('categories')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
               {t('Categories')}
             </button>
-            <button onClick={() => scrollToSection('deals')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
+            <button onClick={() => scrollToSection('deals')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
               {t('Deals')}
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
+            <button onClick={() => scrollToSection('about')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
               {t('About')}
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
+            <button onClick={() => scrollToSection('contact')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
               {t('Contact')}
             </button>
-            <Button variant="outline" size="sm" className="modern-button border-hypermarket-red text-hypermarket-red hover:bg-hypermarket-red hover:text-white" onClick={() => window.open('https://maps.google.com', '_blank')}>
+            <Button variant="outline" size="sm" className="modern-button border-hypermarket-red text-hypermarket-red hover:bg-hypermarket-red hover:text-white sleek-hover" onClick={() => window.open('https://maps.google.com', '_blank')}>
               <MapPin className="w-4 h-4 mr-2" />
               {t('Directions')}
             </Button>

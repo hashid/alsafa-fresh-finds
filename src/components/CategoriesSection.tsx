@@ -71,11 +71,11 @@ export const CategoriesSection = () => {
           
           
           <div className={`flex space-x-8 py-4 ${isHighSpeed ? 'animate-[scroll-left_15s_linear_infinite]' : 'animate-[scroll-left_30s_linear_infinite]'}`}>
-            {[...categories, ...categories, ...categories].map((category, index) => <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32">
-              <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110">
+            {[...categories, ...categories, ...categories].map((category, index) => <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover">
+              <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover">
                 <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
               </div>
-              <h3 className="text-lg font-semibold font-poppins text-charcoal-gray">
+              <h3 className="text-lg font-semibold font-poppins text-charcoal-gray transition-colors duration-300 group-hover:text-hypermarket-red">
                 {t(category.titleKey)}
               </h3>
               </div>)}

@@ -13,10 +13,10 @@ export const ModernHero = () => {
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
             <div className="fade-in-up my-[120px]">
-              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray my-0">
+              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray my-0 text-shimmer">
                 Your One-Stop Hypermarket
               </h1>
-              <p className="text-lg text-charcoal-gray mt-6 leading-relaxed font-normal">
+              <p className="text-lg text-charcoal-gray mt-6 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
                 <span className="block">{t('Providing quality products')}</span>
                 <span className="block">{t('with excellent customer service')}</span>
               </p>
@@ -49,10 +49,10 @@ export const ModernHero = () => {
 
           {/* Right Side - Trolley Image */}
           <div className={`flex items-center justify-center ${isRTL ? 'lg:order-1' : ''}`}>
-            <div className="w-2/3 fade-in-up" style={{
+            <div className="w-2/3 fade-in-right image-float" style={{
             animationDelay: '0.2s'
           }}>
-              <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" />
+              <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
             </div>
           </div>
 

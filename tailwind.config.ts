@@ -168,7 +168,7 @@ export default {
 				'elegant-flow': 'elegant-flow 4s linear infinite',
 				'luxury-float': 'luxury-float 4s ease-in-out infinite',
 				'fade-in': 'fade-in 1.2s ease-out',
-				'breathe': 'breathe 6s ease-in-out infinite'
+				'breathe': 'breathe 8s ease-in-out infinite'
 			}
 		}
 	},

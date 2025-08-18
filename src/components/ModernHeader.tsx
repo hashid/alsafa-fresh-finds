@@ -28,7 +28,7 @@ export const ModernHeader = () => {
       {/* Top language toggle bar */}
       <div className="bg-background border-b border-border/50">
         <div className="container mx-auto px-6">
-          <div className="flex justify-start py-2">
+          <div className="flex justify-end py-2">
             <LanguageToggle />
           </div>
         </div>

@@ -12,7 +12,7 @@ export const ModernHero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
-            <div className="fade-in-up my-[20px]">
+            <div className="fade-in-up my-[40px]">
               <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray my-0">
                 Your One-Stop Hypermarket
               </h1>
@@ -32,16 +32,16 @@ export const ModernHero = () => {
             </div>
             
             {/* WhatsApp Box */}
-            <div className="fade-in-up animate-scale-in bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-card transform transition-all duration-500 hover:shadow-lg" style={{
+            <div style={{
             animationDelay: '0.4s'
-          }}>
+          }} className="fade-in-up animate-scale-in bg-white/90 backdrop-blur-sm p-6 border border-white/30 shadow-card transform transition-all duration-500 hover:shadow-lg rounded-none">
               <div className="text-center">
                 <Button onClick={() => {
                 const phoneNumber = "96891073089";
                 const message = "Hi";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
-              }} className="w-full bg-hypermarket-red hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300">
+              }} className="w-full bg-hypermarket-red hover:bg-red-600 text-white py-3 rounded-lg font-medium transition-all duration-300 px-0 mx-0">
                   <MessageSquare className="w-5 h-5 mr-3" />
                   <div className="text-center">
                     <div>Send "Hi" to get</div>

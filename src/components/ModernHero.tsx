@@ -47,13 +47,17 @@ export const ModernHero = () => {
 
           {/* Right Content - Hero Image */}
           <div className={`flex justify-center ${isRTL ? 'lg:order-1' : ''}`}>
-            <div className="fade-in-up w-1/3 animate-bounce-slow" style={{
+            <div className="fade-in-up w-1/3" style={{
             animationDelay: '0.4s'
           }}>
               <img 
                 src={premiumTrolley} 
                 alt="Premium shopping trolley filled with fresh fruits and vegetables" 
-                className="w-full h-auto object-cover rounded-lg shadow-elegant hover:shadow-glow transition-all duration-500 transform hover:scale-110 animate-pulse hover:animate-none"
+                className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]"
+                style={{
+                  animation: 'pulse 3s ease-in-out infinite',
+                  transform: 'scale(1)'
+                }}
               />
             </div>
           </div>

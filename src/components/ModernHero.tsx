@@ -41,7 +41,7 @@ export const ModernHero = () => {
                 const message = "Hi";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
-              }} className="w-1/3 h-8 px-4 py-2 text-sm font-bold text-white rounded-[10px] transition-all duration-300" style={{ backgroundColor: '#D32F2F' }} onMouseEnter={(e) => {
+              }} className="w-[150px] h-[50px] px-6 py-3 text-lg font-bold text-white rounded-[10px] transition-all duration-300" style={{ backgroundColor: '#D32F2F' }} onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = 'white';
                 e.currentTarget.style.color = '#D32F2F';
                 e.currentTarget.style.border = '2px solid #D32F2F';

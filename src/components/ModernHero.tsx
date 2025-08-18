@@ -23,7 +23,7 @@ export const ModernHero = () => {
             </div>
             
             {/* Trolley Image */}
-            <div className="flex justify-end -mb-8 fade-in-up" style={{
+            <div className="flex justify-start -mb-16 fade-in-up" style={{
             animationDelay: '0.2s'
           }}>
               <div className="w-1/3">

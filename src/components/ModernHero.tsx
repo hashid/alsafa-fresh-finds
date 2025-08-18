@@ -12,8 +12,8 @@ export const ModernHero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
-            <div className="fade-in-up my-[10px]">
-              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray">
+            <div className="fade-in-up my-0">
+              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray my-0">
                 Your One-Stop Hypermarket
               </h1>
               <p className="text-lg text-charcoal-gray mt-6 leading-relaxed font-normal">
@@ -26,7 +26,7 @@ export const ModernHero = () => {
             animationDelay: '0.2s'
           }}>
               {/* Trolley Image */}
-              <div className="flex justify-end mb-6 my-px">
+              <div className="flex justify-end mb-6 my-px px-0 py-[9px] mx-[68px]">
                 <div className="w-1/3">
                   <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" style={{
                   animation: 'pulse 3s ease-in-out infinite',
@@ -35,7 +35,7 @@ export const ModernHero = () => {
                 </div>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-card my-[130px] mx-[20px] px-[8px]">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-card py-0 px-[30px] my-0 mx-px">
                 <div className="text-charcoal-gray text-center mb-4">
                   
                 </div>

@@ -19,14 +19,6 @@ export const BestDealsSection = () => {
               <p className="text-xl opacity-95 leading-relaxed">
                 {t('High-quality fruits and vegetables sourced from trusted growers')}
               </p>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="modern-button bg-white text-hypermarket-red border-white hover:bg-opacity-90 px-8 py-3 text-lg font-semibold"
-              >
-                <Eye className="w-5 h-5 mr-2" />
-                {t('View Offers')}
-              </Button>
             </div>
 
             {/* Right Content - Image */}

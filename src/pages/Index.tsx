@@ -1,6 +1,7 @@
 import { ModernHeader } from '@/components/ModernHeader';
 import { ModernHero } from '@/components/ModernHero';
 import { CategoriesSection } from '@/components/CategoriesSection';
+import { BestDealsImageSection } from '@/components/BestDealsImageSection';
 import { BestDealsSection } from '@/components/BestDealsSection';
 import { ModernAbout } from '@/components/ModernAbout';
 import { ContactSection } from '@/components/ContactSection';
@@ -17,6 +18,7 @@ const Index = () => {
         <div id="categories">
           <CategoriesSection />
         </div>
+        <BestDealsImageSection />
         <div id="deals">
           <BestDealsSection />
         </div>

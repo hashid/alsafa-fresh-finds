@@ -1,15 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { Button } from '@/components/ui/button';
 import { Menu, X, MapPin } from 'lucide-react';
-import logoImage from '@/assets/logo-new.jpg';
+import logoAlSafa from '@/assets/logo-alsafa.jpg';
 export const ModernHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const {
-    t,
-    isRTL
-  } = useLanguage();
+  const [showTagline, setShowTagline] = useState(false);
+  const { t, isRTL } = useLanguage();
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowTagline(true), 1000);
+    return () => clearTimeout(timer);
+  }, []);
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -22,10 +25,18 @@ export const ModernHeader = () => {
   return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src={logoImage} alt="Al Safa Hypermarket" className="h-12 w-auto rounded-lg" />
-            
+          {/* Logo and Tagline */}
+          <div className="flex items-center space-x-4">
+            <img 
+              src={logoAlSafa} 
+              alt="Al Safa Hypermarket" 
+              className="h-12 w-auto rounded-lg"
+            />
+            {showTagline && (
+              <div className={`text-lg font-semibold text-charcoal-gray typing-animation ${isRTL ? 'mr-4' : 'ml-4'}`}>
+                Your satisfaction is our greatness
+              </div>
+            )}
           </div>
 
           {/* Desktop Navigation */}

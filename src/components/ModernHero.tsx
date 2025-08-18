@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { ShoppingCart } from 'lucide-react';
-import { AnimatedCart } from '@/components/AnimatedCart';
+import { MessageSquare } from 'lucide-react';
+import shoppingCartGroceries from '@/assets/shopping-cart-groceries.jpg';
 
 export const ModernHero = () => {
   const { t, isRTL } = useLanguage();
@@ -14,9 +14,9 @@ export const ModernHero = () => {
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
             <div className="fade-in-up">
               <h1 className="text-5xl lg:text-6xl font-bold font-poppins text-charcoal-gray leading-tight">
-                {t('Your One-Stop')}
+                <span className="text-hypermarket-red">AL SAFA</span>
                 <br />
-                <span className="text-hypermarket-red">{t('Hypermarket')}</span>
+                <span className="text-fresh-green">HYPERMARKET</span>
               </h1>
               <p className="text-xl text-ash-dark mt-6 leading-relaxed">
                 {t('Providing quality products with excellent customer service')}
@@ -24,20 +24,34 @@ export const ModernHero = () => {
             </div>
             
             <div className="fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <Button 
-                size="lg" 
-                className="modern-button bg-gradient-red text-white px-8 py-4 text-lg font-semibold hover:shadow-button transform hover:scale-105 transition-all duration-300"
-              >
-                <ShoppingCart className="w-5 h-5 mr-2" />
-                {t('Shop Now')}
-              </Button>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-card">
+                <div className="text-charcoal-gray text-center mb-4">
+                  <div className="text-sm font-medium">Get exclusive offers and updates</div>
+                </div>
+                <Button
+                  onClick={() => {
+                    const phoneNumber = "96891073089";
+                    const message = "Hi";
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                  }}
+                  className="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-lg font-semibold transition-all duration-300"
+                >
+                  <MessageSquare className="w-5 h-5 mr-2" />
+                  Send "Hi" to get offers and updates
+                </Button>
+              </div>
             </div>
           </div>
 
-          {/* Right Content - Animated Cart */}
+          {/* Right Content - Shopping Cart with Groceries */}
           <div className={`flex justify-center ${isRTL ? 'lg:order-1' : ''}`}>
-            <div className="fade-in-up" style={{ animationDelay: '0.4s' }}>
-              <AnimatedCart />
+            <div className="fade-in-up bounce-cart" style={{ animationDelay: '0.4s' }}>
+              <img 
+                src={shoppingCartGroceries} 
+                alt="Shopping cart filled with fresh groceries" 
+                className="w-full max-w-lg rounded-2xl shadow-strong"
+              />
             </div>
           </div>
         </div>

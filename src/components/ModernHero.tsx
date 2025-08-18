@@ -26,10 +26,10 @@ export const ModernHero = () => {
             <div className="fade-in-up" style={{ animationDelay: '0.4s' }}>
               <Button 
                 onClick={() => window.open('https://wa.me/your-number', '_blank')}
-                className="bg-hypermarket-red hover:bg-hypermarket-red/90 text-white font-bold text-sm md:text-base rounded-lg w-auto max-w-xs h-auto px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
+                className="bg-hypermarket-red hover:bg-hypermarket-red/90 text-white font-bold text-base md:text-lg rounded-lg w-32 md:w-44 h-12 md:h-14 px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
               >
-                <MessageSquare className="w-5 h-5 flex-shrink-0" />
-                <span className="text-center leading-tight">Send "Hi" on WhatsApp and save our number to get updates and offer</span>
+                <MessageSquare className="w-5 h-5" />
+                <span>WhatsApp</span>
               </Button>
             </div>
             

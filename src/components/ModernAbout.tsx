@@ -21,9 +21,8 @@ export const ModernAbout = () => {
           {/* Content */}
           <div className="space-y-8 fade-in-up">
             <div className="fade-in-up">
-              <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-charcoal-gray mb-6 relative text-shimmer">
+              <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-hypermarket-red mb-6 relative">
                 <span className="relative z-10">{t('About Us')}</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-premium-gold/10 to-transparent blur-sm opacity-30"></div>
               </h2>
               <p className="text-xl text-ash-dark leading-relaxed">
                 Welcome to Al Safa Hypermarket – proudly serving since 2015. From fresh produce and quality groceries to household essentials and more, we are your trusted one-stop destination dedicated to convenience, value, and excellent customer care.

@@ -18,7 +18,7 @@ export const ModernFooter = () => {
                 <h3 className="text-xl font-bold font-poppins">
                   {t('Al Safa Hypermarket')}
                 </h3>
-                <p className="text-gray-300">{t('Seeb')}</p>
+                
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6">

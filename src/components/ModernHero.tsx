@@ -22,15 +22,27 @@ export const ModernHero = () => {
               </p>
             </div>
             
-            {/* WhatsApp Box */}
-            <div className="fade-in-up" style={{ animationDelay: '0.4s' }}>
-              <Button 
-                onClick={() => window.open('https://wa.me/your-number', '_blank')}
-                className="bg-hypermarket-red hover:bg-hypermarket-red/90 text-white font-bold text-base md:text-lg rounded-lg w-32 md:w-44 h-12 md:h-14 px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
-              >
-                <MessageSquare className="w-5 h-5" />
-                <span>WhatsApp</span>
-              </Button>
+            {/* WhatsApp Section */}
+            <div className="fade-in-up space-y-4" style={{ animationDelay: '0.4s' }}>
+              {/* WhatsApp Text */}
+              <div className="text-center">
+                <p className="text-sm text-charcoal-gray/80 leading-relaxed font-medium">
+                  <span className="block">Send "Hi" on WhatsApp</span>
+                  <span className="block">and save our number</span>
+                  <span className="block">to get updates and offers</span>
+                </p>
+              </div>
+              
+              {/* WhatsApp Button */}
+              <div className="flex justify-center">
+                <Button 
+                  onClick={() => window.open('https://wa.me/your-number', '_blank')}
+                  className="bg-hypermarket-red hover:bg-hypermarket-red/90 text-white font-bold text-base md:text-lg rounded-lg w-32 md:w-44 h-12 md:h-14 px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2"
+                >
+                  <MessageSquare className="w-5 h-5" />
+                  <span>WhatsApp</span>
+                </Button>
+              </div>
             </div>
             
           </div>

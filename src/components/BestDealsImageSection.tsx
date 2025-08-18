@@ -11,7 +11,14 @@ export const BestDealsImageSection = () => {
             </h2>
             <p className="text-xl text-white/90 mb-6">Discover amazing discounts.</p>
             <div className="inline-block bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-              <span className="text-2xl font-bold">Contact us to know more!</span>
+              <a 
+                href="https://wa.me/96891073089" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-2xl font-bold hover:text-white/80 transition-colors duration-300 cursor-pointer"
+              >
+                Contact us to know more!
+              </a>
             </div>
           </div>
         </div>

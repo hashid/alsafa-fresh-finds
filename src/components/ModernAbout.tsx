@@ -26,7 +26,7 @@ export const ModernAbout = () => {
                 {t('About Us')}
               </h2>
               <p className="text-xl text-ash-dark leading-relaxed">
-                {t('We are dedicated to providing our customers with exceptional service and a wide selection of products.')}
+                Welcome to Al Safa Hypermarket – proudly serving our community since 2015. From fresh produce and quality groceries to household essentials and more, we are your trusted one-stop destination dedicated to convenience, value, and excellent customer care.
               </p>
             </div>
             

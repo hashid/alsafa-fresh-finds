@@ -72,6 +72,9 @@ export default {
 				premium: {
 					gold: 'hsl(var(--premium-gold))',
 				},
+				mustard: {
+					yellow: 'hsl(var(--mustard-yellow))',
+				},
 				fresh: {
 					green: 'hsl(var(--fresh-green))'
 				},

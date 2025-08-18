@@ -26,7 +26,7 @@ export const ModernHero = () => {
             {/* Two Column Layout for Mobile - WhatsApp on Left, Image on Right */}
             <div className="grid grid-cols-2 gap-3 items-start">
               {/* Left: WhatsApp Section */}
-              <div className="fade-in-up space-y-3" style={{ animationDelay: '0.4s' }}>
+              <div className="fade-in-up space-y-3 mt-4" style={{ animationDelay: '0.4s' }}>
                 {/* WhatsApp Text */}
                 <div className="text-left">
                   <p className="text-xs leading-tight text-charcoal-gray/80 font-medium">

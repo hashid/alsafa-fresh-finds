@@ -8,7 +8,7 @@ export const ModernFooter = () => {
 
   return (
     <footer className="bg-mustard-yellow text-charcoal-gray">
-      <div className="container mx-auto px-6 py-16">
+      <div className="container mx-auto px-6 py-16 max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Company Info */}
           <div>

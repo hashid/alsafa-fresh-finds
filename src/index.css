@@ -252,7 +252,7 @@ All colors MUST be HSL.
   }
   
   .image-float {
-    animation: imageFloat 6s ease-in-out infinite;
+    animation: imageFloat 10s ease-in-out infinite;
   }
   
   .text-shimmer {
@@ -318,7 +318,7 @@ All colors MUST be HSL.
     transform: translateY(0px) rotate(0deg); 
   }
   50% { 
-    transform: translateY(-10px) rotate(1deg); 
+    transform: translateY(-6px) rotate(0.5deg); 
   }
 }
 

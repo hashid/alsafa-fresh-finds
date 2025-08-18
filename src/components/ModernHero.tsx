@@ -22,17 +22,17 @@ export const ModernHero = () => {
               </p>
             </div>
             
-            {/* Trolley Image */}
-            <div className="flex justify-end -mb-32 fade-in-up" style={{
-            animationDelay: '0.2s'
-          }}>
-              <div className="w-1/3">
-                <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" />
-              </div>
-            </div>
-            
             {/* WhatsApp Box */}
             
+          </div>
+
+          {/* Right Side - Trolley Image */}
+          <div className={`flex items-center justify-center ${isRTL ? 'lg:order-1' : ''}`}>
+            <div className="w-2/3 fade-in-up" style={{
+            animationDelay: '0.2s'
+          }}>
+              <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" />
+            </div>
           </div>
 
         </div>

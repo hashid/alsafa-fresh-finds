@@ -1,10 +1,28 @@
 import bestDealsBanner from '@/assets/best-deals-banner.jpg';
+
 export const BestDealsImageSection = () => {
-  return <section className="py-12">
+  return (
+    <section className="py-12">
       <div className="container mx-auto px-6">
-        <div className="text-center">
-          
+        <div 
+          className="bg-hypermarket-red rounded-2xl p-8 text-white shadow-2xl transform transition-all duration-1000 animate-fade-in opacity-0 translate-y-8"
+          style={{
+            animation: 'fadeInSlideUp 1s ease-out 0.5s forwards'
+          }}
+        >
+          <div className="text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold font-poppins mb-4">
+              Special Deals & Offers
+            </h2>
+            <p className="text-xl text-white/90 mb-6">
+              Discover amazing discounts on your favorite products
+            </p>
+            <div className="inline-block bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
+              <span className="text-2xl font-bold">Up to 50% OFF</span>
+            </div>
+          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };

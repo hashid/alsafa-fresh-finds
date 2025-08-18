@@ -1,5 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { ShoppingBasket, Cookie, Beef, ShirtIcon, ShoppingBag, Droplets, Sparkles, Bike, Bed, Fish } from 'lucide-react';
+import { ShoppingBasket, Cookie, Beef, ShirtIcon, ShoppingBag, Droplets, Sparkles, Bike, Bed, Fish, ChevronUp } from 'lucide-react';
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
 
 const categories = [
   {
@@ -66,6 +68,7 @@ const categories = [
 
 export const CategoriesSection = () => {
   const { t } = useLanguage();
+  const [isHighSpeed, setIsHighSpeed] = useState(false);
 
   return (
     <section className="py-20 bg-light-gray">
@@ -76,9 +79,20 @@ export const CategoriesSection = () => {
           </h2>
         </div>
         
-        <div className="overflow-hidden">
-          <div className="flex animate-scroll-left space-x-8 py-4">
-            {[...categories, ...categories].map((category, index) => (
+        <div className="relative overflow-hidden">
+          {/* Speed Control Button */}
+          <Button
+            onClick={() => setIsHighSpeed(!isHighSpeed)}
+            variant="outline"
+            size="sm"
+            className="absolute top-4 left-4 z-10 bg-white/90 hover:bg-white border-hypermarket-red text-hypermarket-red hover:text-red-600"
+          >
+            <ChevronUp className={`w-4 h-4 mr-2 transition-transform duration-300 ${isHighSpeed ? 'rotate-180' : ''}`} />
+            {isHighSpeed ? 'Slow' : 'Fast'}
+          </Button>
+          
+          <div className={`flex space-x-8 py-4 ${isHighSpeed ? 'animate-[scroll-left_15s_linear_infinite]' : 'animate-[scroll-left_30s_linear_infinite]'}`}>
+            {[...categories, ...categories, ...categories].map((category, index) => (
               <div
                 key={`${category.titleKey}-${index}`}
                 className="text-center group cursor-pointer flex-shrink-0 w-32"

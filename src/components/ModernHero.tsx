@@ -22,30 +22,33 @@ export const ModernHero = () => {
               </p>
             </div>
             
-            <div className="fade-in-up" style={{
-            animationDelay: '0.2s'
-          }}>
-              {/* Trolley Image */}
-              <div className="flex justify-end mb-6 my-px px-0 py-[9px] mx-[68px]">
-                <div className="w-1/3">
-                  <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" style={{
-                  animation: 'pulse 3s ease-in-out infinite',
-                  transform: 'scale(1)'
-                }} />
-                </div>
+            {/* Trolley Image */}
+            <div className="flex justify-center mb-8 fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <div className="w-1/2">
+                <img 
+                  src={premiumTrolley} 
+                  alt="Premium shopping trolley filled with fresh fruits and vegetables" 
+                  className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]" 
+                />
               </div>
-              
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-card py-0 px-[30px] my-0 mx-px">
-                <div className="text-charcoal-gray text-center mb-4">
-                  
-                </div>
-                <Button onClick={() => {
-                const phoneNumber = "96891073089";
-                const message = "Hi";
-                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-                window.open(whatsappUrl, '_blank');
-              }} className="w-fit bg-hypermarket-red hover:bg-red-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm">
-                  <MessageSquare className="w-4 h-4 mr-2" />
+            </div>
+            
+            {/* WhatsApp Box */}
+            <div 
+              className="fade-in-up animate-scale-in bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-card transform transition-all duration-500 hover:shadow-lg" 
+              style={{ animationDelay: '0.4s' }}
+            >
+              <div className="text-center">
+                <Button 
+                  onClick={() => {
+                    const phoneNumber = "96891073089";
+                    const message = "Hi";
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                  }} 
+                  className="w-full bg-hypermarket-red hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300"
+                >
+                  <MessageSquare className="w-5 h-5 mr-3" />
                   <div className="text-center">
                     <div>Send "Hi" to get</div>
                     <div>offers and updates</div>

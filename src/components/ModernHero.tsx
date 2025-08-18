@@ -13,7 +13,9 @@ export const ModernHero = () => {
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
             <div className="fade-in-up">
-              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight" style={{ color: '#2B2B2B' }}>
+              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight" style={{
+              color: '#2B2B2B'
+            }}>
                 <span className="text-hypermarket-red">AL SAFA</span><br />
                 <span className="text-fresh-green">HYPERMARKET</span>
               </h1>
@@ -47,7 +49,7 @@ export const ModernHero = () => {
             <div className="fade-in-up bounce-cart" style={{
             animationDelay: '0.4s'
           }}>
-              <img src={fruitsVegetablesGroceries} alt="High-quality fruits and vegetables" className="w-full max-w-lg rounded-2xl shadow-strong" />
+              
             </div>
           </div>
         </div>

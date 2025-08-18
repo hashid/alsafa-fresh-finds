@@ -2,22 +2,18 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { Facebook, Instagram, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import logoImage from '@/assets/logo-new.jpg';
-
 export const ModernFooter = () => {
-  const { t, isRTL } = useLanguage();
-
-  return (
-    <footer className="bg-charcoal-gray text-white">
+  const {
+    t,
+    isRTL
+  } = useLanguage();
+  return <footer className="bg-charcoal-gray text-white">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img
-                src={logoImage}
-                alt="Al Safa Hypermarket"
-                className="h-12 w-auto rounded-lg"
-              />
+              <img src={logoImage} alt="Al Safa Hypermarket" className="h-12 w-auto rounded-lg" />
               <div>
                 <h3 className="text-xl font-bold font-poppins">
                   {t('Al Safa Hypermarket')}
@@ -58,7 +54,7 @@ export const ModernFooter = () => {
               <Clock className="w-5 h-5 text-hypermarket-red mt-1" />
               <div className="text-gray-300">
                 <p>{t('Daily: 8:00 AM - 12:00 AM')}</p>
-                <p className="text-sm mt-1">{t('Open 7 days a week')}</p>
+                
               </div>
             </div>
           </div>
@@ -70,16 +66,10 @@ export const ModernFooter = () => {
             <div className="flex items-center space-x-4">
               <LanguageToggle />
               <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-hypermarket-red transition-colors transform hover:scale-110"
-                >
+                <a href="#" className="text-gray-400 hover:text-hypermarket-red transition-colors transform hover:scale-110">
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-hypermarket-red transition-colors transform hover:scale-110"
-                >
+                <a href="#" className="text-gray-400 hover:text-hypermarket-red transition-colors transform hover:scale-110">
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>
@@ -93,6 +83,5 @@ export const ModernFooter = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };

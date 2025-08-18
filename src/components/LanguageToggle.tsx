@@ -10,7 +10,7 @@ export const LanguageToggle = () => {
       variant="ghost"
       size="sm"
       onClick={toggleLanguage}
-      className="flex items-center gap-2 text-gray-300 hover:text-hypermarket-red transition-colors"
+      className="flex items-center gap-2 text-hypermarket-red hover:text-hypermarket-red/80 transition-colors"
     >
       <Globe className="w-4 h-4" />
       <span className="text-sm font-medium">

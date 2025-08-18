@@ -41,7 +41,15 @@ export const ModernHero = () => {
                 const message = "Hi";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
-              }} className="w-full bg-hypermarket-red hover:bg-red-600 text-white py-3 rounded-lg font-medium transition-all duration-300 px-0 mx-0">
+              }} className="w-[150px] h-[50px] px-6 py-3 text-lg font-bold text-white rounded-[10px] transition-all duration-300" style={{ backgroundColor: '#D32F2F' }} onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'white';
+                e.currentTarget.style.color = '#D32F2F';
+                e.currentTarget.style.border = '2px solid #D32F2F';
+              }} onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#D32F2F';
+                e.currentTarget.style.color = 'white';
+                e.currentTarget.style.border = 'none';
+              }}>
                   <MessageSquare className="w-5 h-5 mr-3" />
                   <div className="text-center">
                     <div>Send "Hi" to get</div>

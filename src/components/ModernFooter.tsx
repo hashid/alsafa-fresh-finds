@@ -66,10 +66,10 @@ export const ModernFooter = () => {
             <div className="flex items-center space-x-4">
               <LanguageToggle />
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-hypermarket-red transition-colors transform hover:scale-110">
+                <a href="https://www.facebook.com/people/AL-SAFA-HYPERMARKET/100054276620484/#" className="text-gray-400 hover:text-hypermarket-red transition-colors transform hover:scale-110">
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-hypermarket-red transition-colors transform hover:scale-110">
+                <a href="https://www.instagram.com/alsafahypermarket/" className="text-gray-400 hover:text-hypermarket-red transition-colors transform hover:scale-110">
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>

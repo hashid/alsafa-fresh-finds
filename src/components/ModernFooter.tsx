@@ -76,8 +76,7 @@ export const ModernFooter = () => {
             </div>
             <div className="text-center lg:text-right">
               <p className="text-gray-400 text-sm">
-                © 2024 {t('Al Safa Hypermarket')}. {t('All rights reserved.')}{' '}
-                <span className="text-hypermarket-red">{t('Quality Shopping Experience')}</span>
+                © 2025 {t('Al Safa Hypermarket')}. {t('All rights reserved.')}
               </p>
             </div>
           </div>

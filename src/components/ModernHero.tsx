@@ -25,6 +25,21 @@ export const ModernHero = () => {
             <div className="fade-in-up" style={{
             animationDelay: '0.2s'
           }}>
+              {/* Trolley Image */}
+              <div className="flex justify-end mb-6">
+                <div className="w-1/3">
+                  <img 
+                    src={premiumTrolley} 
+                    alt="Premium shopping trolley filled with fresh fruits and vegetables" 
+                    className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]"
+                    style={{
+                      animation: 'pulse 3s ease-in-out infinite',
+                      transform: 'scale(1)'
+                    }}
+                  />
+                </div>
+              </div>
+              
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 shadow-card my-[130px] mx-[20px] px-[8px]">
                 <div className="text-charcoal-gray text-center mb-4">
                   
@@ -45,22 +60,6 @@ export const ModernHero = () => {
             </div>
           </div>
 
-          {/* Right Content - Hero Image */}
-          <div className={`flex justify-center ${isRTL ? 'lg:order-1' : ''}`}>
-            <div className="fade-in-up w-1/3" style={{
-            animationDelay: '0.4s'
-          }}>
-              <img 
-                src={premiumTrolley} 
-                alt="Premium shopping trolley filled with fresh fruits and vegetables" 
-                className="w-full h-auto object-cover rounded-lg shadow-elegant animate-[pulse_3s_ease-in-out_infinite]"
-                style={{
-                  animation: 'pulse 3s ease-in-out infinite',
-                  transform: 'scale(1)'
-                }}
-              />
-            </div>
-          </div>
         </div>
       </div>
     </section>;

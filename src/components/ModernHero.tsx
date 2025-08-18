@@ -63,7 +63,7 @@ export const ModernHero = () => {
         <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
-            <div className="fade-in-up my-[60px]">
+            <div className="fade-in-up my-[20px]">
               <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray my-0 text-shimmer">
                 Your One-Stop Hypermarket
               </h1>
@@ -74,7 +74,7 @@ export const ModernHero = () => {
             </div>
             
             {/* WhatsApp Section */}
-            <div className="fade-in-up space-y-4" style={{ animationDelay: '0.4s' }}>
+            <div className="fade-in-up space-y-4 -mt-4" style={{ animationDelay: '0.4s' }}>
               {/* WhatsApp Text */}
               <div className="text-left">
                 <p className="text-sm text-charcoal-gray/80 leading-relaxed font-medium">

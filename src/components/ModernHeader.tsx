@@ -4,76 +4,48 @@ import { LanguageToggle } from '@/components/LanguageToggle';
 import { Button } from '@/components/ui/button';
 import { Menu, X, MapPin } from 'lucide-react';
 import logoImage from '@/assets/logo-new.jpg';
-
 export const ModernHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t, isRTL } = useLanguage();
-
+  const {
+    t,
+    isRTL
+  } = useLanguage();
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
       setIsMenuOpen(false);
     }
   };
-
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft">
+  return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img
-              src={logoImage}
-              alt="Al Safa Hypermarket"
-              className="h-12 w-auto rounded-lg"
-            />
-            <div>
-              <h1 className="text-xl font-bold font-poppins text-charcoal-gray">
-                {t('Al Safa Hypermarket')}
-              </h1>
-              <p className="text-sm text-ash-dark">{t('Seeb')}</p>
-            </div>
+            <img src={logoImage} alt="Al Safa Hypermarket" className="h-12 w-auto rounded-lg" />
+            
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection('hero')}
-              className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-            >
+            <button onClick={() => scrollToSection('hero')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
               {t('Home')}
             </button>
-            <button
-              onClick={() => scrollToSection('categories')}
-              className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-            >
+            <button onClick={() => scrollToSection('categories')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
               {t('Categories')}
             </button>
-            <button
-              onClick={() => scrollToSection('deals')}
-              className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-            >
+            <button onClick={() => scrollToSection('deals')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
               {t('Deals')}
             </button>
-            <button
-              onClick={() => scrollToSection('about')}
-              className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-            >
+            <button onClick={() => scrollToSection('about')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
               {t('About')}
             </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-            >
+            <button onClick={() => scrollToSection('contact')} className="text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
               {t('Contact')}
             </button>
-            <Button
-              variant="outline"
-              size="sm"
-              className="modern-button border-hypermarket-red text-hypermarket-red hover:bg-hypermarket-red hover:text-white"
-              onClick={() => window.open('https://maps.google.com', '_blank')}
-            >
+            <Button variant="outline" size="sm" className="modern-button border-hypermarket-red text-hypermarket-red hover:bg-hypermarket-red hover:text-white" onClick={() => window.open('https://maps.google.com', '_blank')}>
               <MapPin className="w-4 h-4 mr-2" />
               {t('Directions')}
             </Button>
@@ -81,66 +53,36 @@ export const ModernHeader = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? (
-              <X className="w-6 h-6 text-charcoal-gray" />
-            ) : (
-              <Menu className="w-6 h-6 text-charcoal-gray" />
-            )}
+          <button className="lg:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X className="w-6 h-6 text-charcoal-gray" /> : <Menu className="w-6 h-6 text-charcoal-gray" />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden py-6 border-t border-border">
+        {isMenuOpen && <div className="lg:hidden py-6 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              <button
-                onClick={() => scrollToSection('hero')}
-                className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-              >
+              <button onClick={() => scrollToSection('hero')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
                 {t('Home')}
               </button>
-              <button
-                onClick={() => scrollToSection('categories')}
-                className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-              >
+              <button onClick={() => scrollToSection('categories')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
                 {t('Categories')}
               </button>
-              <button
-                onClick={() => scrollToSection('deals')}
-                className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-              >
+              <button onClick={() => scrollToSection('deals')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
                 {t('Deals')}
               </button>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-              >
+              <button onClick={() => scrollToSection('about')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
                 {t('About')}
               </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium"
-              >
+              <button onClick={() => scrollToSection('contact')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
                 {t('Contact')}
               </button>
-              <Button
-                variant="outline"
-                size="sm"
-                className="modern-button border-hypermarket-red text-hypermarket-red hover:bg-hypermarket-red hover:text-white w-fit"
-                onClick={() => window.open('https://maps.google.com', '_blank')}
-              >
+              <Button variant="outline" size="sm" className="modern-button border-hypermarket-red text-hypermarket-red hover:bg-hypermarket-red hover:text-white w-fit" onClick={() => window.open('https://maps.google.com', '_blank')}>
                 <MapPin className="w-4 h-4 mr-2" />
                 {t('Directions')}
               </Button>
               <LanguageToggle />
             </nav>
-          </div>
-        )}
+          </div>}
       </div>
-    </header>
-  );
+    </header>;
 };

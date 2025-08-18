@@ -14,12 +14,10 @@ export const ModernHero = () => {
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
             <div className="fade-in-up">
               <h1 className="text-5xl lg:text-6xl font-bold font-poppins text-charcoal-gray leading-tight">
-                {t('Your One-Stop')}
-                <br />
-                <span className="text-hypermarket-red">{t('Hypermarket')}</span>
+                Welcome to <span className="text-hypermarket-red">Al Safa Hypermarket</span>
               </h1>
               <p className="text-xl text-ash-dark mt-6 leading-relaxed">
-                {t('Providing quality products with excellent customer service')}
+                Proudly serving our community since 2015. From fresh produce and quality groceries to household essentials and more, we are your trusted one-stop destination dedicated to convenience, value, and excellent customer care.
               </p>
             </div>
             

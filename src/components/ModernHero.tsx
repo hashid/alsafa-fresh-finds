@@ -40,7 +40,7 @@ export const ModernHero = () => {
                 <div className="flex justify-start">
                   <Button 
                     onClick={() => window.open('https://wa.me/96891073089', '_blank')}
-                    className="bg-gradient-to-r from-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/90 hover:to-hypermarket-red text-white font-medium text-xs rounded-md px-2 py-1 h-7 min-w-[80px] shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-1 border border-white/20 relative overflow-hidden group"
+                    className="bg-gradient-to-r from-hypermarket-red via-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/95 hover:via-hypermarket-red hover:to-hypermarket-red/95 text-white font-semibold text-xs rounded-lg px-3 py-1.5 h-8 min-w-[85px] shadow-lg hover:shadow-xl hover:shadow-hypermarket-red/40 transition-all duration-500 ease-out flex items-center justify-center gap-1.5 border border-white/30 backdrop-blur-sm relative overflow-hidden group transform hover:scale-105 hover:-translate-y-0.5"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
                     <MessageSquare className="w-3 h-3 relative z-10 flex-shrink-0" />

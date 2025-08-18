@@ -13,13 +13,10 @@ export const ModernHero = () => {
           {/* Left Content */}
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
             <div className="fade-in-up">
-              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight" style={{
-              color: '#2B2B2B'
-            }}>
-                <span className="text-hypermarket-red">AL SAFA</span><br />
-                <span className="text-fresh-green">HYPERMARKET</span>
+              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray">
+                Your One-Stop Hypermarket
               </h1>
-              <p className="text-xl text-ash-dark mt-6 leading-relaxed">
+              <p className="text-xl text-charcoal-gray mt-6 leading-relaxed font-medium">
                 {t('Providing quality products with excellent customer service')}
               </p>
             </div>

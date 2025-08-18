@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import premiumTrolley from '@/assets/premium-trolley-fruits-enhanced.jpg';
+import premiumTrolley from '@/assets/complete-trolley-white-bg.jpg';
 export const ModernHero = () => {
   const {
     t,

@@ -17,7 +17,11 @@ export const ModernHeader = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
+      const headerHeight = 120; // Account for fixed header height
+      const elementPosition = element.offsetTop - headerHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
         behavior: 'smooth'
       });
       setIsMenuOpen(false);

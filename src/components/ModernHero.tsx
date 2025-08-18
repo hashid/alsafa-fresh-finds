@@ -37,10 +37,12 @@ export const ModernHero = () => {
               <div className="flex justify-center">
                 <Button 
                   onClick={() => window.open('https://wa.me/96891073089', '_blank')}
-                  className="bg-hypermarket-red hover:bg-hypermarket-red/90 text-white font-bold text-base md:text-lg rounded-lg w-32 md:w-44 h-12 md:h-14 px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2 image-float"
+                  className="bg-gradient-to-r from-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/90 hover:to-hypermarket-red text-white font-bold text-base md:text-lg rounded-xl w-32 md:w-44 h-12 md:h-14 px-5 md:px-7 py-3 md:py-4 shadow-lg hover:shadow-2xl hover:shadow-hypermarket-red/30 transition-all duration-500 ease-out flex items-center justify-center space-x-2 transform hover:scale-105 border border-white/20 backdrop-blur-sm relative overflow-hidden group"
                 >
-                  <MessageSquare className="w-5 h-5" />
-                  <span>WhatsApp</span>
+                  {/* Premium shimmer effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                  <MessageSquare className="w-5 h-5 relative z-10" />
+                  <span className="relative z-10">WhatsApp</span>
                 </Button>
               </div>
             </div>

@@ -1,5 +1,4 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { LanguageToggle } from '@/components/LanguageToggle';
 import { Facebook, Instagram, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import logoImage from '@/assets/logo-new.jpg';
 
@@ -78,15 +77,10 @@ export const ModernFooter = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-charcoal-gray/20 mt-12 pt-8">
-          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-            <div className="flex items-center">
-              <LanguageToggle />
-            </div>
-            <div className="text-center lg:text-right">
-              <p className="text-charcoal-gray/70 text-sm">
-                © 2025 {t('Al Safa Hypermarket')}. {t('All rights reserved.')}
-              </p>
-            </div>
+          <div className="text-center">
+            <p className="text-charcoal-gray/70 text-sm">
+              © 2025 {t('Al Safa Hypermarket')}. {t('All rights reserved.')}
+            </p>
           </div>
         </div>
       </div>

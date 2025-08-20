@@ -13,9 +13,10 @@ export const ModernHero = () => {
         <div className="block lg:hidden">
           <div className="space-y-6">
             {/* Hero Title - Left Aligned */}
-            <div className="text-left fade-in-up pt-8">
+            <div className="text-left fade-in-up pt-4">
               <h1 className="text-2xl sm:text-3xl font-bold font-poppins leading-tight text-charcoal-gray text-shimmer">
-                Your One-Stop Hypermarket
+                <span className="block">Your One-Stop</span>
+                <span className="block">Hypermarket</span>
               </h1>
               <p className="text-sm sm:text-base text-charcoal-gray mt-3 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
                 <span className="block">{t('Providing quality products')}</span>

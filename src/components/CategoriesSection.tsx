@@ -70,8 +70,16 @@ export const CategoriesSection = () => {
           {/* Speed Control Button */}
           
           
-          <div className={`flex space-x-8 py-4 ${isHighSpeed ? 'animate-[scroll-left_8s_linear_infinite]' : 'animate-[scroll-left_15s_linear_infinite]'}`}>
-            {[...categories, ...categories, ...categories].map((category, index) => <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover">
+          <div 
+            className={`flex space-x-8 py-4 ${isHighSpeed ? 'animate-[scroll-left_8s_linear_infinite]' : 'animate-[scroll-left_15s_linear_infinite]'} 
+            md:pointer-events-none overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory md:overflow-hidden`}
+            style={{
+              WebkitOverflowScrolling: 'touch',
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none'
+            }}
+          >
+            {[...categories, ...categories, ...categories].map((category, index) => <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover snap-center">
               <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover">
                 <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
               </div>

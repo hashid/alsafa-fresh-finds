@@ -67,30 +67,59 @@ export const CategoriesSection = () => {
         </div>
         
         <div className="relative overflow-hidden">
-          {/* Speed Control Button */}
-          
-          
-          <div 
-            className={`flex space-x-8 py-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory
-            md:${isHighSpeed ? 'animate-[scroll-left_8s_linear_infinite]' : 'animate-[scroll-left_15s_linear_infinite]'} 
-            md:pointer-events-none md:overflow-hidden`}
-            style={{
-              WebkitOverflowScrolling: 'touch',
-              scrollbarWidth: 'none',
-              msOverflowStyle: 'none'
-            }}
-          >
-            {[...categories, ...categories, ...categories].map((category, index) => (
-              <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover snap-center">
-                <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover pointer-events-auto">
-                  <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
+          {/* Desktop: Infinite scrolling animation */}
+          <div className="hidden md:block">
+            <div 
+              className={`flex space-x-8 py-4 ${isHighSpeed ? 'animate-scroll-left-fast' : 'animate-scroll-left'}`}
+              style={{ width: 'calc(100% * 3)' }}
+            >
+              {[...categories, ...categories, ...categories].map((category, index) => (
+                <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover">
+                  <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover">
+                    <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
+                  </div>
+                  <h3 className="text-lg font-semibold font-poppins text-charcoal-gray transition-colors duration-300 group-hover:text-hypermarket-red">
+                    {t(category.titleKey)}
+                  </h3>
                 </div>
-                <h3 className="text-lg font-semibold font-poppins text-charcoal-gray transition-colors duration-300 group-hover:text-hypermarket-red">
-                  {t(category.titleKey)}
-                </h3>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+
+          {/* Mobile: Touch scrollable with infinite content */}
+          <div className="block md:hidden">
+            <div 
+              className="flex space-x-8 py-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory"
+              style={{
+                WebkitOverflowScrolling: 'touch',
+                scrollbarWidth: 'none',
+                msOverflowStyle: 'none'
+              }}
+            >
+              {[...categories, ...categories, ...categories, ...categories].map((category, index) => (
+                <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover snap-center">
+                  <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover">
+                    <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
+                  </div>
+                  <h3 className="text-lg font-semibold font-poppins text-charcoal-gray transition-colors duration-300 group-hover:text-hypermarket-red">
+                    {t(category.titleKey)}
+                  </h3>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Speed Control Button for Desktop */}
+          <button
+            onClick={() => setIsHighSpeed(!isHighSpeed)}
+            className="hidden md:block absolute top-4 right-4 bg-white/90 backdrop-blur-sm border border-hypermarket-red/20 rounded-full p-2 shadow-card hover:shadow-medium transition-all duration-300 group"
+          >
+            <ChevronUp 
+              className={`w-4 h-4 text-hypermarket-red transition-transform duration-300 ${
+                isHighSpeed ? 'rotate-180' : ''
+              }`} 
+            />
+          </button>
         </div>
       </div>
     </section>;

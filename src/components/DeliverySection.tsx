@@ -31,7 +31,7 @@ export const DeliverySection = () => {
               
               <div className="space-y-6">
                 <p className="text-xl text-ash-dark leading-relaxed">
-                  {t('Free delivery available within 10km radius of the hypermarket')}
+                  {t('Free delivery available within 5km radius of the hypermarket')}
                 </p>
                 
                 <div className="bg-gradient-to-r from-hypermarket-red/5 to-premium-gold/5 p-6 rounded-2xl border border-hypermarket-red/10">

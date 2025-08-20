@@ -3,6 +3,7 @@ import { ModernHeader } from '@/components/ModernHeader';
 import { ModernHero } from '@/components/ModernHero';
 import { CategoriesSection } from '@/components/CategoriesSection';
 import { DepartmentCards } from '@/components/DepartmentCards';
+import { DeliverySection } from '@/components/DeliverySection';
 import { BestDealsImageSection } from '@/components/BestDealsImageSection';
 import { BestDealsSection } from '@/components/BestDealsSection';
 import { ModernAbout } from '@/components/ModernAbout';
@@ -47,6 +48,9 @@ const Index = () => {
           
           <div id="about">
             <ModernAbout />
+          </div>
+          <div id="delivery">
+            <DeliverySection />
           </div>
           <div id="contact">
             <ContactSection />

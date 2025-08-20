@@ -11,26 +11,26 @@ export const ModernHero = () => {
       <div className="container mx-auto px-4 md:px-6">
         {/* Mobile Layout - Stacked */}
         <div className="block lg:hidden">
-          <div className="space-y-6">
+          <div className="space-y-8 px-2">
             {/* Hero Title - Left Aligned */}
-            <div className="text-left fade-in-up pt-4">
-              <h1 className="text-2xl sm:text-3xl font-bold font-poppins leading-tight text-charcoal-gray text-shimmer">
+            <div className="text-left fade-in-up pt-6">
+              <h1 className="text-3xl sm:text-4xl font-bold font-poppins leading-tight text-charcoal-gray text-shimmer">
                 <span className="block">Your One-Stop</span>
                 <span className="block">Hypermarket</span>
               </h1>
-              <p className="text-sm sm:text-base text-charcoal-gray mt-3 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
+              <p className="text-base sm:text-lg text-charcoal-gray mt-4 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
                 <span className="block">{t('Providing quality products')}</span>
                 <span className="block">{t('with excellent customer service')}</span>
               </p>
             </div>
             
             {/* Two Column Layout for Mobile - WhatsApp on Left, Image on Right */}
-            <div className="grid grid-cols-2 gap-3 items-start">
+            <div className="grid grid-cols-2 gap-4 items-center">
               {/* Left: WhatsApp Section */}
-              <div className="fade-in-up space-y-3 mt-4" style={{ animationDelay: '0.4s' }}>
+              <div className="fade-in-up space-y-4 mt-2" style={{ animationDelay: '0.4s' }}>
                 {/* WhatsApp Text */}
                 <div className="text-left">
-                  <p className="text-xs leading-tight text-charcoal-gray/80 font-medium">
+                  <p className="text-sm leading-relaxed text-charcoal-gray/80 font-medium">
                     <span className="block">Send "Hi" on WhatsApp</span>
                     <span className="block">and save our number</span>
                     <span className="block">to get updates and offers</span>
@@ -41,18 +41,18 @@ export const ModernHero = () => {
                 <div className="flex justify-start">
                   <Button 
                     onClick={() => window.open('https://wa.me/96891073089', '_blank')}
-                    className="bg-gradient-to-r from-hypermarket-red via-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/95 hover:via-hypermarket-red hover:to-hypermarket-red/95 text-white font-semibold text-xs rounded-lg px-3 py-1.5 h-8 min-w-[85px] shadow-lg hover:shadow-xl hover:shadow-hypermarket-red/40 transition-all duration-500 ease-out flex items-center justify-center gap-1.5 border border-white/30 backdrop-blur-sm relative overflow-hidden group transform hover:scale-105 hover:-translate-y-0.5"
+                    className="bg-gradient-to-r from-hypermarket-red via-hypermarket-red to-hypermarket-red/90 hover:from-hypermarket-red/95 hover:via-hypermarket-red hover:to-hypermarket-red/95 text-white font-semibold text-sm rounded-lg px-4 py-2.5 h-10 min-w-[110px] shadow-lg hover:shadow-xl hover:shadow-hypermarket-red/40 transition-all duration-500 ease-out flex items-center justify-center gap-2 border border-white/30 backdrop-blur-sm relative overflow-hidden group transform hover:scale-105 hover:-translate-y-0.5"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
-                    <MessageSquare className="w-3 h-3 relative z-10 flex-shrink-0" />
-                    <span className="relative z-10 text-xs leading-none">WhatsApp</span>
+                    <MessageSquare className="w-4 h-4 relative z-10 flex-shrink-0" />
+                    <span className="relative z-10 text-sm leading-none">WhatsApp</span>
                   </Button>
                 </div>
               </div>
 
               {/* Right: Trolley Image */}
-              <div className="flex items-center justify-end">
-                <div className="w-full max-w-[200px] fade-in-right image-float" style={{ animationDelay: '0.2s' }}>
+              <div className="flex items-center justify-center">
+                <div className="w-full max-w-[280px] fade-in-right image-float" style={{ animationDelay: '0.2s' }}>
                   <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
                 </div>
               </div>

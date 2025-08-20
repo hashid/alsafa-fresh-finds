@@ -101,7 +101,7 @@ export const ModernHero = () => {
 
           {/* Right Side - Trolley Image */}
           <div className={`flex items-center justify-center ${isRTL ? 'lg:order-1' : ''}`}>
-            <div className="w-2/3 fade-in-right image-float" style={{ animationDelay: '0.2s' }}>
+            <div className="w-4/5 fade-in-right image-float mt-8" style={{ animationDelay: '0.2s' }}>
               <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
             </div>
           </div>

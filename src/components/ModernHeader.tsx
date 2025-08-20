@@ -55,8 +55,8 @@ export const ModernHeader = () => {
             <button onClick={() => scrollToSection('hero')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
               {t('Home')}
             </button>
-            <button onClick={() => scrollToSection('categories')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
-              {t('Categories')}
+            <button onClick={() => scrollToSection('departments')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
+              {t('Departments')}
             </button>
             <button onClick={() => scrollToSection('deals')} className="nav-link text-charcoal-gray hover:text-hypermarket-red font-medium">
               {t('Deals')}
@@ -85,8 +85,8 @@ export const ModernHeader = () => {
               <button onClick={() => scrollToSection('hero')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
                 {t('Home')}
               </button>
-              <button onClick={() => scrollToSection('categories')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
-                {t('Categories')}
+              <button onClick={() => scrollToSection('departments')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
+                {t('Departments')}
               </button>
               <button onClick={() => scrollToSection('deals')} className="text-left text-charcoal-gray hover:text-hypermarket-red transition-colors font-medium">
                 {t('Deals')}

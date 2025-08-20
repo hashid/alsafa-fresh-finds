@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent } from '@/components/ui/card';
-import nidoClearImage from '@/assets/nido-clear.jpg';
-import fruitsClearImage from '@/assets/fruits-clear.jpg';
+import groceryAisleImage from '@/assets/grocery-aisle.jpg';
+import freshProduceImage from '@/assets/fresh-produce.jpg';
 import clothingDressesImage from '@/assets/clothing-dresses.jpg';
 import pillowsBedImage from '@/assets/pillows-bed.jpg';
 import homeAppliancesImage from '@/assets/home-appliances.jpg';
@@ -10,12 +10,12 @@ import fishMeatsImage from '@/assets/fish-meats.jpg';
 const departments = [
   {
     name: 'Groceries',
-    image: nidoClearImage,
+    image: groceryAisleImage,
     description: 'Essential everyday items and household necessities'
   },
   {
     name: 'Fruits & Vegetables', 
-    image: fruitsClearImage,
+    image: freshProduceImage,
     description: 'Fresh, organic produce delivered daily'
   },
   {

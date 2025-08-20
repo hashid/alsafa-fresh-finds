@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { ModernHeader } from '@/components/ModernHeader';
 import { ModernHero } from '@/components/ModernHero';
 import { CategoriesSection } from '@/components/CategoriesSection';
+import { DepartmentCards } from '@/components/DepartmentCards';
 import { BestDealsImageSection } from '@/components/BestDealsImageSection';
 import { BestDealsSection } from '@/components/BestDealsSection';
 import { ModernAbout } from '@/components/ModernAbout';
@@ -36,6 +37,9 @@ const Index = () => {
           </div>
           <div id="categories">
             <CategoriesSection />
+          </div>
+          <div id="departments">
+            <DepartmentCards />
           </div>
           <div id="deals">
             <BestDealsImageSection />

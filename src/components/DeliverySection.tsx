@@ -50,10 +50,6 @@ export const DeliverySection = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-hypermarket-red rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      {t('No minimum order required')}
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-hypermarket-red rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       {t('Professional delivery team')}
                     </li>
                   </ul>

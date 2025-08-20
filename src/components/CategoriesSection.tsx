@@ -109,17 +109,6 @@ export const CategoriesSection = () => {
             </div>
           </div>
 
-          {/* Speed Control Button for Desktop */}
-          <button
-            onClick={() => setIsHighSpeed(!isHighSpeed)}
-            className="hidden md:block absolute top-4 right-4 bg-white/90 backdrop-blur-sm border border-hypermarket-red/20 rounded-full p-2 shadow-card hover:shadow-medium transition-all duration-300 group"
-          >
-            <ChevronUp 
-              className={`w-4 h-4 text-hypermarket-red transition-transform duration-300 ${
-                isHighSpeed ? 'rotate-180' : ''
-              }`} 
-            />
-          </button>
         </div>
       </div>
     </section>;

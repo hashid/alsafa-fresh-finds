@@ -27,7 +27,7 @@ export const ModernHeader = () => {
       setIsMenuOpen(false);
     }
   };
-  return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft">
+  return <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-soft">
       {/* Top contact bar */}
       <div className="bg-background border-b border-border/50">
         <div className="container mx-auto px-6">

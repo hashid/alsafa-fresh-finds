@@ -70,7 +70,20 @@ const translations = {
     "reviews.based": "Based on customer reviews",
     "reviews.offers.title": "Get Exclusive Offers",
     "reviews.offers.desc": "Join our WhatsApp community for special deals and updates",
-    "reviews.offers.button": "Join WhatsApp"
+    "reviews.offers.button": "Join WhatsApp",
+    
+    // Categories
+    "Categories": "Categories",
+    "Home Appliances": "Home Appliances",
+    "Beauty": "Beauty",
+    "Fresh": "Fresh",
+    "Fruits": "Fruits",
+    "Utensils": "Utensils",
+    "Grocery": "Grocery",
+    "Bakery": "Bakery",
+    "Butchery": "Butchery",
+    "Clothing": "Clothing",
+    "Fresh Fish": "Fresh Fish"
   },
   ar: {
     // Header
@@ -132,7 +145,20 @@ const translations = {
     "reviews.based": "بناءً على تقييمات العملاء",
     "reviews.offers.title": "احصل على عروض حصرية",
     "reviews.offers.desc": "انضم إلى مجتمع الواتساب الخاص بنا للحصول على صفقات خاصة وتحديثات",
-    "reviews.offers.button": "انضم للواتساب"
+    "reviews.offers.button": "انضم للواتساب",
+    
+    // Categories
+    "Categories": "الفئات",
+    "Home Appliances": "الأجهزة المنزلية",
+    "Beauty": "الجمال",
+    "Fresh": "طازج",
+    "Fruits": "الفواكه",
+    "Utensils": "أدوات المطبخ",
+    "Grocery": "البقالة",
+    "Bakery": "المخبوزات",
+    "Butchery": "اللحوم",
+    "Clothing": "الملابس",
+    "Fresh Fish": "الأسماك الطازجة"
   }
 };
 

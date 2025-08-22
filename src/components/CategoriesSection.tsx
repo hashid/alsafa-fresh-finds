@@ -1,37 +1,44 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { WashingMachine, Sparkles, Salad, Apple, ChefHat, ShoppingBasket, Cookie, Beef, ShirtIcon, ShoppingBag, Droplets, Bike, Bed, Fish, ChevronUp } from 'lucide-react';
+import { ShoppingBasket, Cookie, Beef, ShirtIcon, Fish, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
+// Import category images
+import categoryHomeAppliances from '@/assets/category-home-appliances.png';
+import categoryBeauty from '@/assets/category-beauty.png';
+import categoryFresh from '@/assets/category-fresh.png';
+import categoryFruits from '@/assets/category-fruits.png';
+import categoryUtensils from '@/assets/category-utensils.png';
+
 const categories = [
   {
-    icon: WashingMachine,
+    image: categoryHomeAppliances,
     titleKey: 'Home Appliances',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-left'
   },
   {
-    icon: Sparkles,
+    image: categoryBeauty,
     titleKey: 'Beauty',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-up'
   },
   {
-    icon: Salad,
+    image: categoryFresh,
     titleKey: 'Fresh',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-right'
   },
   {
-    icon: Apple,
+    image: categoryFruits,
     titleKey: 'Fruits',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-left'
   },
   {
-    icon: ChefHat,
+    image: categoryUtensils,
     titleKey: 'Utensils',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-up'
   },
   {
@@ -87,8 +94,16 @@ export const CategoriesSection = () => {
             >
               {[...categories, ...categories, ...categories].map((category, index) => (
                 <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover">
-                  <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover">
-                    <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
+                  <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover overflow-hidden">
+                    {category.image ? (
+                      <img 
+                        src={category.image} 
+                        alt={`${category.titleKey} category`}
+                        className="w-20 h-20 object-cover rounded-full"
+                      />
+                    ) : (
+                      <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
+                    )}
                   </div>
                   <h3 className="text-lg font-semibold font-poppins text-charcoal-gray transition-colors duration-300 group-hover:text-hypermarket-red">
                     {t(category.titleKey)}
@@ -110,8 +125,16 @@ export const CategoriesSection = () => {
             >
               {[...categories, ...categories, ...categories, ...categories].map((category, index) => (
                 <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover snap-center">
-                  <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover">
-                    <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
+                  <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover overflow-hidden">
+                    {category.image ? (
+                      <img 
+                        src={category.image} 
+                        alt={`${category.titleKey} category`}
+                        className="w-20 h-20 object-cover rounded-full"
+                      />
+                    ) : (
+                      <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
+                    )}
                   </div>
                   <h3 className="text-lg font-semibold font-poppins text-charcoal-gray transition-colors duration-300 group-hover:text-hypermarket-red">
                     {t(category.titleKey)}

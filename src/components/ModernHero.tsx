@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import arabFamilyShopping from '@/assets/arab-family-with-girl-shopping.jpg';
+import arabFamilyShopping from '@/assets/arab-family-complete-shopping.jpg';
 export const ModernHero = () => {
   const {
     t,
@@ -24,11 +24,11 @@ export const ModernHero = () => {
           <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-8 px-2">
             {/* Hero Title - Centered */}
             <div className="text-center fade-in-up pt-6">
-              <h1 className="text-3xl sm:text-4xl font-bold font-poppins leading-tight text-white text-shimmer">
+              <h1 className="text-3xl sm:text-4xl font-bold font-poppins leading-tight bg-gradient-to-r from-mustard-yellow via-premium-gold to-mustard-yellow bg-clip-text text-transparent text-shimmer drop-shadow-lg">
                 <span className="block">Your one-stop</span>
                 <span className="block">hypermarket in Mabela</span>
               </h1>
-              <p className="text-base sm:text-lg text-white mt-4 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
+              <p className="text-base sm:text-lg text-white mt-4 leading-relaxed font-normal fade-in-left drop-shadow-md" style={{ animationDelay: '0.3s' }}>
                 <span className="block">Your satisfaction is our guarantee</span>
               </p>
             </div>
@@ -63,10 +63,10 @@ export const ModernHero = () => {
           {/* Content Centered */}
           <div className="space-y-8 max-w-4xl mx-auto">
             <div className="fade-in-up">
-              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-white my-0 text-shimmer">
+              <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight bg-gradient-to-r from-mustard-yellow via-premium-gold to-mustard-yellow bg-clip-text text-transparent my-0 text-shimmer drop-shadow-lg">
                 Your one-stop hypermarket in Mabela
               </h1>
-              <p className="text-lg text-white mt-6 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
+              <p className="text-lg text-white mt-6 leading-relaxed font-normal fade-in-left drop-shadow-md" style={{ animationDelay: '0.3s' }}>
                 <span className="block">Your satisfaction is our guarantee</span>
               </p>
             </div>

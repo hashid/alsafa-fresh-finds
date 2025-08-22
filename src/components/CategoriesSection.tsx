@@ -1,58 +1,70 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { ShoppingBasket, Cookie, Beef, ShirtIcon, ShoppingBag, Droplets, Sparkles, Bike, Bed, Fish, ChevronUp } from 'lucide-react';
+import { WashingMachine, Sparkles, Salad, Apple, ChefHat, ShoppingBasket, Cookie, Beef, ShirtIcon, ShoppingBag, Droplets, Bike, Bed, Fish, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-const categories = [{
-  icon: ShoppingBasket,
-  titleKey: 'Grocery',
-  color: 'text-fresh-green',
-  animation: 'slide-in-left'
-}, {
-  icon: Cookie,
-  titleKey: 'Bakery',
-  color: 'text-fresh-green',
-  animation: 'slide-in-up'
-}, {
-  icon: Beef,
-  titleKey: 'Butchery',
-  color: 'text-fresh-green',
-  animation: 'slide-in-right'
-}, {
-  icon: ShirtIcon,
-  titleKey: 'Clothing',
-  color: 'text-fresh-green',
-  animation: 'slide-in-left'
-}, {
-  icon: ShoppingBag,
-  titleKey: 'Trolley Bags',
-  color: 'text-fresh-green',
-  animation: 'slide-in-up'
-}, {
-  icon: Droplets,
-  titleKey: 'Cleaning Essentials',
-  color: 'text-fresh-green',
-  animation: 'slide-in-right'
-}, {
-  icon: Sparkles,
-  titleKey: 'Cosmetics',
-  color: 'text-fresh-green',
-  animation: 'slide-in-left'
-}, {
-  icon: Bike,
-  titleKey: 'Cycles',
-  color: 'text-fresh-green',
-  animation: 'slide-in-up'
-}, {
-  icon: Bed,
-  titleKey: 'Bedding',
-  color: 'text-fresh-green',
-  animation: 'slide-in-right'
-}, {
-  icon: Fish,
-  titleKey: 'Fresh Fish',
-  color: 'text-fresh-green',
-  animation: 'slide-in-left'
-}];
+
+const categories = [
+  {
+    icon: WashingMachine,
+    titleKey: 'Home Appliances',
+    color: 'text-fresh-green',
+    animation: 'slide-in-left'
+  },
+  {
+    icon: Sparkles,
+    titleKey: 'Beauty',
+    color: 'text-fresh-green',
+    animation: 'slide-in-up'
+  },
+  {
+    icon: Salad,
+    titleKey: 'Fresh',
+    color: 'text-fresh-green',
+    animation: 'slide-in-right'
+  },
+  {
+    icon: Apple,
+    titleKey: 'Fruits',
+    color: 'text-fresh-green',
+    animation: 'slide-in-left'
+  },
+  {
+    icon: ChefHat,
+    titleKey: 'Utensils',
+    color: 'text-fresh-green',
+    animation: 'slide-in-up'
+  },
+  {
+    icon: ShoppingBasket,
+    titleKey: 'Grocery',
+    color: 'text-fresh-green',
+    animation: 'slide-in-right'
+  },
+  {
+    icon: Cookie,
+    titleKey: 'Bakery',
+    color: 'text-fresh-green',
+    animation: 'slide-in-left'
+  },
+  {
+    icon: Beef,
+    titleKey: 'Butchery',
+    color: 'text-fresh-green',
+    animation: 'slide-in-up'
+  },
+  {
+    icon: ShirtIcon,
+    titleKey: 'Clothing',
+    color: 'text-fresh-green',
+    animation: 'slide-in-right'
+  },
+  {
+    icon: Fish,
+    titleKey: 'Fresh Fish',
+    color: 'text-fresh-green',
+    animation: 'slide-in-left'
+  }
+];
 export const CategoriesSection = () => {
   const {
     t

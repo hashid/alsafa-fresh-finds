@@ -5,7 +5,7 @@ import freshProduceImage from '@/assets/fresh-produce.jpg';
 import mensWomensClothingEnhanced from '@/assets/mens-womens-clothing-enhanced.jpg';
 import pillowsBedImage from '@/assets/pillows-bed.jpg';
 import homeAppliancesImage from '@/assets/home-appliances.jpg';
-import meatSeafoodClean from '@/assets/meat-seafood-clean.jpg';
+import meatFishFocused from '@/assets/meat-fish-focused.jpg';
 
 const departments = [
   {
@@ -35,7 +35,7 @@ const departments = [
   },
   {
     name: 'Fish & Meats',
-    image: meatSeafoodClean,
+    image: meatFishFocused,
     description: 'Fresh seafood and premium quality meats'
   }
 ];

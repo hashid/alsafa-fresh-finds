@@ -69,7 +69,7 @@ export const ModernFooter = () => {
             <div className="flex items-start space-x-3">
               <Clock className="w-5 h-5 text-hypermarket-red mt-1" />
               <div className="text-charcoal-gray/80">
-                <p>{t('Daily: 8:00 AM - 12:00 AM')}</p>
+                <p>{t('Daily: 8:00 AM - 1:00 AM')}</p>
               </div>
             </div>
           </div>

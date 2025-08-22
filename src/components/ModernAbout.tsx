@@ -1,9 +1,32 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import storeImage from '@/assets/department-store.jpg';
 import aboutUsImage from '@/assets/about-us-image.jpg';
+import { FloorImageSlider } from './FloorImageSlider';
+import balloonsImage from '@/assets/balloons-clear.jpg';
+import bucketImage from '@/assets/bucket-clear.jpg';
+import frozenImage from '@/assets/frozen-clear.jpg';
+import fruitsImage from '@/assets/fruits-clear.jpg';
+import nidoImage from '@/assets/nido-clear.jpg';
+import pocariImage from '@/assets/pocari-clear.jpg';
+import additionalProduct1 from '@/assets/additional-product-1.jpg';
+import additionalProduct2 from '@/assets/additional-product-2.jpg';
+import additionalProduct3 from '@/assets/additional-product-3.jpg';
 
 export const ModernAbout = () => {
   const { t, isRTL } = useLanguage();
+
+  const transitionImages = [
+    aboutUsImage,
+    balloonsImage,
+    bucketImage,
+    frozenImage,
+    fruitsImage,
+    nidoImage,
+    pocariImage,
+    additionalProduct1,
+    additionalProduct2,
+    additionalProduct3
+  ];
 
   return (
     <section className="py-20 bg-gradient-to-b from-white via-light-gray/30 to-white relative overflow-hidden">
@@ -20,13 +43,16 @@ export const ModernAbout = () => {
               </p>
             </div>
             
-            {/* About Us Image */}
+            {/* About Us Image Slider */}
             <div className="mb-8 text-center fade-in-up" style={{ animationDelay: '0.1s' }}>
-              <img 
-                src={aboutUsImage} 
-                alt="Al Safa Hypermarket Interior" 
-                className="w-full max-w-4xl mx-auto rounded-2xl shadow-elegant image-float sleek-hover object-cover"
-              />
+              <div className="w-full max-w-4xl mx-auto h-96 rounded-2xl shadow-elegant overflow-hidden">
+                <FloorImageSlider 
+                  images={transitionImages}
+                  title="Al Safa Hypermarket"
+                  autoSlide={true}
+                  interval={4000}
+                />
+              </div>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 fade-in-up" style={{ animationDelay: '0.2s' }}>

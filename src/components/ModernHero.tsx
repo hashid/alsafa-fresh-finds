@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import premiumTrolley from '@/assets/trolley-left-facing-effect.jpg';
+import arabFamilyShopping from '@/assets/arab-family-shopping.jpg';
 export const ModernHero = () => {
   const {
     t,
@@ -15,12 +15,11 @@ export const ModernHero = () => {
             {/* Hero Title - Left Aligned */}
             <div className="text-left fade-in-up pt-6">
               <h1 className="text-3xl sm:text-4xl font-bold font-poppins leading-tight text-charcoal-gray text-shimmer">
-                <span className="block">Your One-Stop</span>
-                <span className="block">Hypermarket</span>
+                <span className="block">Your one-stop</span>
+                <span className="block">hypermarket in Mabela</span>
               </h1>
               <p className="text-base sm:text-lg text-charcoal-gray mt-4 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
-                <span className="block">{t('Providing quality products')}</span>
-                <span className="block">{t('with excellent customer service')}</span>
+                <span className="block">Your satisfaction is our guarantee</span>
               </p>
             </div>
             
@@ -31,9 +30,8 @@ export const ModernHero = () => {
                 {/* WhatsApp Text */}
                 <div className="text-left">
                   <p className="text-sm leading-relaxed text-charcoal-gray/80 font-medium">
-                    <span className="block">Send "Hi" on WhatsApp</span>
-                    <span className="block">and save our number</span>
-                    <span className="block">to get updates and offers</span>
+                    <span className="block">Send "Hi" on WhatsApp and save our number</span>
+                    <span className="block">to get exclusive updates and special offers</span>
                   </p>
                 </div>
                 
@@ -53,7 +51,7 @@ export const ModernHero = () => {
               {/* Right: Trolley Image */}
               <div className="flex items-center justify-center">
                 <div className="w-full max-w-[280px] fade-in-right image-float" style={{ animationDelay: '0.2s' }}>
-                  <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
+                  <img src={arabFamilyShopping} alt="Arab family shopping in hypermarket with trolley" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
                 </div>
               </div>
             </div>
@@ -66,11 +64,10 @@ export const ModernHero = () => {
           <div className={`space-y-8 ${isRTL ? 'lg:order-2' : ''}`}>
             <div className="fade-in-up my-[40px] pt-12">
               <h1 className="text-5xl lg:text-6xl font-bold font-poppins leading-tight text-charcoal-gray my-0 text-shimmer">
-                Your One-Stop Hypermarket
+                Your one-stop hypermarket in Mabela
               </h1>
               <p className="text-lg text-charcoal-gray mt-6 leading-relaxed font-normal fade-in-left" style={{ animationDelay: '0.3s' }}>
-                <span className="block">{t('Providing quality products')}</span>
-                <span className="block">{t('with excellent customer service')}</span>
+                <span className="block">Your satisfaction is our guarantee</span>
               </p>
             </div>
             
@@ -79,9 +76,8 @@ export const ModernHero = () => {
               {/* WhatsApp Text */}
               <div className="text-left">
                 <p className="text-sm text-charcoal-gray/80 leading-relaxed font-medium">
-                  <span className="block">Send "Hi" on WhatsApp</span>
-                  <span className="block">and save our number</span>
-                  <span className="block">to get updates and offers</span>
+                  <span className="block">Send "Hi" on WhatsApp and save our number</span>
+                  <span className="block">to get exclusive updates and special offers</span>
                 </p>
               </div>
               
@@ -103,7 +99,7 @@ export const ModernHero = () => {
           {/* Right Side - Trolley Image */}
           <div className={`flex items-center justify-center ${isRTL ? 'lg:order-1' : ''}`}>
             <div className="w-4/5 fade-in-right image-float mt-8" style={{ animationDelay: '0.2s' }}>
-              <img src={premiumTrolley} alt="Premium shopping trolley filled with fresh fruits and vegetables" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
+              <img src={arabFamilyShopping} alt="Arab family shopping in hypermarket with trolley" className="w-full h-auto object-cover rounded-lg shadow-elegant sleek-hover" />
             </div>
           </div>
         </div>

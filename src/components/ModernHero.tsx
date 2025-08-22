@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import arabFamilyShopping from '@/assets/arab-family-complete-shopping.jpg';
+import arabFamilyShopping from '@/assets/omani-family-happy-shopping.jpg';
 export const ModernHero = () => {
   const {
     t,

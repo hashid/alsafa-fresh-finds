@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent } from '@/components/ui/card';
 import groceryAisleImage from '@/assets/grocery-aisle.jpg';
 import freshProduceImage from '@/assets/fresh-produce.jpg';
-import clothingDepartmentMixed from '@/assets/clothing-department-mixed.jpg';
+import clothingCroppedClean from '@/assets/clothing-cropped-clean.jpg';
 import pillowsBedImage from '@/assets/pillows-bed.jpg';
 import homeAppliancesImage from '@/assets/home-appliances.jpg';
 import meatFishFocused from '@/assets/meat-fish-focused.jpg';
@@ -20,7 +20,7 @@ const departments = [
   },
   {
     name: 'Clothing',
-    image: clothingDepartmentMixed,
+    image: clothingCroppedClean,
     description: 'Fashionable clothing for the whole family'
   },
   {

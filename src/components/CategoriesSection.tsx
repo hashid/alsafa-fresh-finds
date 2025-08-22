@@ -1,5 +1,4 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { ShoppingBasket, Cookie, Beef, ShirtIcon, Fish, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -9,6 +8,11 @@ import categoryBeauty from '@/assets/category-beauty.png';
 import categoryFresh from '@/assets/category-fresh.png';
 import categoryFruits from '@/assets/category-fruits.png';
 import categoryUtensils from '@/assets/category-utensils.png';
+import categoryGrocery from '@/assets/category-grocery.png';
+import categoryBakery from '@/assets/category-bakery.png';
+import categoryButchery from '@/assets/category-butchery.png';
+import categoryClothing from '@/assets/category-clothing.png';
+import categoryFreshFish from '@/assets/category-fresh-fish.png';
 
 const categories = [
   {
@@ -42,33 +46,33 @@ const categories = [
     animation: 'slide-in-up'
   },
   {
-    icon: ShoppingBasket,
+    image: categoryGrocery,
     titleKey: 'Grocery',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-right'
   },
   {
-    icon: Cookie,
+    image: categoryBakery,
     titleKey: 'Bakery',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-left'
   },
   {
-    icon: Beef,
+    image: categoryButchery,
     titleKey: 'Butchery',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-up'
   },
   {
-    icon: ShirtIcon,
+    image: categoryClothing,
     titleKey: 'Clothing',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-right'
   },
   {
-    icon: Fish,
+    image: categoryFreshFish,
     titleKey: 'Fresh Fish',
-    color: 'text-fresh-green',
+    color: 'text-charcoal-gray',
     animation: 'slide-in-left'
   }
 ];
@@ -95,15 +99,11 @@ export const CategoriesSection = () => {
               {[...categories, ...categories, ...categories].map((category, index) => (
                 <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover">
                   <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover overflow-hidden">
-                    {category.image ? (
-                      <img 
-                        src={category.image} 
-                        alt={`${category.titleKey} category`}
-                        className="w-20 h-20 object-cover rounded-full"
-                      />
-                    ) : (
-                      <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
-                    )}
+                    <img 
+                      src={category.image} 
+                      alt={`${category.titleKey} category`}
+                      className="w-20 h-20 object-cover rounded-full"
+                    />
                   </div>
                   <h3 className="text-lg font-semibold font-poppins text-charcoal-gray transition-colors duration-300 group-hover:text-hypermarket-red">
                     {t(category.titleKey)}
@@ -126,15 +126,11 @@ export const CategoriesSection = () => {
               {[...categories, ...categories, ...categories, ...categories].map((category, index) => (
                 <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover snap-center">
                   <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover overflow-hidden">
-                    {category.image ? (
-                      <img 
-                        src={category.image} 
-                        alt={`${category.titleKey} category`}
-                        className="w-20 h-20 object-cover rounded-full"
-                      />
-                    ) : (
-                      <category.icon className={`w-10 h-10 ${category.color} category-icon`} />
-                    )}
+                    <img 
+                      src={category.image} 
+                      alt={`${category.titleKey} category`}
+                      className="w-20 h-20 object-cover rounded-full"
+                    />
                   </div>
                   <h3 className="text-lg font-semibold font-poppins text-charcoal-gray transition-colors duration-300 group-hover:text-hypermarket-red">
                     {t(category.titleKey)}

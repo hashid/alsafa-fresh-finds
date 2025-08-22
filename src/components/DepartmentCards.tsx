@@ -2,10 +2,10 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent } from '@/components/ui/card';
 import groceryAisleImage from '@/assets/grocery-aisle.jpg';
 import freshProduceImage from '@/assets/fresh-produce.jpg';
-import mensWomensClothingImage from '@/assets/mens-womens-clothing.jpg';
+import clothingDepartmentClean from '@/assets/clothing-department-clean.jpg';
 import pillowsBedImage from '@/assets/pillows-bed.jpg';
 import homeAppliancesImage from '@/assets/home-appliances.jpg';
-import fishMeatsImage from '@/assets/fish-meats.jpg';
+import meatSeafoodClean from '@/assets/meat-seafood-clean.jpg';
 
 const departments = [
   {
@@ -20,7 +20,7 @@ const departments = [
   },
   {
     name: 'Clothing',
-    image: mensWomensClothingImage,
+    image: clothingDepartmentClean,
     description: 'Fashionable clothing for the whole family'
   },
   {
@@ -35,7 +35,7 @@ const departments = [
   },
   {
     name: 'Fish & Meats',
-    image: fishMeatsImage,
+    image: meatSeafoodClean,
     description: 'Fresh seafood and premium quality meats'
   }
 ];

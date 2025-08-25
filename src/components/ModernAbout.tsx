@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { CreditCard, Car } from 'lucide-react';
 import storeImage from '@/assets/department-store.jpg';
 import aboutUsImage from '@/assets/about-us-image.jpg';
 import { FloorImageSlider } from './FloorImageSlider';
@@ -65,7 +66,7 @@ export const ModernAbout = () => {
               </div>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="bg-gradient-to-br from-light-gray to-white p-8 rounded-2xl card-hover sleek-hover shadow-elegant border border-premium-gold/10 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-r from-premium-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-premium-gold/20 to-transparent rounded-bl-full"></div>
@@ -84,6 +85,28 @@ export const ModernAbout = () => {
                 </h3>
                 <p className="text-ash-dark relative z-10 leading-relaxed">
                   {t('Friendly and helpful staff ready to assist you')}
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-light-gray to-white p-8 rounded-2xl card-hover sleek-hover shadow-elegant border border-premium-gold/10 relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-r from-premium-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-premium-gold/20 to-transparent rounded-bl-full"></div>
+                <CreditCard className="w-8 h-8 text-hypermarket-red mb-3 relative z-10" />
+                <h3 className="font-bold text-charcoal-gray mb-3 font-poppins text-lg relative z-10 text-shimmer">
+                  ATM Accessible
+                </h3>
+                <p className="text-ash-dark relative z-10 leading-relaxed">
+                  On-site ATM available for your convenience
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-light-gray to-white p-8 rounded-2xl card-hover sleek-hover shadow-elegant border border-premium-gold/10 relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-r from-premium-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-premium-gold/20 to-transparent rounded-bl-full"></div>
+                <Car className="w-8 h-8 text-hypermarket-red mb-3 relative z-10" />
+                <h3 className="font-bold text-charcoal-gray mb-3 font-poppins text-lg relative z-10 text-shimmer">
+                  Ample Parking Space
+                </h3>
+                <p className="text-ash-dark relative z-10 leading-relaxed">
+                  Convenient parking available for all customers
                 </p>
               </div>
             </div>

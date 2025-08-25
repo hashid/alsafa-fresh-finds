@@ -11,6 +11,11 @@ import pocariImage from '@/assets/pocari-clear.jpg';
 import additionalProduct1 from '@/assets/additional-product-1.jpg';
 import additionalProduct2 from '@/assets/additional-product-2.jpg';
 import additionalProduct3 from '@/assets/additional-product-3.jpg';
+import floorImage1 from '@/assets/floor-image-1.jpg';
+import floorImage2 from '@/assets/floor-image-2.jpg';
+import floorImage3 from '@/assets/floor-image-3.jpg';
+import floorImage4 from '@/assets/floor-image-4.jpg';
+import floorImage5 from '@/assets/floor-image-5.jpg';
 
 export const ModernAbout = () => {
   const { t, isRTL } = useLanguage();
@@ -25,7 +30,12 @@ export const ModernAbout = () => {
     pocariImage,
     additionalProduct1,
     additionalProduct2,
-    additionalProduct3
+    additionalProduct3,
+    floorImage1,
+    floorImage2,
+    floorImage3,
+    floorImage4,
+    floorImage5
   ];
 
   return (

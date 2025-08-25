@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Menu, X, MapPin, Phone } from 'lucide-react';
+import { Menu, X, MapPin, Phone, Banknote } from 'lucide-react';
 import logoAlSafa from '@/assets/logo-alsafa.jpg';
 export const ModernHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,11 +32,17 @@ export const ModernHeader = () => {
       <div className="bg-background border-b border-border/50">
         <div className="container mx-auto px-6">
           <div className="flex justify-end py-2">
-            <div className="flex items-center space-x-2 text-sm text-charcoal-gray">
-              <Phone className="w-4 h-4 text-hypermarket-red" />
-              <a href="tel:+96891073089" className="hover:text-hypermarket-red transition-colors">
-                +968 91073089
-              </a>
+            <div className="flex items-center space-x-6 text-sm text-charcoal-gray">
+              <div className="flex items-center space-x-2">
+                <Banknote className="w-4 h-4 text-hypermarket-red" />
+                <span className="text-charcoal-gray">ATM Service Available</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="w-4 h-4 text-hypermarket-red" />
+                <a href="tel:+96891073089" className="hover:text-hypermarket-red transition-colors">
+                  +968 91073089
+                </a>
+              </div>
             </div>
           </div>
         </div>

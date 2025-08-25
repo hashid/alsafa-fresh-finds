@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
 // Import category images
-import categoryHomeAppliances from '@/assets/category-home-appliances.png';
+import categoryElectronics from '@/assets/category-electronics.png';
 import categoryBeauty from '@/assets/category-beauty.png';
 import categoryFresh from '@/assets/category-fresh.png';
 import categoryFruits from '@/assets/category-fruits.png';
@@ -16,8 +16,8 @@ import categoryFreshFish from '@/assets/category-fresh-fish.png';
 
 const categories = [
   {
-    image: categoryHomeAppliances,
-    titleKey: 'Home Appliances',
+    image: categoryElectronics,
+    titleKey: 'Electronics',
     color: 'text-charcoal-gray',
     animation: 'slide-in-left'
   },

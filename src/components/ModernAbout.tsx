@@ -17,30 +17,13 @@ import floorImage2 from '@/assets/floor-image-2.jpg';
 import floorImage3 from '@/assets/floor-image-3.jpg';
 import floorImage4 from '@/assets/floor-image-4.jpg';
 import floorImage5 from '@/assets/floor-image-5.jpg';
-
 export const ModernAbout = () => {
-  const { t, isRTL } = useLanguage();
-
-  const transitionImages = [
-    aboutUsImage,
-    balloonsImage,
-    bucketImage,
-    frozenImage,
-    fruitsImage,
-    nidoImage,
-    pocariImage,
-    additionalProduct1,
-    additionalProduct2,
-    additionalProduct3,
-    floorImage1,
-    floorImage2,
-    floorImage3,
-    floorImage4,
-    floorImage5
-  ];
-
-  return (
-    <section className="py-20 bg-gradient-to-b from-white via-light-gray/30 to-white relative overflow-hidden">
+  const {
+    t,
+    isRTL
+  } = useLanguage();
+  const transitionImages = [aboutUsImage, balloonsImage, bucketImage, frozenImage, fruitsImage, nidoImage, pocariImage, additionalProduct1, additionalProduct2, additionalProduct3, floorImage1, floorImage2, floorImage3, floorImage4, floorImage5];
+  return <section className="py-20 bg-gradient-to-b from-white via-light-gray/30 to-white relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Content */}
@@ -55,18 +38,17 @@ export const ModernAbout = () => {
             </div>
             
             {/* About Us Image Slider */}
-            <div className="mb-8 text-center fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <div className="mb-8 text-center fade-in-up" style={{
+            animationDelay: '0.1s'
+          }}>
               <div className="w-full max-w-4xl mx-auto h-96 rounded-2xl shadow-elegant overflow-hidden">
-                <FloorImageSlider 
-                  images={transitionImages}
-                  title="Al Safa Hypermarket"
-                  autoSlide={true}
-                  interval={4000}
-                />
+                <FloorImageSlider images={transitionImages} title="Al Safa Hypermarket" autoSlide={true} interval={4000} />
               </div>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 fade-in-up" style={{
+            animationDelay: '0.2s'
+          }}>
               <div className="bg-gradient-to-br from-light-gray to-white p-8 rounded-2xl card-hover sleek-hover shadow-elegant border border-premium-gold/10 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-r from-premium-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-premium-gold/20 to-transparent rounded-bl-full"></div>
@@ -90,7 +72,7 @@ export const ModernAbout = () => {
               <div className="bg-gradient-to-br from-light-gray to-white p-8 rounded-2xl card-hover sleek-hover shadow-elegant border border-premium-gold/10 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-r from-premium-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-premium-gold/20 to-transparent rounded-bl-full"></div>
-                <CreditCard className="w-8 h-8 text-hypermarket-red mb-3 relative z-10" />
+                
                 <h3 className="font-bold text-charcoal-gray mb-3 font-poppins text-lg relative z-10 text-shimmer">
                   ATM Accessible
                 </h3>
@@ -113,6 +95,5 @@ export const ModernAbout = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

@@ -53,10 +53,10 @@ export const ModernFooter = () => {
             <div className="mt-8">
               <h5 className="text-base font-semibold font-poppins mb-4">Follow us:</h5>
               <div className="flex space-x-4">
-                <a href="https://www.facebook.com/people/AL-SAFA-HYPERMARKET/100054276620484/#" className="text-charcoal-gray/70 hover:text-hypermarket-red transition-colors transform hover:scale-110">
+                <a href="https://www.facebook.com/people/AL-SAFA-HYPERMARKET/100054276620484/#" className="text-hypermarket-red hover:text-hypermarket-red/80 transition-colors transform hover:scale-110">
                   <Facebook className="w-6 h-6" />
                 </a>
-                <a href="https://www.instagram.com/alsafahypermarket/" className="text-charcoal-gray/70 hover:text-hypermarket-red transition-colors transform hover:scale-110">
+                <a href="https://www.instagram.com/alsafahypermarket/" className="text-hypermarket-red hover:text-hypermarket-red/80 transition-colors transform hover:scale-110">
                   <Instagram className="w-6 h-6" />
                 </a>
               </div>

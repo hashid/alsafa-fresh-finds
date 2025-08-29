@@ -98,7 +98,7 @@ export const CategoriesSection = () => {
             >
               {[...categories, ...categories, ...categories].map((category, index) => (
                 <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover">
-                  <div className="bg-gradient-to-br from-white via-light-gray/20 to-premium-gold/10 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover overflow-hidden border border-premium-gold/20">
+                  <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover overflow-hidden">
                     <img 
                       src={category.image} 
                       alt={`${category.titleKey} category`}
@@ -125,7 +125,7 @@ export const CategoriesSection = () => {
             >
               {[...categories, ...categories, ...categories, ...categories].map((category, index) => (
                 <div key={`${category.titleKey}-${index}`} className="text-center group cursor-pointer flex-shrink-0 w-32 sleek-hover snap-center">
-                  <div className="bg-gradient-to-br from-white via-light-gray/20 to-premium-gold/10 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover overflow-hidden border border-premium-gold/20">
+                  <div className="bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-card group-hover:shadow-medium transition-all duration-300 transform group-hover:scale-110 card-hover overflow-hidden">
                     <img 
                       src={category.image} 
                       alt={`${category.titleKey} category`}

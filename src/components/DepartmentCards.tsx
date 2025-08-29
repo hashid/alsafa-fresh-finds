@@ -44,7 +44,7 @@ export const DepartmentCards = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 bg-gradient-to-b from-light-gray/30 via-white to-light-gray/30">
+    <section className="py-20 bg-gradient-to-b from-light-gray/30 via-white to-light-gray/30 animate-slide-in-right">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-hypermarket-red mb-4">

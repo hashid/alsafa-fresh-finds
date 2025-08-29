@@ -81,7 +81,7 @@ export const CategoriesSection = () => {
     t
   } = useLanguage();
   const [isHighSpeed, setIsHighSpeed] = useState(false);
-  return <section className="py-20 bg-light-gray">
+  return <section className="py-20 bg-light-gray animate-slide-in-right">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-hypermarket-red mb-4">

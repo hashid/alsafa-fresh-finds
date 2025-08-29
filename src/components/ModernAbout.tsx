@@ -23,7 +23,7 @@ export const ModernAbout = () => {
     isRTL
   } = useLanguage();
   const transitionImages = [aboutUsImage, balloonsImage, bucketImage, frozenImage, fruitsImage, nidoImage, pocariImage, additionalProduct1, additionalProduct2, additionalProduct3, floorImage1, floorImage2, floorImage3, floorImage4, floorImage5];
-  return <section className="py-20 bg-gradient-to-b from-white via-light-gray/30 to-white relative overflow-hidden">
+  return <section className="py-20 bg-gradient-to-b from-white via-light-gray/30 to-white relative overflow-hidden animate-slide-in-right">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Content */}

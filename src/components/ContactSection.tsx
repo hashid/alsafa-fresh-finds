@@ -34,7 +34,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-light-gray/30 via-white to-light-gray/30 relative overflow-hidden">
+    <section id="contact" className="py-20 bg-gradient-to-b from-light-gray/30 via-white to-light-gray/30 relative overflow-hidden animate-slide-in-right">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-premium-gold/5 to-transparent"></div>
       <div className="container mx-auto px-4 relative z-10">

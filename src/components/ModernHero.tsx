@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
-import arabFamilyShopping from '@/assets/omani-family-traditional-shopping.jpg';
+import heroNew from '@/assets/hero-new.jpg';
 export const ModernHero = () => {
   const {
     t,
@@ -10,7 +10,7 @@ export const ModernHero = () => {
   return <section className="min-h-screen bg-white flex items-center py-10 md:py-20 relative overflow-hidden">
       {/* Hero Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src={arabFamilyShopping} alt="Arab family shopping in hypermarket with trolley" className="w-full h-full object-cover" />
+        <img src={heroNew} alt="Al Safa Hypermarket storefront and shopping experience" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 

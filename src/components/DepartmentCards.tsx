@@ -47,7 +47,7 @@ export const DepartmentCards = () => {
     <section className="py-20 bg-gradient-to-b from-light-gray/30 via-white to-light-gray/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-charcoal-gray mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-hypermarket-red mb-4">
             {t('Departments')}
           </h2>
           <p className="text-xl text-ash-dark max-w-2xl mx-auto">

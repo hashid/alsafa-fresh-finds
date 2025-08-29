@@ -84,7 +84,7 @@ export const CategoriesSection = () => {
   return <section className="py-20 bg-light-gray">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-charcoal-gray mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-hypermarket-red mb-4">
             {t('Categories')}
           </h2>
         </div>
